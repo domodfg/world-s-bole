@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/world-s-bole/static/css/main.fe080840.css",
+    "main.js": "/world-s-bole/static/js/main.37a86e99.js",
+    "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
+    "static/media/background.jpg": "/world-s-bole/static/media/background.a4c18dea617730a3a5cf.jpg",
+    "static/media/dreadrealm.jpg": "/world-s-bole/static/media/dreadrealm.1590ee6540b2bddbf836.jpg",
+    "index.html": "/world-s-bole/index.html",
+    "main.fe080840.css.map": "/world-s-bole/static/css/main.fe080840.css.map",
+    "main.37a86e99.js.map": "/world-s-bole/static/js/main.37a86e99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe080840.css",
+    "static/js/main.37a86e99.js"
+  ]
+}
