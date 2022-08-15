@@ -32,7 +32,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: max(2vw, 1.2rem);
+  font-size: 1.5rem;
   background-color: rgba(177, 240, 177, 0.5);
   height: 100px;
   border-radius: 0px 0px 20px 20px;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .logo {
-  font-size: max(4vw, 2.5rem);
+  font-size: 4rem;
   margin-top: 150px;
   white-space: nowrap;
 }
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .des {
-  font-size: max(2.4vw, 1.2rem);
+  font-size: 2.5rem;
 }
 
 .content {
@@ -101,6 +101,15 @@ a:hover {
   .mainDescription {
     max-width: 50vw;
     margin-left: 50px;
+  }
+  .header {
+    font-size: 1.2rem;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  .des {
+    font-size: 1.2rem;
   }
   .content {
     display: flex;
