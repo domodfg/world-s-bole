@@ -10,14 +10,8 @@ ul {
 
 a {
   position: relative;
-  display: inline-block;
   text-decoration: none;
   color: white;
-  transition: transform 0.5s ease-out;
-}
-
-a:hover {
-  transform: scale(1.15);
 }
 
 .App {
@@ -39,6 +33,8 @@ a:hover {
 }
 
 .main {
+  display: flex;
+  justify-content: center;
   background-image: url(./images/main.jpg);
   background-position: center;
   background-size: cover;
@@ -47,14 +43,12 @@ a:hover {
 }
 
 .logo {
-  font-size: 4rem;
-  margin-top: 150px;
+  font-size: 7rem;
+  margin-top: 250px;
+  margin-bottom: 150px;
   white-space: nowrap;
-}
-
-.mainDescription {
-  max-width: 30vw;
-  margin-left: 200px;
+  text-align: center;
+  width: 100%;
 }
 
 .des {
@@ -75,38 +69,42 @@ a:hover {
 .dreadrealm {
   width: 500px;
   border-radius: 10px;
-  margin: 30px;
+  margin-top: 50px;
   border: 1px white groove;
-  margin-right: 0px;
 }
 
 .dreadrealmCard {
   display: flex;
-  font-size: max(2.4vw, 1.2rem);
+  font-size: 1.2rem;
+  max-width: 70%;
   color: white;
   align-items: center;
+  max-height: 350px;
 }
 
 .banner {
   width: 100%;
-  background-color: aqua;
+  background-color: rgba(239,229,112,0.7);
   height: 50px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .bannertext {
   padding: 20px;
+  margin: 0;
+}
+
+.cardRight {
+  margin-top: 50px;
+  min-width: 250px;
 }
 
 @media (max-width: 700px) {
-  .mainDescription {
-    max-width: 50vw;
-    margin-left: 50px;
-  }
   .header {
     font-size: 1.2rem;
   }
   .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .des {
     font-size: 1.2rem;
@@ -123,4 +121,19 @@ a:hover {
   .dreadrealmCard {
     flex-direction: column;
   }
+  .cardRight {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dreadrealmCard {
+    flex-direction: column;
+  }
+  .dreadrealmdiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  
 }

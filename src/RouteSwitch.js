@@ -5,7 +5,7 @@ import Shop from "./Shop.js";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/world-s-bole">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/character" element={<Character />} />
