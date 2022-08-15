@@ -15,7 +15,7 @@ function App() {
       </div>
       <div className="content">
         <AnimationOnScroll
-          animateIn="animate__fadeInDown"
+          animateIn="animate__fadeIn"
           initiallyVisible={true}
           className="dreadrealmCard"
         >
