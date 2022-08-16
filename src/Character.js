@@ -5,7 +5,7 @@ const Character = () => {
     <div>
       <div className="main">
         <Navbar />
-        <h1>Hello from Main</h1>
+        <h1>Hello from Character</h1>
       </div>
   
     </div>

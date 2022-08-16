@@ -1,20 +1,15 @@
 import { Link } from "react-router-dom";
+import spellbook from "../images/spell-book.png";
 
 const Navbar = () => {
   return (
     <nav className="header">
-      <p>Logo</p>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/character">Character</Link>
-        </li>
-        <li>
-          <Link to="/shop">Shop</Link>
-        </li>
-      </ul>
+      <img src={spellbook} className="spellbook"/>
+      <div className="link">
+        <Link to="/">Home</Link>
+        <Link to="/character">Character</Link>
+        <Link to="/shop">Shop</Link>
+      </div>
     </nav>
   );
 };

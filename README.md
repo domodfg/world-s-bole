@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+這是一個劍與魔法的世界，這是一片美麗的大陸——烏提爾，陽光與海，山與風，一切都是那麼美好。住在這裡的人都過著和諧的生活，直到祂們的出現……
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+原初時期，當世界還是一片渾濁和無序，掌管黑暗的魔神奧古拉斯創造了祂的眷屬——怪物，給光明之神優米拉斯的子民們帶來了無序混沌。善良的優米拉斯不忍心看到祂的子民受苦，於是乎賦予他們魔法和力量，並攜手人類的勇者們，與魔神以及怪物歷經千百遍苦戰，死傷無數，終於將魔神奧拉古斯封印在神聖的皮克斯之山上。人們才過上安寧幸福的日子，可好景不長。四百年後，魔神的信徒們，不，應該說是人類的叛逃們，偷偷利用廬恩魔法，將其封印瓦解，於是魔神再次降臨，祂發誓這次要將世界化為灰燼，將優米拉斯的子民們一個不留的屠盡…
 
-## Available Scripts
+在這個世界裡，你將重生為亞瑟，一個出生在萬特王國的平民，亞瑟一家本是貴族，但因其父親犯下滔天大錯，觸怒了國王路易.萬特三世，作為處罰被貶為草民。那時的亞瑟才 12 歲。四年後，他的父母因病離世，還沒來得及悼念父母的離世，魔神的爪牙已經開始抓向世界。
 
-In the project directory, you can run:
+“這不是你悲傷的時候，這個世界等著你去拯救！”亞瑟的師傅威利斯如此向他說道。原來亞瑟小時候經常在附近的騎士訓練場偷學，後來威利斯察覺後，覺得他是可造之材，這些年都在訓練他。
 
-### `npm start`
+亞瑟從悲傷中抽離出來，決定加入魔神對抗軍行列，一同與光明之神優米拉斯將魔神封印。在這遊戲中，你將遊歷整片烏提爾並進行冒險，如和魔神的眷屬們戰鬥，也能探索這片被魔神摧毀的荒土末世，在遊戲的最後階段，你將與優米拉斯相遇，並且揭開你的前世…並且和祂一同戰鬥。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+職業
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+玩家一開始能夠選擇自己的職業，包括有劍士，法師，弓箭手，騎槍手。根據不同的職業有不同的玩法如技能，固有天賦或是加持。
 
-### `npm test`
+戰鬥系統
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+最一開始，系統將會教學如何進行格擋和攻擊還有反擊——這三個遊戲的核心玩法。隨著時間的推移，玩家可以從烏提爾大陸上獲得林林總總的坐騎，如布布豬，菲菲鳥，甚或是遠古飛龍。
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+成就系統：每當玩家達成相對的事或條件，就會獲得對應的成就，假如你有完美主義，就一定不要錯過我們為玩家設計各種成就和彩蛋！
