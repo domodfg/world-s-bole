@@ -50,15 +50,15 @@ a {
 
 .logo {
   font-size: 7rem;
-  font-family: "Aboreto", cursive;
+  font-family: "lifeCraft", "Aboreto", cursive;
   font-weight: 400;
-  color: #c4dc69;
+  color: white;
   margin-top: 250px;
   margin-bottom: 150px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   text-align: center;
   width: 100%;
-  text-shadow: 2px 4px #b6f6ff;
+  /* text-shadow: 2px 4px #b6f6ff; */
 }
 
 .des {
