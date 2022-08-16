@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.e36b3107.css",
-    "main.js": "/world-s-bole/static/js/main.386cc556.js",
+    "main.css": "/world-s-bole/static/css/main.523faa92.css",
+    "main.js": "/world-s-bole/static/js/main.e188a169.js",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
+    "static/media/floatingland.jpg": "/world-s-bole/static/media/floatingland.9cc6f9d1bbe7df33477a.jpg",
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/dreadrealm.jpg": "/world-s-bole/static/media/dreadrealm.1590ee6540b2bddbf836.jpg",
+    "static/media/runemagic.jpg": "/world-s-bole/static/media/runemagic.fd4b0602394614b2c647.jpg",
+    "static/media/goldborder.png": "/world-s-bole/static/media/goldborder.99704147f0834e032568.png",
+    "static/media/wrathofthedragon.jpeg": "/world-s-bole/static/media/wrathofthedragon.5e74393fe6a6e1036f77.jpeg",
+    "static/media/spell-book.png": "/world-s-bole/static/media/spell-book.82889383585031573f0d.png",
+    "static/media/slick.svg": "/world-s-bole/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/world-s-bole/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.e36b3107.css.map": "/world-s-bole/static/css/main.e36b3107.css.map",
-    "main.386cc556.js.map": "/world-s-bole/static/js/main.386cc556.js.map"
+    "main.523faa92.css.map": "/world-s-bole/static/css/main.523faa92.css.map",
+    "main.e188a169.js.map": "/world-s-bole/static/js/main.e188a169.js.map"
   },
   "entrypoints": [
-    "static/css/main.e36b3107.css",
-    "static/js/main.386cc556.js"
+    "static/css/main.523faa92.css",
+    "static/js/main.e188a169.js"
   ]
 }
