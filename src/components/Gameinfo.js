@@ -15,7 +15,9 @@ const Gameinfo = () => {
         duration={0.7}
         offset={300}
       >
-        <img src={dreadrealm} className="cardimage" alt="dread realm" />
+        <div className="imagecontainer">
+          <img src={dreadrealm} className="cardimage" alt="dread realm" />
+        </div>
         <div className="cardRight">
           <div className="banner"></div>
           <p className="bannertext">
@@ -44,11 +46,13 @@ const Gameinfo = () => {
             iste est quae.
           </p>
         </div>
-        <img
-          src={wrathofthedragon}
-          className="cardimage"
-          alt="Wrath of the dragon"
-        />
+        <div className="imagecontainer rightimage">
+          <img
+            src={wrathofthedragon}
+            className="cardimage"
+            alt="Wrath of the dragon"
+          />
+        </div>
       </AnimationOnScroll>
       <AnimationOnScroll
         animateIn="animate__fadeIn"
@@ -57,7 +61,9 @@ const Gameinfo = () => {
         duration={0.7}
         offset={300}
       >
-        <img src={floatingland} className="cardimage" alt="Floating land" />
+        <div className="imagecontainer">
+          <img src={floatingland} className="cardimage" alt="Floating land" />
+        </div>
         <div className="cardRight">
           <div className="float banner"></div>
           <p className="bannertext">
@@ -86,7 +92,13 @@ const Gameinfo = () => {
             iste est quae.
           </p>
         </div>
-        <img src={runemagic} className="cardimage" alt="Floating land" />
+        <div className="imagecontainer rightimage">
+          <img
+            src={runemagic}
+            className="cardimage"
+            alt="Floating land"
+          />
+        </div>
       </AnimationOnScroll>
     </div>
   );
