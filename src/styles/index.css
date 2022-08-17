@@ -16,5 +16,5 @@ code {
 
 @font-face {
   font-family: 'lifeCraft';
-  src: local('lifeCraft'), url(./fonts/lifeCraftFont.ttf) format('truetype');
+  src: local('lifeCraft'), url(../fonts/lifeCraftFont.ttf) format('truetype');
 }

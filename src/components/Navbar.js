@@ -4,7 +4,7 @@ import spellbook from "../images/spell-book.png";
 const Navbar = () => {
   return (
     <nav className="header">
-      <img src={spellbook} className="spellbook"/>
+      <img src={spellbook} className="spellbook" alt="logo"/>
       <div className="link">
         <Link to="/">Home</Link>
         <Link to="/character">Character</Link>

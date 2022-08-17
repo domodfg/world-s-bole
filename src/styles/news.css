@@ -1,0 +1,43 @@
+.newsCard {
+    height: 500px;
+    text-align: left;
+    border: 5px solid;
+    border-image: url(../images/goldborder.png);
+    border-image-slice: 10%;
+    border-image-width: 40px 70px;
+    color: white;
+    border-radius: 10px;
+    font-size: clamp(1rem, 2vw, 2rem); 
+    padding: 70px 10vw;
+    box-sizing: border-box;
+  }
+  
+  .news {
+    text-align: center;
+    padding: 10vh 15vw;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .newshead {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .slick-list{
+    width: 100%;
+  }
+  
+  @media (max-width: 700px) {
+    .newsCard{
+      font-size: 1rem;
+      padding: 50px 50px;
+    }
+    .newshead{
+      font-size: 1.5rem;
+    }
+  }
+  
