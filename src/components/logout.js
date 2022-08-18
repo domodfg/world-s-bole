@@ -10,7 +10,7 @@ const LogoutButton = () => {
         logout({ returnTo: window.location.origin + "/world-s-bole" })
       }
     >
-      Log Out
+      登出
     </button>
   );
 };
