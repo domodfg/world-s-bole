@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className="policy">
         <p>服務條款</p>
-        <p>隱私權政策</p>
+        <p>私隱政策</p>
         <p>數碼存根政策</p>
         <p>聯絡我們</p>
       </div>

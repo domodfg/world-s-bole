@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import RouteSwitch from './RouteSwitch';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.css";
+import RouteSwitch from "./RouteSwitch";
+import { Auth0Provider } from "@auth0/auth0-react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RouteSwitch />
-  </React.StrictMode>
+  <Auth0Provider
+    domain="dev-o3wgr4ti.us.auth0.com"
+    clientId="UV7NFlGUCgThv83k8yuHyJisLe5Bm27D"
+    redirectUri={window.location.origin + "/world-s-bole"}
+  >
+    <React.StrictMode>
+      <RouteSwitch />
+    </React.StrictMode>
+  </Auth0Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

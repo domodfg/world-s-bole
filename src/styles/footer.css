@@ -11,18 +11,24 @@
   z-index: 1;
 }
 
+.socialmedia {
+  gap:25px
+}
+
 .socialmedia,
 .policy {
   display: flex;
 }
 
 .policy {
-  gap: 60px;
+  gap: 45px;
 }
 
 .policy p {
   transition: all 0.4s ease-in-out;
+  text-align: center;
   cursor: pointer;
+  width: 80px;
 }
 
 .policy p:hover {
