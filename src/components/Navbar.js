@@ -5,9 +5,9 @@ const Navbar = () => {
     <nav className="header">
       <p className="headerlogo">WB</p>
       <div className="link">
-        <Link to="/">Home</Link>
-        <Link to="/character">Character</Link>
-        <Link to="/shop">Shop</Link>
+        <Link to="/">主頁</Link>
+        <Link to="/character">角色</Link>
+        <Link to="/shop">商店</Link>
       </div>
     </nav>
   );

@@ -7,6 +7,21 @@ a {
   position: relative;
   text-decoration: none;
   color: white;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+.link a {
+  border-bottom: 3px solid transparent;
+  border-radius: 2.5px;
+}
+
+.link a:hover {
+  border-bottom: 3px #f6ffa3 solid;
 }
 
 .header {
@@ -22,6 +37,7 @@ a {
 }
 
 .headerlogo {
+  margin: 0;
   font-size: 2.5rem;
   font-family: "lifeCraft", "Aboreto", cursive;
 }
@@ -66,7 +82,10 @@ a {
     font-size: 1.5rem;
   }
   .header {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .link {
+    gap: 25px;
   }
   .logo {
     font-size: 3rem;

@@ -19,7 +19,7 @@
 .imagecontainer {
   width: 500px;
   overflow: hidden;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   border-radius: 10px 0px 10px 10px;
   border: 1px white groove;
   align-self: flex-start;
@@ -106,6 +106,7 @@
 .cardRight,
 .cardLeft {
   min-width: 250px;
+  flex: 1 1 0;
   align-self: flex-start;
 }
 

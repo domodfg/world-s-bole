@@ -1,10 +1,12 @@
 import "./styles/App.css";
-import "./styles/navbarandlogo.css"
-import "./styles/gameinfo.css"
-import "./styles/news.css"
+import "./styles/navbarandlogo.css";
+import "./styles/gameinfo.css";
+import "./styles/news.css";
+import "./styles/footer.css";
 import Navbar from "./components/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
 import News from "./components/News.js";
+import Footer from "./components/footer.js";
 
 function App() {
   return (
@@ -13,11 +15,12 @@ function App() {
         <Navbar />
         <div>
           <h1 className="logo">World's Bole</h1>
-          <p>Action fantasy RPG</p>
+          <p>動作幻想 RPG</p>
         </div>
       </div>
       <Gameinfo />
       <News />
+      <Footer />
     </div>
   );
 }
