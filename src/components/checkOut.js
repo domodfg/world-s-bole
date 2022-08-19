@@ -11,69 +11,75 @@ let test = {
   remove: "X",
 };
 
-const CheckOut = () => {
-  const [cartItems, setCartItems] = useState([]);
+const CheckOut = ({somedata, cartItems, removeClick, decreaseClick, increaseClick}) => {
+  // const [cartItems, setCartItems] = useState([]);
+  // const cartItems = props.cartItems
 
-  const testClick = () => {
-    test = {
-      ...test,
-      id: Math.random().toString(),
-    };
+  // const testClick = () => {
+  //   test = {
+  //     ...test,
+  //     id: Math.random().toString(),
+  //   };
 
-    setCartItems([...cartItems, test]);
-  };
+  //   setCartItems([...cartItems, test]);
+  // };
 
-  const removeClick = (e) => {
-    const newCartItems = cartItems.filter(
-      (cartItem) => cartItem.id !== e.target.id
-    );
+  // const removeClick = (e) => {
+  //   const newCartItems = cartItems.filter(
+  //     (cartItem) => cartItem.id !== e.target.id
+  //   );
 
-    setCartItems(newCartItems);
-  };
+  //   setCartItems(newCartItems);
+  // };
 
-  const decreaseClick = (e) => {
-    let newCartItems = {};
+  // const decreaseClick = (e) => {
+  //   let newCartItems = {};
 
-    let foundIndex = cartItems.findIndex((item) => item.id === e.target.id);
+  //   let foundIndex = cartItems.findIndex((item) => item.id === e.target.id);
 
-    if (cartItems[foundIndex].quantity === 1) {
-      newCartItems = cartItems.filter(
-        (cartItem) => cartItem.id !== e.target.id
-      );
-    } else {
-      newCartItems = cartItems.map((item) => {
-        if (item.id === e.target.id) {
-          return { ...item, quantity: item.quantity - 1 };
-        }
-        return item;
-      });
-    }
-    setCartItems(newCartItems);
-  };
+  //   if (cartItems[foundIndex].quantity === 1) {
+  //     newCartItems = cartItems.filter(
+  //       (cartItem) => cartItem.id !== e.target.id
+  //     );
+  //   } else {
+  //     newCartItems = cartItems.map((item) => {
+  //       if (item.id === e.target.id) {
+  //         return { ...item, quantity: item.quantity - 1 };
+  //       }
+  //       return item;
+  //     });
+  //   }
+  //   setCartItems(newCartItems);
+  // };
 
-  const increaseClick = (e) => {
-    const newCartItems = cartItems.map((item) => {
-      if (item.id === e.target.id) {
-        return { ...item, quantity: item.quantity + 1 };
-      } else {
-      }
-      return item;
-    });
+  // const increaseClick = (e) => {
+  //   const newCartItems = cartItems.map((item) => {
+  //     if (item.id === e.target.id) {
+  //       return { ...item, quantity: item.quantity + 1 };
+  //     } else {
+  //     }
+  //     return item;
+  //   });
 
-    setCartItems(newCartItems);
-  };
+  //   setCartItems(newCartItems);
+  // };
+  const projectStoreUnParsed = localStorage.getItem("projectStorage");
+  const projectStoreParsed = JSON.parse(projectStoreUnParsed);
 
   return (
     <div className="checkOutPage">
       <div className="main">
         <Navbar />
       </div>
-
-      <div style={{ margin: "100px" }}>
-        <button onClick={testClick}>測試</button>
+      <div>
+        {console.log(projectStoreParsed)}
+        <h1>{somedata}</h1>
       </div>
+      {/* <div style={{ margin: "100px" }}>
+        <button onClick={testClick}>測試</button>
+      </div> */}
 
-      <div className="checkout-container">
+      {/* <div className="checkout-container">
         <div className="checkout-header">
           <span>產品</span>
           <span>描述</span>
@@ -82,7 +88,7 @@ const CheckOut = () => {
           <span>移除</span>
         </div>
         {cartItems.map((cartItem) => {
-          const { id, img, name, price, quantity, remove } = cartItem;
+          const { id, img, name, price, quantity } = cartItem;
 
           return (
             <div key={id} className="checkout-header">
@@ -104,7 +110,7 @@ const CheckOut = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

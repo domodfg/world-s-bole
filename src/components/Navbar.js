@@ -8,7 +8,6 @@ import usericon from "../images/user.png";
 
 const Navbar = (props) => {
   const { user, isAuthenticated } = useAuth0();
-  console.log(props)
 
   const Login = () => {
     if (isAuthenticated) {
@@ -45,7 +44,7 @@ const Navbar = (props) => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
-          <Link to="/shop" onClick={props.shopClick}>商店</Link>
+          <Link to="/shop" onClick={props.shop}>商店</Link>
         </div>
       </div>
       <div className="link">

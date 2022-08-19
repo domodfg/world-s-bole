@@ -12,6 +12,12 @@ const Shop = () => {
   const [cartItems, setCartItems] = useState([]);
   const [openStatus, setOpenStatus] = useState({shop: true, shoppingCart: false});
 
+  const store = () => {
+    localStorage.setItem("projectStorage", JSON.stringify(cartItems));
+  };
+
+  console.log(cartItems);
+
   const shopClick = () => {
     setOpenStatus({shop: true, shoppingCart: false})
   }
@@ -24,8 +30,48 @@ const Shop = () => {
     let cartItemCopy = [...cartItems];
     let item = JSON.parse(e.target.name);
     cartItemCopy.push(item);
+    store()
     setCartItems(cartItemCopy);
-    console.log(cartItems);
+  };
+
+  const removeClick = (e) => {
+    const newCartItems = cartItems.filter(
+      (cartItem) => cartItem.id !== e.target.id
+    );
+
+    setCartItems(newCartItems);
+  };
+
+  const decreaseClick = (e) => {
+    let newCartItems = {};
+
+    let foundIndex = cartItems.findIndex((item) => item.id === e.target.id);
+
+    if (cartItems[foundIndex].quantity === 1) {
+      newCartItems = cartItems.filter(
+        (cartItem) => cartItem.id !== e.target.id
+      );
+    } else {
+      newCartItems = cartItems.map((item) => {
+        if (item.id === e.target.id) {
+          return { ...item, quantity: item.quantity - 1 };
+        }
+        return item;
+      });
+    }
+    setCartItems(newCartItems);
+  };
+
+  const increaseClick = (e) => {
+    const newCartItems = cartItems.map((item) => {
+      if (item.id === e.target.id) {
+        return { ...item, quantity: item.quantity + 1 };
+      } else {
+      }
+      return item;
+    });
+
+    setCartItems(newCartItems);
   };
 
   const pcCopy = ProductFactory("PC edition", 399, 1);
@@ -61,8 +107,10 @@ const Shop = () => {
         <div className="main">
           <Navbar />
         </div>  
-      {openStatus.shoppingCart && <CheckOut cartItems={cartItems} />}
+
+        <CheckOut somedata={"succeed"} cartItems={cartItems} removeClick={removeClick} decreaseClick={decreaseClick} increaseClick={increaseClick}/>
       </div>
+        
     )
   }
 };
