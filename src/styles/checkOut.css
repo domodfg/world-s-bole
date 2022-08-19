@@ -1,0 +1,37 @@
+.checkOutPage {
+    background-color: grey;
+}
+
+.checkout-container {
+    margin: 10% auto;
+    width: 80%;
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name {
+
+}
+
+.quantity {
+
+}
+
+.decrease {
+
+}
+
+.increase {
+
+}
+
+.price {
+
+}
+
+.remove-button {
+
+}
