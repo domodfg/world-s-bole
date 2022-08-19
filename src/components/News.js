@@ -19,9 +19,7 @@ const News = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
             soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
             est quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nihil soluta sequi cumque aut accusantium laboriosam dolores ipsam
-            iste est quae. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit.
+            Nihil soluta sequi cumque aut accusantium laboriosam dolores.
           </p>
         </div>
         <div className="newsCard">
