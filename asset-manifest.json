@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.1dd705d3.css",
-    "main.js": "/world-s-bole/static/js/main.eb609c67.js",
+    "main.css": "/world-s-bole/static/css/main.fe6a992b.css",
+    "main.js": "/world-s-bole/static/js/main.115cd411.js",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/floatingland.jpg": "/world-s-bole/static/media/floatingland.9cc6f9d1bbe7df33477a.jpg",
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
@@ -11,7 +11,10 @@
     "static/media/goldborder.png": "/world-s-bole/static/media/goldborder.99704147f0834e032568.png",
     "static/media/lifeCraftFont.ttf": "/world-s-bole/static/media/lifeCraftFont.7f2bcab913fb2c2796e0.ttf",
     "static/media/wrathofthedragon.jpeg": "/world-s-bole/static/media/wrathofthedragon.5e74393fe6a6e1036f77.jpeg",
+    "static/media/diamond.png": "/world-s-bole/static/media/diamond.7131c5b2d40e613a5897.png",
+    "static/media/user.png": "/world-s-bole/static/media/user.bcc74561d38db661b53f.png",
     "static/media/twitter.png": "/world-s-bole/static/media/twitter.74d51afa21553ad5329b.png",
+    "static/media/shopping-cart.png": "/world-s-bole/static/media/shopping-cart.3dcb3c21e910c5cc9a84.png",
     "static/media/youtube.png": "/world-s-bole/static/media/youtube.b5aeaa52ceb819c868b8.png",
     "static/media/ig.png": "/world-s-bole/static/media/ig.3f16b99f78a21a5242be.png",
     "static/media/slick.svg": "/world-s-bole/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -19,11 +22,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.1dd705d3.css.map": "/world-s-bole/static/css/main.1dd705d3.css.map",
-    "main.eb609c67.js.map": "/world-s-bole/static/js/main.eb609c67.js.map"
+    "main.fe6a992b.css.map": "/world-s-bole/static/css/main.fe6a992b.css.map",
+    "main.115cd411.js.map": "/world-s-bole/static/js/main.115cd411.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dd705d3.css",
-    "static/js/main.eb609c67.js"
+    "static/css/main.fe6a992b.css",
+    "static/js/main.115cd411.js"
   ]
 }
