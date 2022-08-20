@@ -1,42 +1,25 @@
 .checkOutPage {
-    background-color: grey;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    opacity: 0.9;
 }
 
+
 .checkout-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    color: white;
     margin: 10% auto;
     width: 80%;
 }
 
 .checkout-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70px;
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
-.name {
-
-}
-
-.quantity {
-
-}
-
-.decrease {
-
-}
-
-.increase {
-
-}
-
-.price {
-
-}
-
-.remove-button {
-
+.total {
+    font-size: 30px;
+    text-align: right;
 }

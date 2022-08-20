@@ -4,16 +4,25 @@ import ps5 from "./images/ps5-game-case.jpg";
 import React, { useState } from "react";
 
 const ProductFactory = (title, price, quantity) => {
-  return { title, price, quantity };
+  return {
+    id: Math.random().toString(),
+    img: pc,
+    name: title,
+    price: price,
+    quantity: quantity,
+  }
 };
 
+const data = localStorage.hasOwnProperty("projectStorage") ? JSON.parse(localStorage.getItem("projectStorage")) : []
+
 const Shop = () => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(data);
 
   const addToCart = (e) => {
     let cartItemCopy = [...cartItems];
     let item = JSON.parse(e.target.name);
     cartItemCopy.push(item);
+    localStorage.setItem("projectStorage", JSON.stringify(cartItemCopy))
     setCartItems(cartItemCopy);
     console.log(cartItems);
   };

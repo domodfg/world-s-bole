@@ -6,8 +6,9 @@ import shopping_cart from "../images/shopping-cart.png";
 import diamond from "../images/diamond.png";
 import usericon from "../images/user.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { user, isAuthenticated } = useAuth0();
+
   const Login = () => {
     if (isAuthenticated) {
       return (
@@ -43,20 +44,23 @@ const Navbar = () => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
-          <Link to="/shop">商店</Link>
+          <Link to="/shop" onClick={props.shop}>商店</Link>
         </div>
       </div>
       <div className="link">
         <Login />
+      </div>
+      <div className="linkcard">
+        <img
+          src={shopping_cart}
+          width="20px"
+          alt="cart"
+          onClick={props.shoppingCart}
+        />
         <Link to="/check-out">
-          {
-            <img
-              src={shopping_cart}
-              width="20px"
-              className="shopping-cart"
-              alt="cart"
-            />
-          }
+          <div className="shopping-cart">
+            購物車
+          </div>
         </Link>
       </div>
     </nav>
