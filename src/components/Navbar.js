@@ -49,16 +49,18 @@ const Navbar = (props) => {
       </div>
       <div className="link">
         <Login />
+      </div>
+      <div className="linkcard">
+        <img
+          src={shopping_cart}
+          width="20px"
+          alt="cart"
+          onClick={props.shoppingCart}
+        />
         <Link to="/check-out">
-          {
-            <img
-              src={shopping_cart}
-              width="20px"
-              className="shopping-cart"
-              alt="cart"
-              onClick={props.shoppingCart}
-            />
-          }
+          <div className="shopping-cart">
+            購物車
+          </div>
         </Link>
       </div>
     </nav>

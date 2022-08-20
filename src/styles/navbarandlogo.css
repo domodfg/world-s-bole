@@ -118,6 +118,15 @@ a:hover,
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.shopping-cart:hover {
+  border-bottom: 3px #f6ffa3 solid
+}
+
+.shopping-cart {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ac8c00,

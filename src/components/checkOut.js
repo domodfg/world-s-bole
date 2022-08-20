@@ -1,31 +1,17 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
-import testItem from "../images/fb.png";
 import "../styles/checkOut.css";
-// let test = {
-//   id: 1,
-//   img: testItem,
-//   name: "FB",
-//   price: 1,
-//   quantity: 1,
-// };
-
 
 const CheckOut = () => {
   const projectStoreUnParsed = localStorage.getItem("projectStorage");
   const projectStoreParsed = JSON.parse(projectStoreUnParsed); 
   const [cartItemsCopy, setCartItemsCopy] = useState(projectStoreParsed);
 
-  console.log(cartItemsCopy)
+  const add = (accumulator, {quantity, price}) => {
+    return accumulator + quantity * price;
+  }
 
-  // const testClick = () => {
-  //   test = {
-  //     ...test,
-  //     id: Math.random().toString(),
-  //   };
-  //   console.log(test)
-  //   setCartItemsCopy([...cartItemsCopy, test]);
-  // };
+  const total = cartItemsCopy.reduce(add, 0);
 
   const removeClick = (e) => {
     const newCartItems = cartItemsCopy.filter(
@@ -41,7 +27,6 @@ const CheckOut = () => {
 
     let foundIndex = cartItemsCopy.findIndex((item) => item.id === e.target.id);
 
-    console.log(foundIndex)
     if (cartItemsCopy[foundIndex].quantity === 1) {
       newCartItems = cartItemsCopy.filter(
         (cartItem) => cartItem.id !== e.target.id
@@ -67,7 +52,6 @@ const CheckOut = () => {
       }
       return item;
     });
-    console.log(newCartItems)
 
     localStorage.setItem("projectStorage", JSON.stringify(newCartItems))
     setCartItemsCopy(newCartItems);
@@ -79,41 +63,48 @@ const CheckOut = () => {
         <Navbar />
       </div>
 
-      {/* <div style={{ margin: "100px" }}>
-        <button onClick={testClick}>測試</button>
-      </div> */}
-
       <div className="checkout-container">
-        <div className="checkout-header">
-          <span>產品</span>
-          <span>描述</span>
-          <span>數量</span>
-          <span>價格</span>
-          <span>移除</span>
-        </div>
-        {cartItemsCopy.map((cartItem) => {
-          const { id, img, name, price, quantity } = cartItem;
+        <table className="checkout-header">
+          <tr className="tbRow">
+            <th>產品</th>
+            <th>描述</th>
+            <th>數量</th>
+            <th>價格</th>
+            <th>移除</th>
+          </tr>
+          {cartItemsCopy.map((cartItem) => {
+            const { id, img, name, price, quantity } = cartItem;
 
-          return (
-            <div key={id} className="checkout-header">
-              <span>{<img src={img} width="20px" alt="fb" />}</span>
-              <span>{name}</span>
-              <span>
-                <button id={id} onClick={decreaseClick}>
-                  -
-                </button>
-                {quantity}
-                <button id={id} onClick={increaseClick}>
-                  +
-                </button>
-              </span>
-              <span>{price}</span>
-              <button id={id} onClick={removeClick}>
-                x
-              </button>
-            </div>
-          );
-        })}
+            return (
+                <tr>
+                  <td>{<img src={img} width="80px" height="100px" alt="product" />}</td>
+                  <td>{name}</td>
+                  <td>
+                    <button id={id} onClick={decreaseClick} className="btn btn-light">
+                      -
+                    </button>
+                    {quantity}
+                    <button id={id} onClick={increaseClick} className="btn btn-light">
+                      +
+                    </button>
+                  </td>
+                  <td>{price}</td>
+                  <td>
+                    <button id={id} onClick={removeClick} className="btn btn-danger">
+                      x
+                    </button>
+                  </td>
+                </tr>
+            )
+          })}
+        </table>
+        
+        {
+          <div className="total">
+            <hr />
+            Total: ${total}
+          </div>
+        }
       </div>
     </div>
   );
