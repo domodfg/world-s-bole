@@ -102,7 +102,7 @@ const CheckOut = () => {
         {
           <div className="total">
             <hr />
-            Total: ${total}
+            帳單總額: ${total}
           </div>
         }
       </div>
