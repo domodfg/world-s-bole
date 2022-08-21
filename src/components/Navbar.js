@@ -44,24 +44,25 @@ const Navbar = (props) => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
-          <Link to="/shop" onClick={props.shop}>商店</Link>
+          <Link to="/shop" onClick={props.shop}>
+            商店
+          </Link>
         </div>
       </div>
-      <div className="link">
+      <div className="link rightlink">
         <Login />
-      </div>
-      <div className="linkcard">
-        <img
-          src={shopping_cart}
-          width="20px"
-          alt="cart"
-          onClick={props.shoppingCart}
-        />
-        <Link to="/check-out">
-          <div className="shopping-cart">
-            購物車
-          </div>
-        </Link>
+
+        <div className="linkcard">
+          <img
+            src={shopping_cart}
+            width="20px"
+            alt="cart"
+            onClick={props.shoppingCart}
+          />
+          <Link to="/check-out">
+            <div className="shopping-cart">購物車</div>
+          </Link>
+        </div>
       </div>
     </nav>
   );

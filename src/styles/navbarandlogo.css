@@ -49,7 +49,7 @@ a:hover,
   width: 100%;
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   background-color: rgba(177, 240, 177, 0.5);
@@ -61,7 +61,12 @@ a:hover,
   margin: 0;
   font-size: 2.5rem;
   font-family: "lifeCraft", "Aboreto", cursive;
-  padding-left: 42px;
+  flex: 1;
+}
+
+.rightlink {
+  justify-content: center;
+  flex: 1;
 }
 
 .dropdown-content {
@@ -116,15 +121,6 @@ a:hover,
   text-align: center;
   width: 100%;
   animation: glow 1s ease-in-out infinite alternate;
-}
-
-.shopping-cart:hover {
-  border-bottom: 3px #f6ffa3 solid
-}
-
-.shopping-cart {
-  display: inline-block;
-  margin: 0px 5px;
 }
 
 @keyframes glow {

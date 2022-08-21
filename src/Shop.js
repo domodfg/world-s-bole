@@ -24,7 +24,6 @@ const Shop = () => {
     cartItemCopy.push(item);
     localStorage.setItem("projectStorage", JSON.stringify(cartItemCopy))
     setCartItems(cartItemCopy);
-    console.log(cartItems);
   };
 
   const pcCopy = ProductFactory("PC edition", 399, 1);

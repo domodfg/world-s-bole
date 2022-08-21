@@ -3,11 +3,13 @@ import "./styles/navbarandlogo.css";
 import "./styles/gameinfo.css";
 import "./styles/news.css";
 import "./styles/footer.css";
-import "./styles/shop.css"
+import "./styles/shop.css";
+import "./styles/map.css";
 import Navbar from "./components/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
 import News from "./components/News.js";
 import Footer from "./components/footer.js";
+import Map from "./components/Map.js";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         </div>
       </div>
       <Gameinfo />
+      <Map />
       <News />
       <Footer />
     </div>
