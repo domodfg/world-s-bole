@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.81d939af.css",
-    "main.js": "/world-s-bole/static/js/main.50493d53.js",
-    "static/media/field.jpg": "/world-s-bole/static/media/field.4bf529b1a53c5bf7404e.jpg",
-    "static/media/city.jpg": "/world-s-bole/static/media/city.06cba9a809c2a3fe97cb.jpg",
-    "static/media/dungeon.jpg": "/world-s-bole/static/media/dungeon.569bc317bd1794d65d0e.jpg",
-    "static/media/area.jpg": "/world-s-bole/static/media/area.cdcbe9004f187d722821.jpg",
-    "static/media/map.jpg": "/world-s-bole/static/media/map.f9e91c6f3d04ceeaeb7c.jpg",
+    "main.css": "/world-s-bole/static/css/main.5918a89b.css",
+    "main.js": "/world-s-bole/static/js/main.9784f639.js",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/floatingland.jpg": "/world-s-bole/static/media/floatingland.9cc6f9d1bbe7df33477a.jpg",
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/mapframe.jpg": "/world-s-bole/static/media/mapframe.070adb379d3ab3c67397.jpg",
     "static/media/dreadrealm.jpg": "/world-s-bole/static/media/dreadrealm.1590ee6540b2bddbf836.jpg",
     "static/media/runemagic.jpg": "/world-s-bole/static/media/runemagic.fd4b0602394614b2c647.jpg",
+    "static/media/field.jpeg": "/world-s-bole/static/media/field.3d7e04ef75be837b85ad.jpeg",
     "static/media/ps5-game-case.jpg": "/world-s-bole/static/media/ps5-game-case.f975dd858ac7035b4b66.jpg",
+    "static/media/dungeon.jpeg": "/world-s-bole/static/media/dungeon.4ab3f09b3f8e86843768.jpeg",
+    "static/media/city.jpeg": "/world-s-bole/static/media/city.d97efdcd376aca4000fd.jpeg",
+    "static/media/area.jpeg": "/world-s-bole/static/media/area.f42c34a4a20fe5f33968.jpeg",
+    "static/media/map.jpeg": "/world-s-bole/static/media/map.72c74dc3cdcc9a74e14e.jpeg",
     "static/media/pcgamecase.jpg": "/world-s-bole/static/media/pcgamecase.f5e9c220a1af3a49ea80.jpg",
     "static/media/frame_flower_mandal_element_generated.png": "/world-s-bole/static/media/frame_flower_mandal_element_generated.2b8c2f78bad6ed594db5.png",
     "static/media/goldborder.png": "/world-s-bole/static/media/goldborder.99704147f0834e032568.png",
@@ -30,11 +30,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.81d939af.css.map": "/world-s-bole/static/css/main.81d939af.css.map",
-    "main.50493d53.js.map": "/world-s-bole/static/js/main.50493d53.js.map"
+    "main.5918a89b.css.map": "/world-s-bole/static/css/main.5918a89b.css.map",
+    "main.9784f639.js.map": "/world-s-bole/static/js/main.9784f639.js.map"
   },
   "entrypoints": [
-    "static/css/main.81d939af.css",
-    "static/js/main.50493d53.js"
+    "static/css/main.5918a89b.css",
+    "static/js/main.9784f639.js"
   ]
 }
