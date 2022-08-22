@@ -1,19 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import "../styles/checkOut.css";
 
-const data = localStorage.hasOwnProperty("projectStorage") ? JSON.parse(localStorage.getItem("projectStorage")) : []
-
 const CheckOut = () => {
-
+  let total
+  const data = localStorage.hasOwnProperty("projectStorage") ? JSON.parse(localStorage.getItem("projectStorage")) : []
   const [cartItemsCopy, setCartItemsCopy] = useState(data);
 
-  const add = (accumulator, {quantity, price}) => {
-    return accumulator + quantity * price;
-  }
+  console.log(cartItemsCopy)
 
-  const total = cartItemsCopy.reduce(add, 0);
+  useEffect(() => { 
+    const add = (accumulator, {quantity, price}) => {
+      return accumulator + quantity * price;
+    }
+  
+    total = cartItemsCopy.reduce(add, 0);
+  
+   }, [cartItemsCopy]);
 
+  
   const removeClick = (e) => {
     const newCartItems = cartItemsCopy.filter(
       (cartItem) => cartItem.id !== e.target.id
