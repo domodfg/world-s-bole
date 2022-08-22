@@ -3,17 +3,16 @@ import Navbar from "./Navbar";
 import "../styles/checkOut.css";
 
 const CheckOut = () => {
-  let total = 0;
   const data = localStorage.hasOwnProperty("projectStorage") ? JSON.parse(localStorage.getItem("projectStorage")) : []
+  const [total, setTotal] = useState(0);
   const [cartItemsCopy, setCartItemsCopy] = useState(data);
 
+  const add = (accumulator, {quantity, price}) => {
+    return accumulator + quantity * price;
+  }
 
   useEffect(() => { 
-    const add = (accumulator, {quantity, price}) => {
-      return accumulator + quantity * price;
-    }
-  
-    total = cartItemsCopy.reduce(add, 0);
+    setTotal(cartItemsCopy.reduce(add, 0));
   
    }, [cartItemsCopy]);
 
