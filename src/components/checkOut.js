@@ -70,43 +70,56 @@ const CheckOut = () => {
       <div className="checkout-container">
         
         <div className="left-container">
-          <ul>
-            <li> 
               {cartItemsCopy.map((cartItem) => {
                   const { id, img, name, price, quantity } = cartItem;
 
                   return (
+                    <div key={id} className="list-item"> 
                       <div className="product-container">
-                        <div className="img-details">{<img src={img} width="160px" height="200px" alt="product" />}</div>
+                        <div className="img-details">
+                          {<img src={img} width="160px" height="200px" alt="product" />}
+                        </div>
                         <div className="details-container">
-                          <div className="name-details">{name}</div>
+                          <div className="name-details">
+                            {name}
+                          </div>
                           <div className="button-container">
-                            <button id={id} onClick={decreaseClick} className="btn btn-light">
+                            <button id={id} onClick={decreaseClick} className="increase-btn">
                               &#8595;
                             </button>
                             {quantity}
-                            
-                            <button id={id} onClick={increaseClick} className="btn btn-light">
+                            <button id={id} onClick={increaseClick} className="decrease-btn">
                               &#8593;
                             </button>
                           </div>
                           <div className="price-details">HKD ${price}</div>
                           <div className="remove-details">
-                            <button id={id} onClick={removeClick} className="btn btn-danger">
+                            <button id={id} onClick={removeClick} className="remove-btn">
                               移除
                             </button>
                           </div>
                         </div>
                       </div>
+                    </div>
                   )
                 })}
-            </li>
-          </ul>
         </div>
 
         {
-          <div className="total right-container">
-            帳單總額: ${total}
+          <div className="right-container">
+            <div>
+              <div className="space-between-container"><div>小計:</div> <div> ${total} </div></div>
+              <div className="space-between-container"><div>運費:</div> <div>$0</div></div>
+            </div>
+            <div className="space-between-container">
+              <div>總額</div>
+              <div>${total + 0}</div>
+            </div>
+            <div>
+              <button className="payment-btn">
+                付款
+              </button>
+            </div>
           </div>
         }
       </div>
