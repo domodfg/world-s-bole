@@ -52,7 +52,11 @@ a:hover,
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  background-color: rgba(177, 240, 177, 0.5);
+  background: linear-gradient(
+    180deg,
+    rgba(85, 255, 158, 0.8),
+    rgba(0, 255, 237, 0.1) 70.71%
+  );
   height: 60px;
   z-index: 1;
 }
