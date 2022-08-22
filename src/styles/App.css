@@ -2,6 +2,19 @@
 
 #root {
   margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+button {
+  font-size: 1.2rem;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+  right: 1px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .App {
