@@ -22,7 +22,7 @@ const Map = () => {
           <button onClick={() => changeMap(area)}>地區</button>
           <button onClick={() => changeMap(city)}>城市</button>
           <button onClick={() => changeMap(field)}>原野</button>
-          <button onClick={() => changeMap(dungeon)}>地下城</button>
+          <button onClick={() => changeMap(dungeon)}>遺跡</button>
           <button onClick={() => changeMap(map)}>重置</button>
         </div>
       </div>
