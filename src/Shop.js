@@ -3,10 +3,10 @@ import pc from "./images/pcgamecase.jpg";
 import ps5 from "./images/ps5-game-case.jpg";
 import React, { useState } from "react";
 
-const ProductFactory = (title, price, quantity) => {
+const ProductFactory = (img, title, price, quantity) => {
   return {
     id: Math.random().toString(),
-    img: pc,
+    img: img,
     name: title,
     price: price,
     quantity: quantity,
@@ -24,11 +24,10 @@ const Shop = () => {
     cartItemCopy.push(item);
     localStorage.setItem("projectStorage", JSON.stringify(cartItemCopy))
     setCartItems(cartItemCopy);
-    console.log(cartItems);
   };
 
-  const pcCopy = ProductFactory("PC edition", 399, 1);
-  const ps5Copy = ProductFactory("PS5 edition", 429, 1);
+  const pcCopy = ProductFactory(pc, "PC edition", 399, 1);
+  const ps5Copy = ProductFactory(ps5, "PS5 edition", 429, 1);
 
   return (
     <div className="shop">
