@@ -20,9 +20,23 @@ const Shop = () => {
   const firstRun = useRef(true);
 
   const addToCart = (e) => {
+    let newCartItems = []
     let cartItemCopy = [...cartItems];
     let item = JSON.parse(e.target.name);
-    cartItemCopy.push(item);
+    let foundIndex = cartItems.findIndex((cartItem) => cartItem.name === item.name);
+
+    if(foundIndex !== -1){
+        newCartItems = cartItems.map((cartItem) => {
+          if (cartItem.name === item.name) {
+            return { ...cartItem, quantity: cartItem.quantity + 1 };
+          }
+          return cartItem;
+        });
+        cartItemCopy = [...newCartItems]
+    }
+    else{
+      cartItemCopy.push(item);
+    }
     setCartItems(cartItemCopy);
   };
 

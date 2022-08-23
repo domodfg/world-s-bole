@@ -1,18 +1,44 @@
+.empty-shopping-cart {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 15% 15%;
+    width: fit-content;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.shop-now-btn {
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgba(46, 199, 82, 0.267);
+    color: white;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.shop-now-btn:hover {
+    background: rgba(14, 166, 39, 0.558);
+    
+}
+
 .checkOutPage {
     background: url(../images/background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
     opacity: 0.9;
+    height: 100%;
+    min-height: 100vh;
 }
-
 
 .checkout-container {
     color: white;
     display: flex;
     flex-direction: row;
     margin: 10% auto;
-    width: 98%;
+    width: 90%;
     gap: 20px;
 }
 
@@ -20,16 +46,14 @@
     display: flex;
     flex-direction: column;
     flex-grow: 100;
-    /* border: 1px green solid; */
 }
 
 .product-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    gap: 50px;
-    /* border: 1px red solid; */
+    gap: 25px;
 }
 
 .button-container {
@@ -38,7 +62,6 @@
     justify-content: space-evenly;
     width: 100px;
     gap: 10px;
-    /* border: 1px red solid; */
 }
 
 .list-item {
@@ -46,23 +69,23 @@
 }
 
 .details-container {
-
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    /* border: 1px white solid; */
-    flex-grow: 8;
+    width: 60%;
 }
 
 .right-container {
+    position: fixed;
+    width: 15%;
+    right: 1%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     column-gap: 20px;
     flex-grow: 20;
     padding: 1%;
-    /* border: 1px white solid; */
     gap: 20px;
 }
 
@@ -79,13 +102,13 @@
     padding: 10px 30px;
     font-size: 1.2rem;
     border-radius: 10px;
-    background-color: rgba(154, 240, 255, 0.558);
+    background-color: rgba(6, 107, 147, 0.267);
     color: white;
-    transition: background-color ease-in-out 0.3s;
+    transition: background-color linear 0.3s;
 }
 
 .payment-btn:hover {
-    background: rgba(0, 132, 184, 0.267);
+    background: rgba(154, 240, 255, 0.558);
 }
 
 .remove-btn {
@@ -94,13 +117,14 @@
     padding: 10px 30px;
     font-size: 1.2rem;
     border-radius: 10px;
-    background-color: rgba(233, 14, 91, 0.558);
+    background-color: rgba(210, 40, 17, 0.267);
     color: white;
     transition: background-color ease-in-out 0.3s;
 }
 
 .remove-btn:hover {
-    background: rgba(210, 40, 17, 0.267);
+    background: rgba(233, 14, 91, 0.558);
+    
 }
 
 .increase-btn {
@@ -108,13 +132,13 @@
     padding: 5px 15px;
     font-size: 1.2rem;
     border-radius: 10px;
-    background-color: rgba(125, 119, 118, 0.558);
+    background-color: rgba(134, 136, 137, 0.267);
     color: white;
     transition: background-color ease-in-out 0.3s;
 }
 
 .increase-btn:hover {
-    background: rgba(134, 136, 137, 0.267);
+    background: rgba(125, 119, 118, 0.558);
 }
 
 .decrease-btn {
@@ -122,13 +146,13 @@
     padding: 5px 15px;
     font-size: 1.2rem;
     border-radius: 10px;
-    background-color: rgba(125, 119, 118, 0.558);
+    background-color: rgba(134, 136, 137, 0.267);
     color: white;
     transition: background-color ease-in-out 0.3s;
 }
 
 .decrease-btn:hover {
-    background: rgba(134, 136, 137, 0.267);
+    background: rgba(125, 119, 118, 0.558);
 }
 
 .quantity-details {
@@ -152,10 +176,9 @@
     .product-container {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
-        gap: 50px;
-        /* border: 1px red solid; */
+        gap: 25px;
         width: auto;
     }
 
@@ -163,15 +186,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 1px solid red;
         gap: 15px;
-        /* border: 1px white solid; */
+        width: fit-content;
     }
 
     .left-container {
         display: flex;
         flex-direction: column;
         flex-grow: 2;
-        /* border: 1px green solid; */
     }
 
     .right-container {
@@ -179,9 +202,8 @@
         flex-direction: column;
         justify-content: flex-start;
         column-gap: 20px;
-        flex-grow: 1;
         padding: 1%;
-        /* border: 1px white solid; */
+        width: 20%;
         gap: 20px;
     }
 }
