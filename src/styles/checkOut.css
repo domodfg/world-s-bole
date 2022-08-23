@@ -155,22 +155,27 @@
   text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .checkout-container {
         color: white;
         display: flex;
-        flex-direction: row;
-        margin: 10% auto;
-        gap: 5%;
+        flex-direction: column;
+        margin: 20% auto;
+        gap: 30px;
     }
 
-    .img-details{
+    .img-container {
         margin: 1% 5%;
+    }
+    .img-details{
+        
+        width: 130px;
+        height: 170px;
     }
 
     .product-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         gap: 25px;
@@ -179,26 +184,75 @@
 
     .details-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        border: 1px solid red;
-        gap: 15px;
+        gap: 20px;
         width: fit-content;
     }
 
     .left-container {
         display: flex;
         flex-direction: column;
-        flex-grow: 2;
     }
 
     .right-container {
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        column-gap: 20px;
-        padding: 1%;
-        width: 20%;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .increase-btn {
+        border: none;
+        padding: 5px 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: rgba(134, 136, 137, 0.267);
+        color: white;
+    }
+
+    .decrease-btn {
+        border: none;
+        padding: 5px 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: rgba(134, 136, 137, 0.267);
+        color: white;
+    }
+
+    .remove-btn {
+        width: 80px;
+        border: none;
+        padding: 5px 20px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: rgba(210, 40, 17, 0.267);
+        color: white;
+    }
+
+    .payment-btn-container {
+        margin: auto;
+    }
+
+    .payment-btn {
+        width: 100%;
+        border: none;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        background-color: rgba(6, 107, 147, 0.267);
+        color: white;
+    }
+
+    .empty-shopping-cart {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
         gap: 20px;
+        font-size: 25px;
     }
 }
