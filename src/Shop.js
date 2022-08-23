@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar.js";
 import pc from "./images/pcgamecase.jpeg";
-import ps5 from "./images/ps5-game-case.jpg";
+import ps5 from "./images/ps5gamecase.jpeg";
 import React, { useState, useEffect, useRef } from "react";
 import uniqid from 'uniqid';
 
