@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.f76badc3.css",
-    "main.js": "/world-s-bole/static/js/main.dd6e67a7.js",
+    "main.css": "/world-s-bole/static/css/main.cee272af.css",
+    "main.js": "/world-s-bole/static/js/main.42ad50ff.js",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
-    "static/media/floatingland.jpg": "/world-s-bole/static/media/floatingland.9cc6f9d1bbe7df33477a.jpg",
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/mapframe.jpg": "/world-s-bole/static/media/mapframe.070adb379d3ab3c67397.jpg",
-    "static/media/dreadrealm.jpg": "/world-s-bole/static/media/dreadrealm.1590ee6540b2bddbf836.jpg",
     "static/media/runemagic.jpg": "/world-s-bole/static/media/runemagic.fd4b0602394614b2c647.jpg",
     "static/media/field.jpeg": "/world-s-bole/static/media/field.3d7e04ef75be837b85ad.jpeg",
     "static/media/ps5-game-case.jpg": "/world-s-bole/static/media/ps5-game-case.f975dd858ac7035b4b66.jpg",
@@ -14,8 +12,10 @@
     "static/media/city.jpeg": "/world-s-bole/static/media/city.d97efdcd376aca4000fd.jpeg",
     "static/media/area.jpeg": "/world-s-bole/static/media/area.f42c34a4a20fe5f33968.jpeg",
     "static/media/map.jpeg": "/world-s-bole/static/media/map.72c74dc3cdcc9a74e14e.jpeg",
-    "static/media/pcgamecase.jpg": "/world-s-bole/static/media/pcgamecase.f5e9c220a1af3a49ea80.jpg",
+    "static/media/pcgamecase.jpeg": "/world-s-bole/static/media/pcgamecase.375794062db940c5c2fb.jpeg",
     "static/media/frame_flower_mandal_element_generated.png": "/world-s-bole/static/media/frame_flower_mandal_element_generated.2b8c2f78bad6ed594db5.png",
+    "static/media/dreadrealm.jpg": "/world-s-bole/static/media/dreadrealm.d5381a3e1a86b34f0224.jpg",
+    "static/media/floatingland.jpg": "/world-s-bole/static/media/floatingland.041c71e7ef6a797b472a.jpg",
     "static/media/goldborder.png": "/world-s-bole/static/media/goldborder.99704147f0834e032568.png",
     "static/media/lifeCraftFont.ttf": "/world-s-bole/static/media/lifeCraftFont.7f2bcab913fb2c2796e0.ttf",
     "static/media/wrathofthedragon.jpeg": "/world-s-bole/static/media/wrathofthedragon.5e74393fe6a6e1036f77.jpeg",
@@ -30,11 +30,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.f76badc3.css.map": "/world-s-bole/static/css/main.f76badc3.css.map",
-    "main.dd6e67a7.js.map": "/world-s-bole/static/js/main.dd6e67a7.js.map"
+    "main.cee272af.css.map": "/world-s-bole/static/css/main.cee272af.css.map",
+    "main.42ad50ff.js.map": "/world-s-bole/static/js/main.42ad50ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.f76badc3.css",
-    "static/js/main.dd6e67a7.js"
+    "static/css/main.cee272af.css",
+    "static/js/main.42ad50ff.js"
   ]
 }
