@@ -14,6 +14,13 @@ button {
   font-size: 1.2rem;
 }
 
+body {
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 button:active {
   position: relative;
   top: 1px;
