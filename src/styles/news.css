@@ -15,10 +15,6 @@
   .news {
     text-align: center;
     padding: 10vh 15vw;
-    background: url(../images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
   }
   
   .newshead {
