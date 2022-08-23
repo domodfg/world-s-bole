@@ -3,10 +3,12 @@ import App from "./App.js";
 import Character from "./Character.js";
 import Shop from "./Shop.js";
 import CheckOut from "./components/checkOut";
+import ScrollToTop from "./components/Scrolltotop.js";
 
 const RouteSwitch = () => {
   return (
     <HashRouter hashType="hashbang">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/character" element={<Character />} />

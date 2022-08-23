@@ -7,21 +7,53 @@
 .gamecopy {
   margin-top: 150px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 150px;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
   max-width: 1200px;
 }
 
-.gamecopy div {
+.gamecopy .gameProductInfo {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5vw;
+  border: 5px solid;
+  border-image: url(../images/goldborder.png);
+  border-image-slice: 10%;
+  border-image-width: 40px 70px;
+  padding: 4vw 5vw;
+}
+
+.gameProductInfo div {
+  align-self: stretch;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  width: 30%;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.gameProductInfo img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.gameProductInfo h3,
+.price {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.gameProductInfo p {
+  margin: 0;
 }
 
 .gamecopy button {
+  align-self: flex-start;
   border: none;
   padding: 10px 30px;
   font-size: 1.2rem;
@@ -35,22 +67,25 @@
   background: rgba(0, 132, 184, 0.267);
 }
 
-.gamecopy img {
-  aspect-ratio: 3/4;
-  width: 100%;
-  border-radius: 10px;
-}
-
 @media (max-width: 700px) {
   .gamecopy {
-    flex-direction: column;
     gap: 50px;
     margin-top: 100px;
+    font-size: 0.8rem;
   }
-  .gamecopy img {
-    width: 300px;
+
+  .gameProductInfo h3,
+  .price,
+  .gameProductInfo button {
+    margin: 0;
+    font-size: 1rem;
   }
-  .gamecopy button {
-    width: 200px;
+  .gamecopy .gameProductInfo {
+    gap: 5vw;
+    padding: 20px 40px;
+    border-image-width: 20px 30px;
+  }
+  .gamecopy .gameProductInfo img {
+    width: 100px;
   }
 }
