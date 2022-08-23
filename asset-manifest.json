@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.cee272af.css",
-    "main.js": "/world-s-bole/static/js/main.42ad50ff.js",
+    "main.css": "/world-s-bole/static/css/main.3085abb6.css",
+    "main.js": "/world-s-bole/static/js/main.a39ed398.js",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
+    "static/media/main.webm": "/world-s-bole/static/media/main.5927e6037b4f1b4e4277.webm",
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/mapframe.jpg": "/world-s-bole/static/media/mapframe.070adb379d3ab3c67397.jpg",
     "static/media/runemagic.jpg": "/world-s-bole/static/media/runemagic.fd4b0602394614b2c647.jpg",
@@ -30,11 +31,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.cee272af.css.map": "/world-s-bole/static/css/main.cee272af.css.map",
-    "main.42ad50ff.js.map": "/world-s-bole/static/js/main.42ad50ff.js.map"
+    "main.3085abb6.css.map": "/world-s-bole/static/css/main.3085abb6.css.map",
+    "main.a39ed398.js.map": "/world-s-bole/static/js/main.a39ed398.js.map"
   },
   "entrypoints": [
-    "static/css/main.cee272af.css",
-    "static/js/main.42ad50ff.js"
+    "static/css/main.3085abb6.css",
+    "static/js/main.a39ed398.js"
   ]
 }
