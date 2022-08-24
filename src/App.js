@@ -11,14 +11,15 @@ import News from "./components/News.js";
 import Footer from "./components/footer.js";
 import Map from "./components/Map.js";
 import mainvideo from "./images/main.webm";
+import main from "./images/main.jpg";
 
 function App() {
   return (
     <div className="App">
       <div className="main">
         <Navbar />
-        <video autoPlay muted loop>
-          <source src={mainvideo} type="video/mp4" />
+        <video poster={main} autoPlay muted loop>
+          <source src={mainvideo} type="video/webm" />
         </video>
         <div>
           <h1 className="logo">World's Bole</h1>
