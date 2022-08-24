@@ -2,16 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Navbar from "./Navbar";
+import CustomInput from "./input";
 import "../styles/checkOut.css";
 
 const CheckOut = () => {
   const [total, setTotal] = useState(0);
   const [shippingCost, setShippingCost] = useState(100);
   const [cartItems, setCartItems] = useState([]);
-  const [customQuantity, setCustomQuantity] = useState(1);
   const [editable, setEditable] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const { user, isAuthenticated } = useAuth0();
+  const { isAuthenticated } = useAuth0();
   const firstRun = useRef(true);
 
   //testEmail : 1A2b3c4d5@example.com
@@ -32,12 +32,7 @@ const CheckOut = () => {
     if (isAuthenticated) {
       setShippingCost(0);
     }
-  });
-
-  let temp = 0
-  useEffect(() => {
-    setCustomQuantity(temp)
-  }, [editable]);
+  },[isAuthenticated]);
 
   useEffect(() => {
     setTotal(cartItems.reduce(add, 0));
@@ -70,10 +65,14 @@ const CheckOut = () => {
   const editClick = () => {
     setEditable(true);
   }
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      setEditable(false)
+    }
+  }
 
   const handleChange = (e) => {
     const newQuantity = parseInt(e.target.value)
-    setCustomQuantity(newQuantity);
 
     const newCartItems = cartItems.map((item) => {
       if (item.id === e.target.id) {
@@ -82,6 +81,7 @@ const CheckOut = () => {
       return item;
     })
     setCartItems(newCartItems);
+    setTimeout(() => setEditable(false),3000)
   };
 
   const decreaseClick = (e) => {
@@ -103,7 +103,7 @@ const CheckOut = () => {
       });
     }
 
-    setCustomQuantity(newQuantity);
+    // setCustomQuantity(newQuantity);
     setCartItems(newCartItems);
   };
 
@@ -117,7 +117,7 @@ const CheckOut = () => {
       }
       return item;
     });
-    setCustomQuantity(newQuantity);
+    // setCustomQuantity(newQuantity);
     setCartItems(newCartItems);
   };
 
@@ -150,7 +150,6 @@ const CheckOut = () => {
           <div className="left-container">
             {cartItems.map((cartItem) => {
               const { id, img, name, price, quantity } = cartItem;
-              temp = quantity
               return (
                 <div key={id} className="list-item">
                   <div className="product-container">
@@ -168,9 +167,9 @@ const CheckOut = () => {
                           &#8595;
                         </button>
 
-                        <div onClick={editClick}>
+                        <div onClick={editClick} onKeyDown={handleKeyDown}>
                           {
-                            editable ? <input id={id} className="quantity-details" type="number" min="1" onChange={handleChange} value={customQuantity} /> : quantity
+                            editable ? <CustomInput id={id} displayValue={quantity} handleChange={handleChange} /> : quantity
                           }
                         </div>
                         
