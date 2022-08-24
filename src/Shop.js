@@ -58,8 +58,8 @@ const Shop = () => {
     firstRun.current = false;
   }, [cartItems]);
 
-  const pcCopy = ProductFactory(pc, "PC edition", 399, 1);
-  const ps5Copy = ProductFactory(ps5, "PS5 edition", 429, 1);
+  const pcCopy = ProductFactory(pc, "STEAM 數位標準版", 399, 1);
+  const ps5Copy = ProductFactory(ps5, "PS5 數位標準版", 429, 1);
 
   return (
     <div className="shop">
