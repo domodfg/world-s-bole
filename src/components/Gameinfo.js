@@ -11,7 +11,7 @@ const Gameinfo = () => {
       <AnimationOnScroll
         animateIn="animate__fadeIn"
         animateOut="animate__fadeOut"
-        className="card"
+        className="gameinfocard"
         duration={0.7}
         offset={300}
       >
@@ -29,7 +29,7 @@ const Gameinfo = () => {
       <AnimationOnScroll
         animateIn="animate__fadeIn"
         animateOut="animate__fadeOut"
-        className="cardmirrored card"
+        className="cardmirrored gameinfocard"
         duration={0.7}
         offset={300}
       >
@@ -50,7 +50,7 @@ const Gameinfo = () => {
       <AnimationOnScroll
         animateIn="animate__fadeIn"
         animateOut="animate__fadeOut"
-        className="card"
+        className="gameinfocard"
         duration={0.7}
         offset={300}
       >
@@ -67,7 +67,7 @@ const Gameinfo = () => {
       <AnimationOnScroll
         animateIn="animate__fadeIn"
         animateOut="animate__fadeOut"
-        className="cardmirrored card"
+        className="cardmirrored gameinfocard"
         duration={0.7}
         offset={300}
       >
