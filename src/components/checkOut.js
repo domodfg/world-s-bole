@@ -46,6 +46,7 @@ const CheckOut = () => {
     } else {
       setIsEmpty(false)
     }
+
   }, [cartItems]);
 
 
@@ -65,10 +66,15 @@ const CheckOut = () => {
   const editClick = () => {
     setEditable(true);
   }
+
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       setEditable(false)
     }
+  }
+
+  const handleBlur = () => {
+    setEditable(false)
   }
 
   const handleChange = (e) => {
@@ -81,7 +87,6 @@ const CheckOut = () => {
       return item;
     })
     setCartItems(newCartItems);
-    setTimeout(() => setEditable(false),3000)
   };
 
   const decreaseClick = (e) => {
@@ -103,7 +108,6 @@ const CheckOut = () => {
       });
     }
 
-    // setCustomQuantity(newQuantity);
     setCartItems(newCartItems);
   };
 
@@ -117,7 +121,6 @@ const CheckOut = () => {
       }
       return item;
     });
-    // setCustomQuantity(newQuantity);
     setCartItems(newCartItems);
   };
 
@@ -169,7 +172,7 @@ const CheckOut = () => {
 
                         <div onClick={editClick} onKeyDown={handleKeyDown}>
                           {
-                            editable ? <CustomInput id={id} displayValue={quantity} handleChange={handleChange} /> : quantity
+                            editable ? <CustomInput id={id} displayValue={quantity} handleChange={handleChange} handleBlur={handleBlur}/> : quantity
                           }
                         </div>
                         
