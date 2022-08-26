@@ -14,7 +14,7 @@ const Map = () => {
 
   return (
     <div className="map">
-      <h2>探索烏爾提大陸</h2>
+      <h2>探索烏提爾大陸</h2>
       <div className="mapdisplay">
         <div className="empty"></div>
         {utrue}
