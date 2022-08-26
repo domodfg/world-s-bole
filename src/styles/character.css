@@ -1,0 +1,72 @@
+.character {
+  display: flex;
+  height: 92.2vh;
+  margin-top: 60px;
+}
+
+.country {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  overflow: hidden;
+  border-left: 3px black ridge;
+  box-sizing: border-box;
+  opacity: 0.5;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease-in-out;
+}
+
+.country:hover {
+  opacity: 1;
+}
+
+.country.active {
+  position: absolute;
+  width: 100%;
+  height: 92.2%;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* to change the direction of width transition */
+.seraphinecontainer.active {
+  left: 25%;
+  transform: translate(-25%, 0);
+}
+.roamcontainer.active {
+  /* expand from center */
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.timecontainer.active {
+  right: 25%;
+  transform: translate(25%, 0);
+}
+.moonislecontainer {
+  right: 0;
+}
+
+.country img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.country .moonisle,
+.country .time,
+.country .roam {
+  object-position: 80% 50%;
+}
+
+.country .seraphine {
+  object-position: 35% 50%;
+}
+
+.country p {
+  font-size: 3rem;
+  padding-top: 10vw;
+}
