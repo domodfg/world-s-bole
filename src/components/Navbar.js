@@ -44,7 +44,7 @@ const Navbar = (props) => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
-          <Link to="/shop" onClick={props.shop}>
+          <Link to="/shop">
             商店
           </Link>
         </div>
@@ -57,7 +57,6 @@ const Navbar = (props) => {
             src={shopping_cart}
             width="20px"
             alt="cart"
-            onClick={props.shoppingCart}
           />
           <Link to="/check-out">
             <div className="shopping-cart">購物車</div>

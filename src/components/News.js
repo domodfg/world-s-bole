@@ -1,6 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import dragonroar from "../images/dragonroar.webm";
+import dragonroarimage from "../images/dragonroar.jpeg";
+import newcompany from "../images/newcompany.webm";
+import phoneix from "../images/Phoneix.webm";
+import spider from "../images/spider.webm";
 
 const News = () => {
   let settings = {
@@ -12,47 +17,31 @@ const News = () => {
   };
   return (
     <div className="news">
+      <h2>最新消息</h2>
       <Slider {...settings}>
         <div className="newsCard">
-          <p className="newshead">Patch 1.0.3</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nihil soluta sequi cumque aut accusantium laboriosam dolores.
-          </p>
+          <video poster={dragonroarimage} autoPlay muted loop>
+            <source src={dragonroar} type="video/webm" />
+          </video>
+          <div>
+            <p>版本1.0.3新增地下城</p>
+            <p>尤格爾的煉獄</p>
+          </div>
         </div>
         <div className="newsCard">
-          <p className="newshead">Patch 1.0.2</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
+          <video autoPlay muted loop>
+            <source src={newcompany} type="video/webm" />
+          </video>
         </div>
         <div className="newsCard">
-          <p className="newshead">Patch 1.0.1</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
+          <video className="phoneix" autoPlay muted loop>
+            <source src={phoneix} type="video/webm" />
+          </video>
         </div>
         <div className="newsCard">
-          <p className="newshead">Launch day!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
-        </div>
-        <div className="newsCard">
-          <p className="newshead">OST on sale!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
+          <video className="spider" autoPlay muted loop>
+            <source src={spider} type="video/webm" />
+          </video>
         </div>
       </Slider>
     </div>

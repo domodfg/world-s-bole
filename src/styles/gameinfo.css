@@ -31,7 +31,7 @@
   transform: scale(1.25);
 }
 
-.card {
+.gameinfocard {
   display: flex;
   font-size: 1.2rem;
   width: 70%;
@@ -118,7 +118,7 @@
     width: 300px;
     align-self: center;
   }
-  .card {
+  .gameinfocard  {
     justify-content: center;
     flex-direction: column;
     margin: 0;
