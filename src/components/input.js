@@ -7,7 +7,7 @@ const CustomInput = (props) => {
         setCustomQuantity(props.displayValue);
       },[props.displayValue]);
 
-    return <input id={props.id} className="quantity-details" type="number" min="1" onChange={props.handleChange} value={customQuantity} />
+    return <input id={props.id} className="quantity-details" type="number" min="1" onChange={props.handleChange} onBlur={props.handleBlur} value={customQuantity} />
 }
 
 export default CustomInput

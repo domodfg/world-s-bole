@@ -6,7 +6,7 @@ import shopping_cart from "../images/shopping-cart.png";
 import diamond from "../images/diamond.png";
 import usericon from "../images/user.png";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const { user, isAuthenticated } = useAuth0();
 
   const Login = () => {
@@ -58,6 +58,7 @@ const Navbar = (props) => {
             width="20px"
             alt="cart"
           />
+          
           <Link to="/check-out">
             <div className="shopping-cart">購物車</div>
           </Link>
