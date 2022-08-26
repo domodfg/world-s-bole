@@ -5,11 +5,31 @@ import seraphine from "./images/seraphine.jpeg";
 import roam from "./images/roam.jpeg";
 import time from "./images/time.jpeg";
 import moonisle from "./images/moonisle.jpg";
+import React, { useState } from "react";
+import { Cityofendinfo, Cityofendtitle } from "./components/Cityofendinfo.js";
+import { Seraphineinfo, Seraphinetitle } from "./components/Seraphine.js";
+import { Roaminfo, Roamtitle } from "./components/Roam.js";
+import { Timeinfo, Timetitle } from "./components/Time.js";
+import { Mooninfo, Moontitle } from "./components/Moonisle.js";
 
 const Character = () => {
+  const [displayInfo, setDisplayInfo] = useState(false);
+  const [displayTitle, setDisplayTitle] = useState(true);
+
   const expand = (e) => {
-    e.currentTarget.classList.toggle("active");
+    if (!displayInfo) {
+      e.currentTarget.classList.add("active");
+      setDisplayTitle(false);
+      setTimeout(() => setDisplayInfo(true), 500);
+    }
   };
+  const contract = () => {
+    const activeSection = document.querySelector(".active");
+    activeSection.classList.remove("active");
+    setDisplayInfo(false);
+    setDisplayTitle(true);
+  };
+
   return (
     <div>
       <div className="main">
@@ -18,23 +38,28 @@ const Character = () => {
       <div className="character">
         <div onClick={expand} className="country">
           <img src={cityofend} alt="city of end" />
-          <p>終之國</p>
+          <Cityofendtitle title={displayTitle} />
+          <Cityofendinfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>
         <div onClick={expand} className="country seraphinecontainer">
           <img className="seraphine" src={seraphine} alt="seraphine" />
-          <p>賽拉斐爾</p>
+          <Seraphinetitle title={displayTitle} />
+          <Seraphineinfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>
         <div onClick={expand} className="country roamcontainer">
           <img className="roam" src={roam} alt="roam" />
-          <p>隆密</p>
+          <Roamtitle title={displayTitle} />
+          <Roaminfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>
         <div onClick={expand} className="country timecontainer">
           <img className="time" src={time} alt="time" />
-          <p>時之國</p>
+          <Timetitle title={displayTitle} />
+          <Timeinfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>
         <div onClick={expand} className="country moonislecontainer">
           <img className="moonisle" src={moonisle} alt="moon isle" />
-          <p>新月聯邦</p>
+          <Moontitle title={displayTitle} />
+          <Mooninfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>
       </div>
     </div>
