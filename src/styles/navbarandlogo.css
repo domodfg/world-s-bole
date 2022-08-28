@@ -23,6 +23,7 @@ a:hover,
 .link a:hover,
 .link button:hover {
   border-bottom: 3px #f6ffa3 solid;
+  color: white;
 }
 
 .link button {
