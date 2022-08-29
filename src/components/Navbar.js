@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import LoginButton from "./login.js";
 import LogoutButton from "./logout.js";
 import { useAuth0 } from "@auth0/auth0-react";
-import shopping_cart from "../images/shopping-cart.png";
-import diamond from "../images/diamond.png";
-import usericon from "../images/user.png";
+import shopping_cart from "../images/navbar/shopping-cart.png";
+import diamond from "../images/navbar/diamond.png";
+import usericon from "../images/navbar/user.png";
 
 const Navbar = () => {
   const { user, isAuthenticated } = useAuth0();

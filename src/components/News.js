@@ -1,11 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import dragonroar from "../images/dragonroar.webm";
-import dragonroarimage from "../images/dragonroar.jpeg";
-import newcompany from "../images/newcompany.webm";
-import phoneix from "../images/Phoneix.webm";
-import spider from "../images/spider.webm";
+import dragonroar from "../images/news/dragonroar.webm";
+import dragonroarimage from "../images/news/dragonroar.jpeg";
+import newcompany from "../images/news/newcompany.webm";
+import phoneix from "../images/news/Phoneix.webm";
+import spider from "../images/news/spider.webm";
 
 const News = () => {
   let settings = {

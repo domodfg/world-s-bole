@@ -1,7 +1,7 @@
-import dreadrealm from "../images/dreadrealm.jpg";
-import wrathofthedragon from "../images/wrathofthedragon.jpeg";
-import floatingland from "../images/floatingland.jpg";
-import runemagic from "../images/runemagic.jpg";
+import dreadrealm from "../images/gameinfo/dreadrealm.jpg";
+import wrathofthedragon from "../images/gameinfo/wrathofthedragon.jpeg";
+import floatingland from "../images/gameinfo/floatingland.jpg";
+import runemagic from "../images/gameinfo/runemagic.jpg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 

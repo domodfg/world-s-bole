@@ -1,7 +1,7 @@
-import facebook from "../images/fb.png";
-import instagram from "../images/ig.png";
-import twitter from "../images/twitter.png";
-import youtube from "../images/youtube.png";
+import facebook from "../images/footer/fb.png";
+import instagram from "../images/footer/ig.png";
+import twitter from "../images/footer/twitter.png";
+import youtube from "../images/footer/youtube.png";
 
 const Footer = () => {
   return (

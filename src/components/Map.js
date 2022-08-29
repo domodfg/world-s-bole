@@ -1,8 +1,8 @@
-import map from "../images/map.jpeg";
-import area from "../images/area.jpeg";
-import city from "../images/city.jpeg";
-import dungeon from "../images/dungeon.jpeg";
-import field from "../images/field.jpeg";
+import map from "../images/map/map.jpeg";
+import area from "../images/map/area.jpeg";
+import city from "../images/map/city.jpeg";
+import dungeon from "../images/map/dungeon.jpeg";
+import field from "../images/map/field.jpeg";
 import React, { useState } from "react";
 
 const Map = () => {

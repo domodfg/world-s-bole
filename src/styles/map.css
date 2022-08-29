@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/mapframe.jpg);
+  background-image: url(../images/map/mapframe.jpg);
   background-position: center;
   background-size: cover;
   gap: 50px;
