@@ -26,6 +26,7 @@
   border-image-slice: 10%;
   border-image-width: 40px 70px;
   padding: 4vw 5vw;
+  box-sizing: content-box;
 }
 
 .gameProductInfo div {

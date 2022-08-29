@@ -20,7 +20,7 @@ const Character = () => {
     if (!displayInfo) {
       e.currentTarget.classList.add("active");
       setDisplayTitle(false);
-      setTimeout(() => setDisplayInfo(true), 500);
+      setDisplayInfo(true);
     }
   };
   const contract = () => {
