@@ -11,14 +11,15 @@ import News from "./components/News.js";
 import Footer from "./components/footer.js";
 import Map from "./components/Map.js";
 import mainvideo from "./images/main.webm";
-import main from "./images/main.jpg";
+import mainfallback from "./images/mainposter.jpg";
+
 
 function App() {
   return (
     <div className="App">
       <div className="main">
         <Navbar />
-        <video poster={main} autoPlay muted loop>
+        <video poster={mainfallback} autoPlay muted loop>
           <source src={mainvideo} type="video/webm" />
         </video>
         <div>
