@@ -1,0 +1,57 @@
+.story {
+  min-height: calc(100vh - 60px);
+  padding: calc(60px + 3vw) 20px 3vw 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   prevent scroll bar appear when flipping */
+  overflow: hidden;
+}
+
+.page {
+  background-image: url(../images/booktexture.jpg);
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-weight: 300;
+  padding: 20px 50px;
+  box-shadow: rgb(0 0 0 / 40%) -7px 0px 30px -7px inset;
+  font-size: 0.9rem;
+}
+
+.page .pagecontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  height: 600px;
+}
+
+.pagecontent p {
+  align-self: center;
+  justify-self: end;
+  margin: 0;
+}
+
+.cover {
+  background-image: url(../images/bookcover.jpg);
+  background-position: 65% 50%;
+  background-size: cover;
+  color: white;
+}
+
+.cover p {
+  margin: auto;
+  padding: 50% 0px;
+}
+
+@media (max-width: 700px) {
+  .page {
+    font-size: 0.8rem;
+  }
+  .page .pagecontent {
+    height: 550px;
+  }
+}

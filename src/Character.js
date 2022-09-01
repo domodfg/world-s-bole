@@ -7,7 +7,7 @@ import seraphinevid from "./images/country/seraphine.webm";
 import roam from "./images/country/roam.jpg";
 import roamvid from "./images/country/roam.webm";
 import time from "./images/country/time.jpg";
-import timevid from "./images/country/time.webm";
+import moonislevid from "./images/country/moonisle.webm";
 import moonisle from "./images/country/moonisle.jpg";
 import React, { useState } from "react";
 import { Cityofendinfo, Cityofendtitle } from "./components/Cityofendinfo.js";
@@ -66,21 +66,16 @@ const Character = () => {
         </div>
         <div onClick={expand} className="country timecontainer">
           <img className="time" src={time} alt="time" />
-          <video className="time" poster={time} autoPlay muted loop>
-            <source src={timevid} type="video/webm" />
-          </video>
+          <video className="time" poster={time} autoPlay muted loop></video>
           <Timetitle title={displayTitle} />
           <Timeinfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>
         <div onClick={expand} className="country moonislecontainer">
           <img className="moonisle" src={moonisle} alt="moon isle" />
-          <video
-            className="moonisle"
-            poster={moonisle}
-            autoPlay
-            muted
-            loop
-          ></video>
+          <video className="moonisle" poster={moonisle} autoPlay muted loop>
+            {" "}
+            <source src={moonislevid} type="video/webm" />
+          </video>
           <Moontitle title={displayTitle} />
           <Mooninfo displayStatus={displayInfo} onClickEvent={contract} />
         </div>

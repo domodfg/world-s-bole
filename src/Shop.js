@@ -3,6 +3,7 @@ import pc from "./images/shop/pcgamecase.jpeg";
 import ps5 from "./images/shop/ps5gamecase.jpeg";
 import React, { useState, useEffect, useRef } from "react";
 import uniqid from "uniqid";
+import Footer from "./components/footer.js";
 
 const ProductFactory = (img, title, price, quantity) => {
   return {
@@ -100,6 +101,7 @@ const Shop = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

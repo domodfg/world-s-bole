@@ -44,21 +44,19 @@ const Navbar = () => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
-          <Link to="/shop">
-            商店
-          </Link>
+          <Link to="/story">故事</Link>
+        </div>
+        <div className="linkcard">
+          <img src={diamond} alt="diamond" />
+          <Link to="/shop">商店</Link>
         </div>
       </div>
       <div className="link rightlink">
         <Login />
 
         <div className="linkcard">
-          <img
-            src={shopping_cart}
-            width="20px"
-            alt="cart"
-          />
-          
+          <img src={shopping_cart} width="20px" alt="cart" />
+
           <Link to="/check-out">
             <div className="shopping-cart">購物車</div>
           </Link>
