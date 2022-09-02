@@ -5,6 +5,7 @@ import "./styles/news.css";
 import "./styles/footer.css";
 import "./styles/shop.css";
 import "./styles/map.css";
+import "./styles/footerpolicy.css"
 import Navbar from "./components/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
 import News from "./components/News.js";

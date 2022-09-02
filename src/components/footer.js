@@ -2,6 +2,7 @@ import facebook from "../images/footer/fb.png";
 import instagram from "../images/footer/ig.png";
 import twitter from "../images/footer/twitter.png";
 import youtube from "../images/footer/youtube.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,10 +14,10 @@ const Footer = () => {
         <img src={youtube} alt="youtube" />
       </div>
       <div className="policy">
-        <p>服務條款</p>
-        <p>私隱政策</p>
-        <p>數碼存根政策</p>
-        <p>聯絡我們</p>
+        <Link to="/usepolicy">服務條款</Link>
+        <Link to="/privacy">私隱政策</Link>
+        <Link to="/cookiepolicy">數碼存根政策</Link>
+        <Link to="/contactus">聯絡我們</Link>
       </div>
       <p>&copy; WB software Inc.</p>
     </footer>

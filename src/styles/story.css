@@ -8,6 +8,14 @@
   overflow: hidden;
 }
 
+.storybook {
+  background-image: url(../images/map/mapframe.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+}
+
 .page {
   background-image: url(../images/booktexture.jpg);
   background-color: white;
@@ -42,9 +50,18 @@
   color: white;
 }
 
+@font-face {
+  font-family: "aoya";
+  src: url(../fonts/aoya.ttf) format("truetype");
+}
+
 .cover p {
+  color: rgb(183, 183, 60);
+  font-family: "aoya";
   margin: auto;
   padding: 50% 0px;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 @media (max-width: 700px) {
