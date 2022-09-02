@@ -10,7 +10,8 @@
 
 .newsCard {
   position: relative;
-  height: 500px;
+  min-height: 500px;
+  height: 30vw;
   border: 5px solid;
   border-image: url(../images/goldborder.png);
   border-image-slice: 10%;
@@ -20,6 +21,7 @@
   border-radius: 10px;
   font-size: clamp(1rem, 2vw, 2rem);
   box-sizing: border-box;
+
 }
 
 .newsCard video {
@@ -61,6 +63,7 @@
     font-size: 1rem;
     border-image-width: 20px 30px;
     height: 250px;
+    min-height: 250px;
   }
   .newsCard div {
     font-size: 1.2rem;

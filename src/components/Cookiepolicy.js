@@ -4,7 +4,7 @@ import Footer from "./footer.js";
 
 const Cookiepolicy = () => {
   return (
-    <div>
+    <div className="App">
       <div className="main">
         <Navbar />
       </div>
@@ -66,7 +66,7 @@ const Cookiepolicy = () => {
 
         <p>所必需的：</p>
 
-        <figure class="wp-block-table">
+        <figure>
           <table>
             <tbody>
               <tr>
@@ -104,7 +104,7 @@ const Cookiepolicy = () => {
 
         <p>我們使用以下的功能性數碼存根：</p>
 
-        <figure class="wp-block-table">
+        <figure>
           <table>
             <tbody>
               <tr>
@@ -153,7 +153,7 @@ const Cookiepolicy = () => {
           數碼存根也被設置用於分析我們的到訪者如何使用網站並監視網站的效能。這使到訪者透過專門的設定獲得高質量的體驗，並有助於及時識別和解決出現的任何問題。網站使用以下的效能性數碼存根能:
         </p>
 
-        <figure class="wp-block-table">
+        <figure>
           <table>
             <tbody>
               <tr>

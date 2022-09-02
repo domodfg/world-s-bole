@@ -4,7 +4,7 @@ import Footer from "./footer.js";
 
 const Privacy = () => {
   return (
-    <div>
+    <div className="App">
       <div className="main">
         <Navbar />
       </div>

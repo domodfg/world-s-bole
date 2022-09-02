@@ -22,6 +22,7 @@
 
 .policy {
   gap: 45px;
+  margin-bottom: 10px;
 }
 
 .policy a {
@@ -47,9 +48,9 @@
   .socialmedia img {
     width: 70px;
   }
-  .policy {
+  .policy{
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+ 
   }
 }

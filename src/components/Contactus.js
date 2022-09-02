@@ -4,7 +4,7 @@ import Footer from "./footer.js";
 
 const Contactus = () => {
   return (
-    <div>
+    <div className="App">
       <div className="main">
         <Navbar />
       </div>

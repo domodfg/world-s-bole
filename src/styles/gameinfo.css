@@ -11,8 +11,6 @@
   vertical-align: top;
 }
 
-
-
 .imagecontainer {
   width: 500px;
   overflow: hidden;
@@ -105,6 +103,40 @@
   min-width: 250px;
   flex: 1 1 0;
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRight button {
+  align-self: flex-end;
+}
+
+.gameinfopopup {
+  position: fixed;
+  width: 70%;
+  background-color: #040c1ee6;
+  z-index: 1;
+  padding: 2vw 5vw;
+  height: 80%;
+  top: 10%;
+  border-radius: 10px;
+  font-size: clamp(0.6rem, 1.2vw, 1.5rem); 
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.gameinfopopup button {
+  background: transparent;
+  color: white;
+  border: none;
 }
 
 @media (max-width: 700px) {
