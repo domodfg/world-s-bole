@@ -1,18 +1,23 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Navbar from "./Navbar";
 import CustomInput from "./input";
+import { useSelector, useDispatch } from 'react-redux'
+import { selectCount, setShopContent } from '../utils/shopSlicer'
 import "../styles/checkOut.css";
+
 
 const CheckOut = () => {
   const [total, setTotal] = useState(0);
   const [shippingCost, setShippingCost] = useState(100);
-  const [cartItems, setCartItems] = useState([]);
+  // const [cartItems, setCartItems] = useState([]);
   const [editable, setEditable] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
   const { isAuthenticated } = useAuth0();
-  const firstRun = useRef(true);
+  // const firstRun = useRef(true);
+  const cartItems = useSelector(selectCount)
+  const dispatch = useDispatch()
 
   //testEmail : 1A2b3c4d5@example.com
   //password: 1A2b3c4d5@
@@ -21,12 +26,12 @@ const CheckOut = () => {
     return accumulator + quantity * price;
   };
 
-  useEffect(() => {
-    const cartItems = JSON.parse(localStorage.getItem("projectStorage"));
-    if (cartItems) {
-      setCartItems(cartItems);
-    }
-  }, []);
+  // useEffect(() => {
+  //   // const cartItems = JSON.parse(localStorage.getItem("projectStorage"));
+  //   if (count) {
+  //     dispatch(setShopContent(count));
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -36,10 +41,10 @@ const CheckOut = () => {
 
   useEffect(() => {
     setTotal(cartItems.reduce(add, 0));
-    if (!firstRun.current) {
-      localStorage.setItem("projectStorage", JSON.stringify(cartItems));
-    }
-    firstRun.current = false;
+    // if (!firstRun.current) {
+    //   localStorage.setItem("projectStorage", JSON.stringify(cartItems));
+    // }
+    // firstRun.current = false;
 
     if (cartItems.length === 0) {
       setIsEmpty(true)
@@ -60,7 +65,7 @@ const CheckOut = () => {
     const newCartItems = cartItems.filter(
       (cartItem) => cartItem.id !== e.target.id
     );
-    setCartItems(newCartItems);
+    dispatch(setShopContent(newCartItems));
   };
 
   const editClick = () => {
@@ -86,7 +91,7 @@ const CheckOut = () => {
       }
       return item;
     })
-    setCartItems(newCartItems);
+    dispatch(setShopContent(newCartItems));
   };
 
   const decreaseClick = (e) => {
@@ -108,7 +113,7 @@ const CheckOut = () => {
       });
     }
 
-    setCartItems(newCartItems);
+    dispatch(setShopContent(newCartItems));
   };
 
   const increaseClick = (e) => {
@@ -121,7 +126,7 @@ const CheckOut = () => {
       }
       return item;
     });
-    setCartItems(newCartItems);
+    dispatch(setShopContent(newCartItems));
   };
 
   if (isEmpty) {
