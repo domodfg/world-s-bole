@@ -5,15 +5,16 @@ import "./styles/news.css";
 import "./styles/footer.css";
 import "./styles/shop.css";
 import "./styles/map.css";
-import "./styles/footerpolicy.css"
+import "./styles/footerpolicy.css";
+import "./styles/gameplay.css";
 import Navbar from "./components/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
+import Gameplay from "./components/Gameplay.js";
 import News from "./components/News.js";
 import Footer from "./components/footer.js";
 import Map from "./components/Map.js";
 import mainvideo from "./images/main.webm";
 import mainfallback from "./images/mainposter.jpg";
-
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         </div>
       </div>
       <Gameinfo />
+      <Gameplay />
       <Map />
       <News />
       <Footer />

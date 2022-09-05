@@ -46,4 +46,7 @@ h2 {
   body {
     position: relative;
   }
+  h2 {
+    font-size: 2rem;
+  }
 }
