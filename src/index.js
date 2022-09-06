@@ -5,6 +5,10 @@ import RouteSwitch from "./RouteSwitch";
 import { Auth0Provider } from "@auth0/auth0-react";
 import store from './utils/store'
 import { Provider } from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistStore } from 'redux-persist';
+
+let persistor = persistStore(store);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +19,9 @@ root.render(
   >
     <React.StrictMode>
     <Provider store={store}>
-      <RouteSwitch />
+      <PersistGate loading={null} persistor={persistor}>
+        <RouteSwitch />
+      </PersistGate>
     </Provider>
     </React.StrictMode>
   </Auth0Provider>
