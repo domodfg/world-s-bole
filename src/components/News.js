@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dragonroar from "../images/news/dragonroar.webm";
@@ -7,13 +8,37 @@ import newcompany from "../images/news/newcompany.webm";
 import phoneix from "../images/news/Phoneix.webm";
 import spider from "../images/news/spider.webm";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#50949b" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#50949b" }}
+      onClick={onClick}
+    />
+  );
+}
+
 const News = () => {
-  let settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className="news">

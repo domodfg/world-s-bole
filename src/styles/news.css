@@ -1,10 +1,10 @@
 .news {
-  padding: 5vh 15%;
+  padding: 3rem 15%;
 }
 
 .news h2 {
   margin-top: 0px;
-  margin-bottom: 33.2px;
+  margin-bottom: 1.4rem;
   text-align: center;
 }
 
@@ -54,10 +54,16 @@
   color: rgb(255, 255, 255) !important;
 }
 
+.slick-arrow{
+  border-radius: 50%;
+}
+
 @media (max-width: 700px) {
   .news {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1.5rem 10px 3rem 10px;
+  }
+  .news h2{
+    margin-bottom: 1.3rem;
   }
   .newsCard {
     font-size: 1rem;

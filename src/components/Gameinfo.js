@@ -1,7 +1,7 @@
-import runemagic from "../images/gameinfo/runemagic.jpg";
 import gameinfo1 from "../images/gameinfo/gameinfo1.jpg";
 import gameinfo3 from "../images/gameinfo/gameinfo3.jpg";
 import gameinfo2 from "../images/gameinfo/gameinfo2.jpg";
+import gameinfo4 from "../images/gameinfo/gameinfo4.webm";
 import moreinfo from "../images/gameinfo/Fantasy_Spell_Book.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
@@ -116,7 +116,9 @@ const Gameinfo = () => {
           </p>
         </div>
         <div className="imagecontainer rightimage">
-          <img src={runemagic} className="cardimage" alt="Floating land" />
+          <video className="cardimage" autoPlay muted loop>
+            <source src={gameinfo4} type="video/webm" />
+          </video>
         </div>
       </AnimationOnScroll>
       {displayInfo && (
@@ -148,6 +150,7 @@ const Gameinfo = () => {
         <div className="gameinfopopup" ref={popupRef}>
           <p>
             近現代：
+            <br />
             伴隨著魔神的持續侵犯，烏提爾大陸也進入了近代時期。10月21日，隨著風暴城首都保衛戰結束，人類一方最終取得了勝利，卻死傷慘重，半數人口死亡和城鎮農田變成廢墟。
             <br />
             惱羞成怒的奧比斯轉而向鹽湖城發動進迫，戰火開始蔓延到了全國。在一片絕望和哀嚎聲中，光明神優比特彷彿聽見了人們的禱告。10月30日，正值鹽湖城戰役進行到如火如荼之際，大陸上各處出現了不同程度的地震，只見一道化作酷似人形的光芒在生命樹頂上出現，人們稱之為“烏提爾的奇跡”！當晚，大陸上各處出現了被眷顧召喚而出的勇者，他們都是優比特親自下凡選出來的使者！不僅指引人們走出了的戰事即將失敗的陰霾，所到之處都得到了治癒和救贖。後世人們稱之為“被選中的人”。

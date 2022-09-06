@@ -6,12 +6,11 @@
   background-image: url(../images/map/mapframe.jpg);
   background-position: center;
   background-size: cover;
-  gap: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 6rem;
 }
 
 .map h2 {
-  margin: 33.2px 0px;
+ margin: 1.5rem 0px;
 }
 
 .mapdisplay {
@@ -63,6 +62,10 @@
 
   .legend {
     flex-direction: row;
+  }
+
+  .map{
+    padding-bottom: 4.5rem;
   }
 
   .map img {
