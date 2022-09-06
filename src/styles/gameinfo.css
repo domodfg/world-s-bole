@@ -116,6 +116,18 @@
   transition: transform 0.1s ease-in-out;
 }
 
+.infobook1 {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(235, 255, 252));
+}
+
+.infobook2 {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(255, 81, 18));
+}
+
+.infobook3{
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(132, 252, 172));
+}
+
 .cardLeft img {
   align-self: flex-start;
   margin-left: 5%;
