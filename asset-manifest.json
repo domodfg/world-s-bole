@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.4e54400e.css",
-    "main.js": "/world-s-bole/static/js/main.61f78a56.js",
-    "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.4e2f4b5c7450684d6459.mp4",
+    "main.css": "/world-s-bole/static/css/main.57c48f49.css",
+    "main.js": "/world-s-bole/static/js/main.a6168cfd.js",
+    "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/moonisle.webm": "/world-s-bole/static/media/moonisle.ea3076c3cf3fad63bb00.webm",
     "static/media/aoya.ttf": "/world-s-bole/static/media/aoya.d4babae65014b4cbc436.ttf",
@@ -13,9 +13,9 @@
     "static/media/time.jpg": "/world-s-bole/static/media/time.dc247f50449122071aa3.jpg",
     "static/media/newcompany.webm": "/world-s-bole/static/media/newcompany.d712b234707b9e01bfd4.webm",
     "static/media/field.jpeg": "/world-s-bole/static/media/field.3d7e04ef75be837b85ad.jpeg",
-    "static/media/roam.webm": "/world-s-bole/static/media/roam.88705e4cd9663bb5d796.webm",
+    "static/media/seraphine.webm": "/world-s-bole/static/media/seraphine.88705e4cd9663bb5d796.webm",
     "static/media/dungeon.jpeg": "/world-s-bole/static/media/dungeon.4ab3f09b3f8e86843768.jpeg",
-    "static/media/seraphine.webm": "/world-s-bole/static/media/seraphine.36c5ff2491d40263d1b9.webm",
+    "static/media/roam.webm": "/world-s-bole/static/media/roam.36c5ff2491d40263d1b9.webm",
     "static/media/city.jpeg": "/world-s-bole/static/media/city.d97efdcd376aca4000fd.jpeg",
     "static/media/area.jpeg": "/world-s-bole/static/media/area.f42c34a4a20fe5f33968.jpeg",
     "static/media/map.jpeg": "/world-s-bole/static/media/map.72c74dc3cdcc9a74e14e.jpeg",
@@ -29,9 +29,9 @@
     "static/media/gameinfo4.webm": "/world-s-bole/static/media/gameinfo4.66662304854be83ca646.webm",
     "static/media/Fantasy_Spell_Book.png": "/world-s-bole/static/media/Fantasy_Spell_Book.c32aad49dd556c7ac3d1.png",
     "static/media/booktexture.jpg": "/world-s-bole/static/media/booktexture.2d3e450879960f616b4f.jpg",
-    "static/media/seraphine.jpg": "/world-s-bole/static/media/seraphine.0d08b3a54dbff5270d3b.jpg",
+    "static/media/roam.jpg": "/world-s-bole/static/media/roam.0d08b3a54dbff5270d3b.jpg",
     "static/media/mainposter.jpg": "/world-s-bole/static/media/mainposter.ad650e2b51e550326856.jpg",
-    "static/media/roam.jpg": "/world-s-bole/static/media/roam.b725c475e9f353788c4d.jpg",
+    "static/media/seraphine.jpg": "/world-s-bole/static/media/seraphine.b725c475e9f353788c4d.jpg",
     "static/media/cityofend.jpg": "/world-s-bole/static/media/cityofend.1bb79c96b8104a831cb8.jpg",
     "static/media/moonisle.jpg": "/world-s-bole/static/media/moonisle.96d884ffac801767c119.jpg",
     "static/media/gamecaption.png": "/world-s-bole/static/media/gamecaption.746200c2b71bb11587c7.png",
@@ -52,11 +52,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.4e54400e.css.map": "/world-s-bole/static/css/main.4e54400e.css.map",
-    "main.61f78a56.js.map": "/world-s-bole/static/js/main.61f78a56.js.map"
+    "main.57c48f49.css.map": "/world-s-bole/static/css/main.57c48f49.css.map",
+    "main.a6168cfd.js.map": "/world-s-bole/static/js/main.a6168cfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e54400e.css",
-    "static/js/main.61f78a56.js"
+    "static/css/main.57c48f49.css",
+    "static/js/main.a6168cfd.js"
   ]
 }
