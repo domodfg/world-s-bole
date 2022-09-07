@@ -124,7 +124,7 @@
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(255, 81, 18));
 }
 
-.infobook3{
+.infobook3 {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(132, 252, 172));
 }
 
@@ -148,12 +148,13 @@
   width: 70%;
   background-color: #040c1ee6;
   z-index: 1;
-  padding: 2vw 5vw;
-  height: 80%;
-  top: 10%;
+  padding: 3.5% 7%;
   border-radius: 10px;
-  font-size: clamp(0.6rem, 1.2vw, 1.5rem);
+  font-size: clamp(0.6rem, 1.3vw, 1.2rem);
   animation: fadeIn 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes fadeIn {
@@ -165,10 +166,16 @@
   }
 }
 
-.gameinfopopup button {
-  background: transparent;
-  color: white;
-  border: none;
+.gameinfopopup img {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 0.5rem;
+  transition: transform 0.3s ease-out;
+}
+
+.gameinfopopup img:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 700px) {
@@ -208,5 +215,8 @@
   .cardRight img {
     align-self: center;
     width: 30%;
+  }
+  .gameinfopopup img{
+    width: 40px;
   }
 }

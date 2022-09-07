@@ -1,11 +1,12 @@
+import React, { useState } from "react";
 import Navbar from "./components/Navbar.js";
 import pc from "./images/shop/pcgamecase.jpeg";
 import ps5 from "./images/shop/ps5gamecase.jpeg";
-// import React, { useEffect, useRef } from "react";
 import uniqid from "uniqid";
+import close from "./images/gameinfo/close.png";
 import Footer from "./components/footer.js";
-import { useSelector, useDispatch } from 'react-redux'
-import { selectCount, setShopContent } from './utils/shopSlicer'
+import { useSelector, useDispatch } from "react-redux";
+import { selectCount, setShopContent } from "./utils/shopSlicer";
 
 const ProductFactory = (img, title, price, quantity) => {
   return {
@@ -18,10 +19,9 @@ const ProductFactory = (img, title, price, quantity) => {
 };
 
 const Shop = () => {
-  // const [cartItems, setCartItems] = useState([]);
-  // const firstRun = useRef(true);
-  const cartItems = useSelector(selectCount)
-  const dispatch = useDispatch()
+  const [displayAlert, setDisplayAlert] = useState(false);
+  const cartItems = useSelector(selectCount);
+  const dispatch = useDispatch();
 
   const addToCart = (e) => {
     let newCartItems = [];
@@ -43,25 +43,11 @@ const Shop = () => {
       cartItemCopy.push(item);
     }
     dispatch(setShopContent(cartItemCopy));
+    setDisplayAlert(true);
+    setTimeout(() => {
+      setDisplayAlert(false);
+    }, 3000);
   };
-
-  //get localstorage when render
-
-  // useEffect(() => {
-  //   // const cartItems = JSON.parse(localStorage.getItem("projectStorage"));
-  //   if (count) {
-  //     dispatch(setShopContent(count));
-  //   }
-  // }, []);
-
-  //change localstorage when cartItems changes but prevent it runs when render as it will return an empty array
-
-  // useEffect(() => {
-  //   // if (!firstRun.current) {
-  //   //   localStorage.setItem("projectStorage", JSON.stringify(cartItems));
-  //   // }
-  //   firstRun.current = false;
-  // }, [cartItems]);
 
   const pcCopy = ProductFactory(pc, "STEAM 數位標準版", 399, 1);
   const ps5Copy = ProductFactory(ps5, "PS5 數位標準版", 429, 1);
@@ -105,6 +91,12 @@ const Shop = () => {
           </div>
         </div>
       </div>
+      {displayAlert && (
+        <div className="buyingpopup">
+          <p>成功添加至購物車</p>{" "}
+          <img src={close} alt="close" onClick={() => setDisplayAlert(false)} />
+        </div>
+      )}
       <Footer />
     </div>
   );

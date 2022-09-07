@@ -3,6 +3,7 @@ import gameinfo3 from "../images/gameinfo/gameinfo3.jpg";
 import gameinfo2 from "../images/gameinfo/gameinfo2.jpg";
 import gameinfo4 from "../images/gameinfo/gameinfo4.webm";
 import moreinfo from "../images/gameinfo/Fantasy_Spell_Book.png";
+import close from "../images/gameinfo/close.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import React, { useState, useRef, useEffect } from "react";
@@ -133,7 +134,7 @@ const Gameinfo = () => {
             <br />
             隨後，首都陷落的消息很快就傳遍到世界的中心。6月18日，反抗軍首領艾札爾（艾爾斯蘭王的兒子）被迫率領部隊退出森林，往生命樹根下躲避並謀求進一步的反擊，由於許多聽聞到首都淪陷和平民也跟隨住大部對向生命樹下逃逸。到了19日，魔軍的先鋒哥布林部隊和騎兵抵達生命樹下，向拼死守護在樹下不肯後退的妖精和精靈反抗軍進行了慘絕人寰的大規模屠殺（後世認為這次事件直接導致了生命樹的停止生長，而精靈一族的飛翔能力也因此嚴重被削弱，絕大多數負隅頑抗會飛的妖精近乎慘遭滅絕）。
           </p>
-          <button onClick={() => setDisplayInfo(false)}>返回</button>
+          <img src={close} alt="close" onClick={() => setDisplayInfo(false)} />
         </div>
       )}
       {displayInfo2 && (
@@ -146,7 +147,7 @@ const Gameinfo = () => {
             悲劇發生後，精靈族陷入了長期的游擊戰。直到8月，魔軍佔領了平原上的大部分土地，開始計劃向北方的人類和隆密進兵，兩國對於自身可能被滅族和重蹈精靈慘劇的危機感增加。直到9月1日，人類和獸人族好不容易才達成了共識，建立了當時一度聲名大噪的“獸人聯盟”。9月3日，第一支由隆密派出的三千餘名獵人向哥布林部隊發動了進攻。4日，北方的人類也揮軍兩萬南下，幫助留亡到終之國的艾扎爾王室復國。
             正當所有人都認為曙光嶄露之際，奧比斯卻作出了令人震驚和果斷的形勢判斷。它意識到人類始終是大陸上最棘手的環節。9月6日，隆密國的第一支衝鋒部隊雖然取得了初步勝利，但到了次日，魔軍卻突然向北方高原上的人類守軍發動了而來的魔法師與精靈奴隸等，向人類投放了大量的燃燒魔法和重砲彈藥（此科技乃精靈國首奇襲，利用祭司和俘虜創），成功穿過了自然屏障界限森林，並迅速攻佔了當時的人類邊境重鎮克萊文。10日，首都風暴城內人心惶惶。9月12日，精靈王族再次展開逃亡，一直逃到了人類在海上的邊境重鎮要塞都市。15日，人類在冰原上展開了與魔軍聲勢浩大的殊死抵抗，投入到此次戰事中的人類總數高達十五萬左右，超過70%以上的人口被捲入到這場戰役裡，史稱”冰原抗擊戰”。
           </p>
-          <button onClick={() => setDisplayInfo2(false)}>返回</button>
+          <img src={close} alt="close" onClick={() => setDisplayInfo2(false)} />
         </div>
       )}
       {displayInfo3 && (
@@ -162,7 +163,7 @@ const Gameinfo = () => {
             <br />
             得知此消息的魔神奧比斯一怒之下集結了總兵力約六萬，開始與聯合軍在通古斯山脈下的黑暗平原上展開了“最後聖戰”！結果以奧比斯的戰敗和身死落幕：它選擇以自殺和詛咒的方式暫別烏提爾這個舞台，從通古斯山頂的懸崖上跳了下去......
           </p>
-          <button onClick={() => setDisplayInfo3(false)}>返回</button>
+          <img src={close} alt="close" onClick={() => setDisplayInfo3(false)} />
         </div>
       )}
     </div>
