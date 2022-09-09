@@ -7,6 +7,7 @@ import close from "../images/gameinfo/close.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import React, { useState, useRef, useEffect } from "react";
+import "../styles/gameinfo.css";
 
 const Gameinfo = () => {
   const [displayInfo, setDisplayInfo] = useState(false);

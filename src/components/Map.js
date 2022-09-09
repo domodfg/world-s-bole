@@ -5,6 +5,7 @@ import dungeon from "../images/map/dungeon.jpeg";
 import field from "../images/map/field.jpeg";
 import divider from "../images/divider.png";
 import React, { useState } from "react";
+import "../styles/map.css";
 
 const Map = () => {
   const [utrue, setUtrue] = useState(<img src={map} alt="map of Utrue" />);
@@ -17,7 +18,7 @@ const Map = () => {
     <div className="map">
       <div className="divider">
         <img src={divider} className="dividermirror" alt="divider" />
-        <h2>探索烏提爾大陸</h2>
+        <h2>探索烏爾提大陸</h2>
         <img src={divider} alt="divider" />
       </div>
       <div className="mapdisplay">

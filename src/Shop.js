@@ -7,6 +7,7 @@ import close from "./images/gameinfo/close.png";
 import Footer from "./components/footer.js";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCount, setShopContent } from "./utils/shopSlicer";
+import "./styles/shop.css";
 
 const ProductFactory = (img, title, price, quantity) => {
   return {

@@ -1,5 +1,6 @@
 .link {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
@@ -13,6 +14,7 @@ a {
 a:hover,
 .link button:hover {
   text-shadow: 0 0 5px #ffffff;
+  color: white;
 }
 
 .link a {
@@ -37,7 +39,8 @@ a:hover,
   cursor: pointer;
 }
 
-.link img {
+.link img,
+.linkcard img {
   width: 20px;
 }
 
@@ -134,19 +137,7 @@ a:hover,
   margin-bottom: 150px;
   text-align: center;
   width: 100%;
-  /*   animation: glow 1s ease-in-out infinite alternate; */
 }
-
-/* @keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ac8c00,
-      0 0 40px #ac8c00, 0 0 50px#ac8c00, 0 0 60px#ac8c00, 0 0 70px #ac8c00;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #c9a402, 0 0 40px #c9a402,
-      0 0 50px #c9a402, 0 0 60px #c9a402, 0 0 70px #c9a402, 0 0 80px #c9a402;
-  }
-} */
 
 @media (max-width: 700px) {
   .main video {
@@ -161,20 +152,18 @@ a:hover,
   }
   .header {
     font-size: 1rem;
-    justify-content: center;
     gap: 15px;
   }
-  .link {
-    gap: 18px;
+  .rightlink{
+    justify-content: end;
+    padding-right: 1.5rem;
   }
-  .headerlogo {
+
+  .inactiveWhenMobile,
+  .linkcard.inactiveWhenMobile {
     display: none;
   }
   .logo {
-    font-size: 3rem;
-    animation: none;
-  }
-  .link button {
-    font-size: 1rem;
+    font-size: 4.5rem;
   }
 }

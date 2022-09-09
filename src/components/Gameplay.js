@@ -1,6 +1,7 @@
 import React from "react";
 import divider from "../images/divider.png";
 import gamefootage from "../images/gameplay/gameplay.mp4";
+import "../styles/gameplay.css";
 
 const Gameplay = () => {
   return (

@@ -8,6 +8,7 @@ import dragonroarimage from "../images/news/dragonroar.jpeg";
 import newcompany from "../images/news/newcompany.webm";
 import phoneix from "../images/news/Phoneix.webm";
 import spider from "../images/news/spider.webm";
+import "../styles/news.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

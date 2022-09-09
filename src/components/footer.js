@@ -3,6 +3,7 @@ import instagram from "../images/footer/ig.png";
 import twitter from "../images/footer/twitter.png";
 import youtube from "../images/footer/youtube.png";
 import { Link } from "react-router-dom";
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
