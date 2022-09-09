@@ -1,0 +1,26 @@
+.subscribe-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+
+.subs-title {
+    font-size: 26px;
+}
+
+.subs-info {
+    font-size: 20px;
+}
+
+.email-container {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.email-addr {
+    border-radius: 0.375rem;
+}
