@@ -23,8 +23,6 @@
 
 .country.active {
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -53,7 +51,7 @@
   right: 0;
 }
 
-.country img,
+.country .countryBG,
 .country video {
   position: absolute;
   width: 100%;
@@ -63,7 +61,7 @@
   z-index: -1;
 }
 
-.country.active img,
+.country.active .countryBG,
 .country video {
   display: none;
 }
@@ -91,42 +89,18 @@
   padding-top: 10vw;
 }
 
-.country.active p {
-  padding: 0px 20vw;
-}
-
-.country div p {
+.country .countryinfo p {
   font-size: 1.2rem;
-  padding: 0px 20vw;
+  padding: 0;
 }
 
-.country div p:first-child {
-  margin-top: 16px;
-}
-
-.country div {
-  padding-bottom: 3vh;
-  margin-bottom: 10vh;
+.country .countryinfo {
+  align-self: flex-end;
+  width: 50%;
+  height: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   animation: fadeIn 2s;
-}
-
-.country div button {
-  font-size: 1.2rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid transparent;
-  border-radius: 2.5px;
-  color: white;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-  margin-left: 20vw;
-}
-
-.country div button:hover {
-  text-shadow: 0 0 5px #ffffff;
-  border-bottom: 3px #f6ffa3 solid;
-  color: white;
+  padding: 2.5% 5%;
 }
 
 @keyframes fadeIn {
@@ -148,10 +122,13 @@
 }
 
 @media (max-width: 700px) {
-  .country div p {
+  .country .countryinfo p {
     font-size: 0.7rem;
   }
-  .country.active img {
+  .country .countryinfo h2{
+    font-size: 1.2rem;
+  }
+  .country.active .countryBG {
     display: block;
   }
   .country.active video {

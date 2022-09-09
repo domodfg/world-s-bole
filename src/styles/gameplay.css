@@ -1,5 +1,6 @@
 .gameplay,
-.gameplay div {
+.gameplay .gameplaymain,
+.gameplay .gamecaption {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +11,7 @@
   padding-bottom: 6rem;
 }
 
-.gameplay div {
+.gameplay .gameplaymain {
   width: 70%;
 }
 
@@ -34,7 +35,6 @@
   background-image: url(../images/gameplay/gamecaption.png);
   background-size: cover;
   background-position: center;
-  padding: 2rem;
   color: #5a1b1b;
   box-shadow: -2px 0.5px 10px black;
 }
@@ -43,7 +43,7 @@
   .gameplay {
     padding-bottom: 4.5rem;
   }
-  .gameplay div {
+  .gameplay .gameplaymain{
     width: 95%;
   }
 }

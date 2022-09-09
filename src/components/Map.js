@@ -3,6 +3,7 @@ import area from "../images/map/area.jpeg";
 import city from "../images/map/city.jpeg";
 import dungeon from "../images/map/dungeon.jpeg";
 import field from "../images/map/field.jpeg";
+import divider from "../images/divider.png";
 import React, { useState } from "react";
 
 const Map = () => {
@@ -14,7 +15,11 @@ const Map = () => {
 
   return (
     <div className="map">
-      <h2>探索烏爾提大陸</h2>
+      <div className="divider">
+        <img src={divider} className="dividermirror" alt="divider" />
+        <h2>探索烏提爾大陸</h2>
+        <img src={divider} alt="divider" />
+      </div>
       <div className="mapdisplay">
         <div className="empty"></div>
         {utrue}

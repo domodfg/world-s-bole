@@ -52,7 +52,6 @@
     url(../images/frame_flower_mandal_element_generated.png);
   background-position: 50% 60%;
   background-size: cover;
-
   height: min(3vw, 50px);
   border-radius: 0px 10px 10px 0px;
   box-sizing: border-box;
@@ -166,18 +165,6 @@
   }
 }
 
-.gameinfopopup img {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  padding: 0.5rem;
-  transition: transform 0.3s ease-out;
-}
-
-.gameinfopopup img:hover {
-  transform: scale(1.2);
-}
-
 @media (max-width: 700px) {
   .content {
     padding-top: 1rem;
@@ -198,6 +185,11 @@
     margin-top: 50px;
     max-height: 700px;
     font-size: 1.2rem;
+    gap: 20px;
+  }
+  .banner, .bannerleft{
+    border-radius: 10px;
+    height: 30px;
   }
   .bannertext,
   .bannertextleft {
@@ -215,8 +207,5 @@
   .cardRight img {
     align-self: center;
     width: 30%;
-  }
-  .gameinfopopup img{
-    width: 40px;
   }
 }

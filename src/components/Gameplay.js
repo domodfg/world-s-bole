@@ -1,11 +1,16 @@
 import React from "react";
+import divider from "../images/divider.png";
 import gamefootage from "../images/gameplay/gameplay.mp4";
 
 const Gameplay = () => {
   return (
     <div className="gameplay">
-      <div>
+      <div className="divider">
+        <img src={divider} className="dividermirror" alt="divider" />
         <h2>廣闊的開放世界</h2>
+        <img src={divider} alt="divider" />
+      </div>
+      <div className="gameplaymain">
         <video className="gamefootage" autoPlay muted loop>
           <source src={gamefootage} type="video/mp4" />
         </video>

@@ -1,4 +1,6 @@
 import React from "react";
+import divider from "../images/divider.png";
+import close from "../images/gameinfo/close.png";
 
 const Cityofendtitle = (props) => {
   if (props.title) {
@@ -9,8 +11,12 @@ const Cityofendtitle = (props) => {
 const Cityofendinfo = (props) => {
   if (props.displayStatus) {
     return (
-      <div>
-        <p>終之國</p>
+      <div className="countryinfo">
+        <div className="divider">
+          <img src={divider} className="dividermirror" alt="divider" />
+          <h2>終之國</h2>
+          <img src={divider} alt="divider" />
+        </div>
         <p>
           又稱：白色國度, 冰雪之國
           <br />
@@ -18,7 +24,17 @@ const Cityofendinfo = (props) => {
           <br />{" "}
           該國崇拜實用主義，更多地是因為地形文化的原因，城鎮和鄉村民風彪悍，平民尚武，認為”劍和武力就是一切！“，這種說法漸漸深入到國民的骨髓，幾乎人手配備一把長劍。至於個人更是崇尚武力”PK“，無論在城鎮抑或者在外面，單挑狀況時有發生......
         </p>
-        <button onClick={props.onClickEvent}>返回</button>
+        <div className="divider">
+          <img src={divider} className="dividermirror" alt="divider" />
+          <h2>登場角色</h2>
+          <img src={divider} alt="divider" />
+        </div>
+        <img
+          src={close}
+          alt="close"
+          onClick={props.onClickEvent}
+          className="close"
+        />
       </div>
     );
   }

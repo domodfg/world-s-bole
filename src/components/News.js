@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import divider from "../images/divider.png";
 import dragonroar from "../images/news/dragonroar.webm";
 import dragonroarimage from "../images/news/dragonroar.jpeg";
 import newcompany from "../images/news/newcompany.webm";
@@ -42,7 +43,11 @@ const News = () => {
   };
   return (
     <div className="news">
-      <h2>最新消息</h2>
+      <div className="divider">
+        <img src={divider} className="dividermirror" alt="divider" />
+        <h2>最新消息</h2>
+        <img src={divider} alt="divider" />
+      </div>
       <Slider {...settings}>
         <div className="newsCard">
           <video poster={dragonroarimage} autoPlay muted loop>

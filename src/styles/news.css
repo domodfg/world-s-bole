@@ -5,7 +5,6 @@
 
 .news h2 {
   margin-top: 0px;
-  margin-bottom: 1.4rem;
   text-align: center;
 }
 
@@ -62,9 +61,6 @@
 @media (max-width: 700px) {
   .news {
     padding: 1.5rem 10px 3rem 10px;
-  }
-  .news h2{
-    margin-bottom: 1.3rem;
   }
   .newsCard {
     font-size: 1rem;
