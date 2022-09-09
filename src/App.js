@@ -9,6 +9,7 @@ import Footer from "./components/footer.js";
 import Map from "./components/Map.js";
 import mainvideo from "./images/main.webm";
 import mainfallback from "./images/mainposter.jpg";
+import { Subscription } from "./components/Subscription";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Gameplay />
       <Map />
       <News />
+      <Subscription />
       <Footer />
     </div>
   );

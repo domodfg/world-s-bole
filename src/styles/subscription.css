@@ -1,0 +1,54 @@
+.subscribe-container {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    color: white;
+    gap: 15px;
+}
+
+.subs-title {
+    font-size: 26px;
+}
+
+.subs-info {
+    font-size: 20px;
+}
+
+.email-container {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.email-addr {
+    border-radius: 0.375rem;
+}
+
+.subs-btn {
+    opacity: 0.8;
+}
+
+.subs-btn:hover {
+    opacity: 1;
+}
+
+.success-msg {
+    position: absolute;
+    text-align: center;
+    width: 350px;
+    bottom: 0;
+    font-weight: 500;
+    animation: fadeAnimation ease 8s;
+}
+
+@keyframes fadeAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
