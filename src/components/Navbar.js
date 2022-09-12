@@ -48,17 +48,11 @@ const Navbar = () => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
-          <Link to="/gameplay">系統</Link>
+          <Link to="/gamesystem">系統</Link>
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
           <Link to="/story">故事</Link>
-        </div>
-        <div className="linkcard">
-          <img src={diamond} alt="diamond" />
-          <Link to="/shop" onClick={props.shop}>
-            商店
-          </Link>
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />

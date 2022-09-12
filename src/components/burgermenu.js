@@ -27,6 +27,10 @@ class Burger extends React.Component {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
+          <Link to="/gamesystem">系統</Link>
+        </div>
+        <div className="linkcard">
+          <img src={diamond} alt="diamond" />
           <Link to="/shop">商店</Link>
         </div>
         <div className="linkcard">
