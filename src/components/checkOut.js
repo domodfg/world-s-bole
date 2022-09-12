@@ -1,38 +1,57 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 import Navbar from "./Navbar";
+import CustomInput from "./input";
+import { useSelector, useDispatch } from 'react-redux'
+import { selectCount, setShopContent } from '../utils/shopSlicer'
 import "../styles/checkOut.css";
+
 
 const CheckOut = () => {
   const [total, setTotal] = useState(0);
-  const [shippingCost, setShippingCost] = useState(0);
-  const [cartItems, setCartItems] = useState([]);
+  const [shippingCost, setShippingCost] = useState(100);
+  // const [cartItems, setCartItems] = useState([]);
+  const [editable, setEditable] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const firstRun = useRef(true);
+  const { isAuthenticated } = useAuth0();
+  // const firstRun = useRef(true);
+  const cartItems = useSelector(selectCount)
+  const dispatch = useDispatch()
+
+  //testEmail : 1A2b3c4d5@example.com
+  //password: 1A2b3c4d5@
 
   const add = (accumulator, { quantity, price }) => {
     return accumulator + quantity * price;
   };
 
+  // useEffect(() => {
+  //   // const cartItems = JSON.parse(localStorage.getItem("projectStorage"));
+  //   if (count) {
+  //     dispatch(setShopContent(count));
+  //   }
+  // }, []);
+
   useEffect(() => {
-    const cartItems = JSON.parse(localStorage.getItem("projectStorage"));
-    if (cartItems) {
-      setCartItems(cartItems);
+    if (isAuthenticated) {
+      setShippingCost(0);
     }
-  }, []);
+  },[isAuthenticated]);
 
   useEffect(() => {
     setTotal(cartItems.reduce(add, 0));
-    if (!firstRun.current) {
-      localStorage.setItem("projectStorage", JSON.stringify(cartItems));
-    }
-    firstRun.current = false;
+    // if (!firstRun.current) {
+    //   localStorage.setItem("projectStorage", JSON.stringify(cartItems));
+    // }
+    // firstRun.current = false;
 
     if (cartItems.length === 0) {
       setIsEmpty(true)
     } else {
       setIsEmpty(false)
     }
+
   }, [cartItems]);
 
 
@@ -46,12 +65,38 @@ const CheckOut = () => {
     const newCartItems = cartItems.filter(
       (cartItem) => cartItem.id !== e.target.id
     );
-    setCartItems(newCartItems);
+    dispatch(setShopContent(newCartItems));
+  };
+
+  const editClick = () => {
+    setEditable(true);
+  }
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      setEditable(false)
+    }
+  }
+
+  const handleBlur = () => {
+    setEditable(false)
+  }
+
+  const handleChange = (e) => {
+    const newQuantity = parseInt(e.target.value)
+
+    const newCartItems = cartItems.map((item) => {
+      if (item.id === e.target.id) {
+        return { ...item, quantity: newQuantity };
+      }
+      return item;
+    })
+    dispatch(setShopContent(newCartItems));
   };
 
   const decreaseClick = (e) => {
     let newCartItems = {};
-
+    let newQuantity = 0;
     let foundIndex = cartItems.findIndex((item) => item.id === e.target.id);
 
     if (cartItems[foundIndex].quantity === 1) {
@@ -61,22 +106,27 @@ const CheckOut = () => {
     } else {
       newCartItems = cartItems.map((item) => {
         if (item.id === e.target.id) {
-          return { ...item, quantity: item.quantity - 1 };
+          newQuantity = item.quantity - 1
+          return { ...item, quantity: newQuantity };
         }
         return item;
       });
     }
-    setCartItems(newCartItems);
+
+    dispatch(setShopContent(newCartItems));
   };
 
   const increaseClick = (e) => {
+    let newQuantity = 0;
+
     const newCartItems = cartItems.map((item) => {
       if (item.id === e.target.id) {
-        return { ...item, quantity: item.quantity + 1 };
+        newQuantity = item.quantity + 1
+        return { ...item, quantity: newQuantity };
       }
       return item;
     });
-    setCartItems(newCartItems);
+    dispatch(setShopContent(newCartItems));
   };
 
   if (isEmpty) {
@@ -108,7 +158,6 @@ const CheckOut = () => {
           <div className="left-container">
             {cartItems.map((cartItem) => {
               const { id, img, name, price, quantity } = cartItem;
-
               return (
                 <div key={id} className="list-item">
                   <div className="product-container">
@@ -125,7 +174,13 @@ const CheckOut = () => {
                         <button id={id} onClick={decreaseClick} className="increase-btn">
                           &#8595;
                         </button>
-                        {quantity}
+
+                        <div onClick={editClick} onKeyDown={handleKeyDown}>
+                          {
+                            editable ? <CustomInput id={id} displayValue={quantity} handleChange={handleChange} handleBlur={handleBlur}/> : quantity
+                          }
+                        </div>
+                        
                         <button id={id} onClick={increaseClick} className="decrease-btn">
                           &#8593;
                         </button>

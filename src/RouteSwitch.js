@@ -4,6 +4,11 @@ import Character from "./Character.js";
 import GamePlay from "./Gameplay.js";
 import Shop from "./Shop.js";
 import CheckOut from "./components/checkOut";
+import Story from "./Story.js";
+import Usepolicy from "./components/Usepolicy.js";
+import Privacy from "./components/Privacy.js";
+import Cookiepolicy from "./components/Cookiepolicy.js";
+import Contactus from "./components/Contactus.js";
 import ScrollToTop from "./components/Scrolltotop.js";
 
 const RouteSwitch = () => {
@@ -16,6 +21,11 @@ const RouteSwitch = () => {
         <Route path="/gameplay" element={<GamePlay />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/check-out" element={<CheckOut />} />
+        <Route path="/story" element={<Story />} />
+        <Route path="/usepolicy" element={<Usepolicy />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/cookiepolicy" element={<Cookiepolicy />} />
+        <Route path="/contactus" element={<Contactus />} />
       </Routes>
     </HashRouter>
   );

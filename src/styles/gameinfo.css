@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px;
+  padding: 3rem 0px;
 }
 
 .cardimage {
@@ -11,10 +11,8 @@
   vertical-align: top;
 }
 
-
-
 .imagecontainer {
-  width: 500px;
+  width: 50%;
   overflow: hidden;
   flex: 0 1 auto;
   border-radius: 10px 0px 10px 10px;
@@ -27,19 +25,20 @@
   border-radius: 0px 10px 10px 10px;
 }
 
-.imagecontainer img:hover {
+.imagecontainer img:hover,
+.imagecontainer video:hover {
   transform: scale(1.25);
 }
 
-.card {
+.gameinfocard {
   display: flex;
-  font-size: 1.2rem;
+  font-size: clamp(0.6rem, 1.3vw, 1.5rem);
   width: 70%;
   max-width: 1200px;
   color: white;
   align-items: center;
   max-height: 350px;
-  margin: 50px 0px;
+  margin: 3rem 0px;
 }
 
 .banner,
@@ -53,8 +52,7 @@
     url(../images/frame_flower_mandal_element_generated.png);
   background-position: 50% 60%;
   background-size: cover;
-
-  height: 50px;
+  height: min(3vw, 50px);
   border-radius: 0px 10px 10px 0px;
   box-sizing: border-box;
 }
@@ -105,25 +103,97 @@
   min-width: 250px;
   flex: 1 1 0;
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRight img,
+.cardLeft img {
+  align-self: flex-end;
+  width: 15%;
+  margin-right: 5%;
+  transition: transform 0.1s ease-in-out;
+}
+
+.infobook1 {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(235, 255, 252));
+}
+
+.infobook2 {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(255, 81, 18));
+}
+
+.infobook3 {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(132, 252, 172));
+}
+
+.cardLeft img {
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-right: 0;
+  transform: scaleX(-1);
+}
+
+.cardRight img:hover {
+  transform: scale(1.2);
+}
+
+.cardLeft img:hover {
+  transform: scaleX(-1) scale(1.2);
+}
+
+.gameinfopopup {
+  position: fixed;
+  width: 70%;
+  background-color: #040c1ee6;
+  z-index: 1;
+  padding: 3.5% 7%;
+  border-radius: 10px;
+  font-size: clamp(0.6rem, 1.3vw, 1.2rem);
+  animation: fadeIn 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 700px) {
   .content {
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 2000px;
   }
-  .imagecontainer{
-    width: 300px;
+  .imagecontainer {
+    width: 100%;
     align-self: center;
   }
-  .card {
+  .gameinfocard {
+    width: 80%;
     justify-content: center;
     flex-direction: column;
     margin: 0;
     margin-top: 50px;
-    max-height: 600px;
+    max-height: 700px;
+    font-size: 1.2rem;
+    gap: 20px;
+  }
+  .banner, .bannerleft{
+    border-radius: 10px;
+    height: 30px;
+  }
+  .bannertext,
+  .bannertextleft {
+    padding: 20px 0px;
   }
   .cardRight {
     margin-top: 10px;
@@ -132,5 +202,10 @@
     flex-direction: column-reverse;
     margin-top: 50px;
     gap: 20px;
+  }
+  .cardLeft img,
+  .cardRight img {
+    align-self: center;
+    width: 30%;
   }
 }

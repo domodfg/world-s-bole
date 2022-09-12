@@ -1,9 +1,11 @@
-import map from "../images/map.jpeg";
-import area from "../images/area.jpeg";
-import city from "../images/city.jpeg";
-import dungeon from "../images/dungeon.jpeg";
-import field from "../images/field.jpeg";
+import map from "../images/map/map.jpeg";
+import area from "../images/map/area.jpeg";
+import city from "../images/map/city.jpeg";
+import dungeon from "../images/map/dungeon.jpeg";
+import field from "../images/map/field.jpeg";
+import divider from "../images/divider.png";
 import React, { useState } from "react";
+import "../styles/map.css";
 
 const Map = () => {
   const [utrue, setUtrue] = useState(<img src={map} alt="map of Utrue" />);
@@ -14,7 +16,11 @@ const Map = () => {
 
   return (
     <div className="map">
-      <h2>探索烏爾提大陸</h2>
+      <div className="divider">
+        <img src={divider} className="dividermirror" alt="divider" />
+        <h2>探索烏爾提大陸</h2>
+        <img src={divider} alt="divider" />
+      </div>
       <div className="mapdisplay">
         <div className="empty"></div>
         {utrue}

@@ -3,17 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/mapframe.jpg);
+  background-image: url(../images/map/mapframe.jpg);
   background-position: center;
   background-size: cover;
-  gap: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 6rem;
+  border-top: 3px rgb(82, 41, 21) solid;
+  border-bottom: 3px rgb(82, 41, 21) solid;
 }
 
 .map h2 {
-  font-size: 2.5rem;
-  color: white;
-  font-weight: 500;
+  margin: 1.5rem 0px;
+  background: -webkit-linear-gradient(#eee, #fdff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .mapdisplay {
@@ -44,14 +46,14 @@
   padding: 10px 10px;
   color: #005c3d;
   box-shadow: 0.5px 0.5px 5px black;
-  transition: background-color  ease-in-out 0.4s;
+  transition: background-color ease-in-out 0.4s;
 }
 
 .legend button:hover {
-  background-color:rgb(38, 72, 69)
+  background-color: rgb(38, 72, 69);
 }
 
-.map img {
+.mapdisplay img {
   width: 60%;
   border-radius: 20px 0px 20px 20px;
   box-shadow: -2px 0.5px 10px black;
@@ -67,12 +69,12 @@
     flex-direction: row;
   }
 
-  .map img {
-    width: 95%;
+  .map {
+    padding-bottom: 4.5rem;
   }
 
-  .map h2 {
-    font-size: 2rem;
+  .mapdisplay img {
+    width: 95%;
   }
 
   .legend button {

@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import LoginButton from "./login.js";
 import LogoutButton from "./logout.js";
 import { useAuth0 } from "@auth0/auth0-react";
-import shopping_cart from "../images/shopping-cart.png";
-import diamond from "../images/diamond.png";
-import usericon from "../images/user.png";
+import shopping_cart from "../images/navbar/shopping-cart.png";
+import diamond from "../images/navbar/diamond.png";
+import usericon from "../images/navbar/user.png";
+import Burger from "./burgermenu.js";
+import "../styles/burgermenu.css";
+import "../styles/navbarandlogo.css";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const { user, isAuthenticated } = useAuth0();
 
   const Login = () => {
@@ -32,8 +35,9 @@ const Navbar = (props) => {
   };
   return (
     <nav className="header">
-      <p className="headerlogo">WB</p>
-      <div className="link">
+      <Burger />
+      <p className="headerlogo inactiveWhenMobile">WB</p>
+      <div className="link inactiveWhenMobile">
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
           <Link to="/">主頁</Link>
@@ -48,21 +52,23 @@ const Navbar = (props) => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
+          <Link to="/story">故事</Link>
+        </div>
+        <div className="linkcard">
+          <img src={diamond} alt="diamond" />
           <Link to="/shop" onClick={props.shop}>
             商店
           </Link>
         </div>
+        <div className="linkcard">
+          <img src={diamond} alt="diamond" />
+          <Link to="/shop">商店</Link>
+        </div>
       </div>
       <div className="link rightlink">
         <Login />
-
-        <div className="linkcard">
-          <img
-            src={shopping_cart}
-            width="20px"
-            alt="cart"
-            onClick={props.shoppingCart}
-          />
+        <div className="linkcard inactiveWhenMobile">
+          <img src={shopping_cart} width="20px" alt="cart" />
           <Link to="/check-out">
             <div className="shopping-cart">購物車</div>
           </Link>

@@ -28,4 +28,57 @@
 
 .heading h1 {
     margin-bottom: 300px;
+
+
+
+
+
+.gameplay,
+.gameplay .gameplaymain,
+.gameplay .gamecaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameplay {
+  padding-bottom: 6rem;
+}
+
+.gameplay .gameplaymain {
+  width: 70%;
+}
+
+.gamefootage {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1vw 0px;
+  box-shadow: -2px 0.5px 10px aqua;
+}
+
+.gameplay .gamecaption {
+  position: relative;
+  left: 3%;
+  text-align: center;
+  width: 39%;
+  height: max(15vw, 80px);
+  font-size: 2.5vw;
+  margin-left: auto;
+  margin-top: -10vw;
+  background-color: rgba(11, 0, 45, 0.8);
+  background-image: url(../images/gameplay/gamecaption.png);
+  background-size: cover;
+  background-position: center;
+  color: #5a1b1b;
+  box-shadow: -2px 0.5px 10px black;
+}
+
+@media (max-width: 700px) {
+  .gameplay {
+    padding-bottom: 4.5rem;
+  }
+  .gameplay .gameplaymain{
+    width: 95%;
+  }
 }

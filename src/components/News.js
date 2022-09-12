@@ -1,58 +1,78 @@
 import Slider from "react-slick";
+import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import divider from "../images/divider.png";
+import dragonroar from "../images/news/dragonroar.webm";
+import dragonroarimage from "../images/news/dragonroar.jpeg";
+import newcompany from "../images/news/newcompany.webm";
+import phoneix from "../images/news/Phoneix.webm";
+import spider from "../images/news/spider.webm";
+import "../styles/news.css";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#50949b" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#50949b" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const News = () => {
-  let settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className="news">
+      <div className="divider">
+        <img src={divider} className="dividermirror" alt="divider" />
+        <h2>最新消息</h2>
+        <img src={divider} alt="divider" />
+      </div>
       <Slider {...settings}>
         <div className="newsCard">
-          <p className="newshead">Patch 1.0.3</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nihil soluta sequi cumque aut accusantium laboriosam dolores.
-          </p>
+          <video poster={dragonroarimage} autoPlay muted loop>
+            <source src={dragonroar} type="video/webm" />
+          </video>
+          <div>
+            <p>版本1.0.3新增地下城</p>
+            <p>尤格爾的煉獄</p>
+          </div>
         </div>
         <div className="newsCard">
-          <p className="newshead">Patch 1.0.2</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
+          <video autoPlay muted loop>
+            <source src={newcompany} type="video/webm" />
+          </video>
         </div>
         <div className="newsCard">
-          <p className="newshead">Patch 1.0.1</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
+          <video className="phoneix" autoPlay muted loop>
+            <source src={phoneix} type="video/webm" />
+          </video>
         </div>
         <div className="newsCard">
-          <p className="newshead">Launch day!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
-        </div>
-        <div className="newsCard">
-          <p className="newshead">OST on sale!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            soluta sequi cumque aut accusantium laboriosam dolores ipsam iste
-            est quae.
-          </p>
+          <video className="spider" autoPlay muted loop>
+            <source src={spider} type="video/webm" />
+          </video>
         </div>
       </Slider>
     </div>
