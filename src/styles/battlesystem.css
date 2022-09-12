@@ -1,0 +1,75 @@
+.title {
+    display: flex;
+    width: fit-content;
+    align-self: center;
+    color: rgb(158, 116, 54);
+    font-size: 50px;
+    margin: 50px;
+}
+
+.battlesystem {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/leavebackground.png);
+    background-size: cover;
+}
+
+.battlemethod {
+    display: flex;
+    margin: 10px 200px;
+    justify-content: space-around;
+    white-space: nowrap;;
+}
+
+.battlemethod button {
+    font-family: "Noto Serif TC", serif;
+    border: 3px solid rgb(209, 168, 106);
+    background-color: black;
+    color: rgb(209, 168, 106);
+    font-size: 50px;
+    text-align: center;
+    transition-duration: 0.4s;
+    padding: 5px 20px;
+}
+
+.battlemethod button:hover {
+    color: black;
+    background-color: rgb(209, 168, 106);
+    border: 3px solid black;
+}
+
+.battlemethoddetail {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-right: 100px;
+    padding: 70px;
+}
+
+.battlemethoddetail .description {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.battlemethoddetail p {
+    width: 100%;
+    font-family: "Noto Serif TC", serif;
+    font-size: 2.5vw;
+    margin-right: -100px;
+    padding: 30px;
+    word-wrap: break-word;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+.battlemethoddetail video {
+    width: 100%;
+    border: 12px solid;
+    border-image: url(../images/gameplaygoldenborder.png);
+    border-image-slice: 30%;
+    border-image-width: 80px 80px;
+}
