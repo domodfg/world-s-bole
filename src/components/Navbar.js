@@ -48,6 +48,10 @@ const Navbar = () => {
         </div>
         <div className="linkcard">
           <img src={diamond} alt="diamond" />
+          <Link to="/gamesystem">系統</Link>
+        </div>
+        <div className="linkcard">
+          <img src={diamond} alt="diamond" />
           <Link to="/story">故事</Link>
         </div>
         <div className="linkcard">
