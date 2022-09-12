@@ -62,7 +62,7 @@ const Shop = () => {
         <div className="gameProductInfo">
           <img src={pc} alt="pc game case" />
           <div>
-            <h3>STEAM 數位標準版</h3>
+            <h2>STEAM 數位標準版</h2>
             <p>遊戲類型： ARPG 動作角色扮演</p>
             <p>發行日期：2022-09-30</p>
             <p>發行廠商： WB software Inc.</p>
@@ -78,7 +78,7 @@ const Shop = () => {
         <div className="gameProductInfo">
           <img src={ps5} alt="ps5 game case" />
           <div>
-            <h3>PS5 數位標準版</h3>
+            <h2>PS5 數位標準版</h2>
             <p>遊戲類型： ARPG 動作角色扮演</p>
             <p>發行日期：2022-09-20</p>
             <p>發行廠商： WB software Inc.</p>

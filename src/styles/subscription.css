@@ -1,6 +1,4 @@
 .subscribe-container {
-    position: relative;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +9,7 @@
     background-size: cover;
     color: white;
     gap: 15px;
+    padding: 15% 0;
 }
 
 .subs-title {
