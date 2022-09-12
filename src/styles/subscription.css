@@ -1,11 +1,14 @@
 .subscribe-container {
     position: relative;
-    height: 300px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 13, 13);
+    background-image: url("../images/dragon.webp");
+    background-position: 35% 60%;
+    background-size: cover;
     color: white;
     gap: 15px;
 }
