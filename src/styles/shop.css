@@ -18,7 +18,7 @@
   max-width: 1200px;
 }
 
-.gamecopy .gameProductInfo {
+.gamecopy .gameProductInfo{
   font-size: clamp(0.6rem, 1.3vw, 1.3rem);
   width: 70%;
   display: flex;
@@ -26,11 +26,16 @@
   align-items: flex-start;
   gap: min(4rem, 5vw);
   border: 5px solid;
-  border-image: url(../images/goldborder.png);
-  border-image-slice: 10%;
-  border-image-width: 40px 70px;
+  border-image: url(../images/gameplaygoldenborder.png);
+  border-image-slice: 20%;
+  border-image-width: 8% 8%;
   padding: 5%;
   box-sizing: content-box;
+}
+
+.gamecopy h2{
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  margin: 0;
 }
 
 .gameProductInfo div {
@@ -99,10 +104,4 @@
 
 .buyingpopup p {
   margin: 0;
-}
-
-@media (max-width: 700px) {
-  .gamecopy .gameProductInfo {
-    border-image-width: 20px 30px;
-  }
 }
