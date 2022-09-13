@@ -2,8 +2,10 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import "../styles/subscription.css"
 
-// email: CheungTaiMan1122@outlook.com
+// email: Leechunchun123@outlook.com
 // password: 1a23456678@
+// app-password: kgzmehbsuclwpihe
+// two-step-code: 7QU6D-7QF4E-WYKWU-TPVHQ-YMJCU
 
 // emailJS:facebe9622@nicoimg.com
 // password: 1a23456678
