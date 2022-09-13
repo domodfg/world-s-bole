@@ -1,9 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
 import "../styles/subscription.css"
 
 // email: kaikaiday@hotmail.com
 // password: 1a23456678@
+// elasticemail: kaikaiday@hotmail.com
+// password: 1a23456678@
+
 // Your security token is 16c1bebd-ee7d-48ea-b5fe-84ea8658adc9 Please take note of this.
 // emailAPI: kaikaiday@hotmail.com
 // password: 982D2AAADC56FC7B3ECB896467E9CEDC630B
