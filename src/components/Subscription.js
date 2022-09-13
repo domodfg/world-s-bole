@@ -10,11 +10,6 @@ import "../styles/subscription.css"
 // smtp.elasticemail.com
 // port:2525
 
-const PUBLIC_KEY = "jFhET9ib_PNnK18T-"
-const TEMPLATE_ID = "template_rkx54av"
-const SERVICE_ID = "service_e1c2ayo"
-
-
 export const Subscription = () => {
   const [displayAlert, setDisplayAlert] = useState(false);
   const form = useRef();
