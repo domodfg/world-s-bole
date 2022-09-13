@@ -1,6 +1,5 @@
 .subscribe-container {
-    position: relative;
-    height: 600px;
+    position: relative; /* The position of the successfully-subscribed message is based on this container */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +10,7 @@
     background-size: cover;
     color: white;
     gap: 15px;
+    padding: 15% 0;
 }
 
 .subs-title {
@@ -48,10 +48,36 @@
 }
 
 @keyframes fadeAnimation {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
+    }
+}
+
+.error {
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.5em red;
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.5rem;
+    }
+
+    75% {
+        margin-left: -0.5rem;
+    }
+
+    100% {
+        margin-left: 0rem;
     }
 }
