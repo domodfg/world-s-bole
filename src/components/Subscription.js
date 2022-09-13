@@ -2,13 +2,13 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import "../styles/subscription.css"
 
-// email: Leechunchun123@outlook.com
+// email: kaikaiday@hotmail.com
 // password: 1a23456678@
-// app-password: kgzmehbsuclwpihe
-// two-step-code: 7QU6D-7QF4E-WYKWU-TPVHQ-YMJCU
-
-// emailJS:facebe9622@nicoimg.com
-// password: 1a23456678
+// Your security token is 16c1bebd-ee7d-48ea-b5fe-84ea8658adc9 Please take note of this.
+// emailAPI: kaikaiday@hotmail.com
+// password: 982D2AAADC56FC7B3ECB896467E9CEDC630B
+// smtp.elasticemail.com
+// port:2525
 
 const PUBLIC_KEY = "jFhET9ib_PNnK18T-"
 const TEMPLATE_ID = "template_rkx54av"
@@ -31,22 +31,30 @@ export const Subscription = () => {
       input.value = "請輸入電郵"
       subs_btn.disabled = false
     }else{
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-        .then((result) => {
-          setDisplayAlert(true)
-          input.value = ''
-          
-        }, (error) => {
-            console.log(error.text);
-        });
-    }
+        window.Email.send({
+          SecureToken : "16c1bebd-ee7d-48ea-b5fe-84ea8658adc9",
+          To : input.value,
+          From : "kaikaiday@hotmail.com",
+          Subject : "恭喜您! 已成功訂閱World's Bole電子報!",
+          Body : "恭喜您! 已成功訂閱World's Bole電子報!",
+          Attachments : [
+            {
+              name : "leaflet.png",
+              path : "https://i.ibb.co/PZYn7Kj/Leaflet.webp"
+            }]
+        }).then(
+          () => {
+            setDisplayAlert(true)
+            input.value = ''
+        })
+      }
   };
 
   useEffect(() => {
     setTimeout(() => {
       setDisplayAlert(false)
       document.getElementsByClassName("subs-btn")[0].disabled = false
-    }, 7000)
+    }, 5000)
   }, [displayAlert]);
 
   return (

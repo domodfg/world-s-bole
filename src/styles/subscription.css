@@ -44,7 +44,7 @@
     width: 350px;
     bottom: 0;
     font-weight: 500;
-    animation: fadeAnimation ease 8s;
+    animation: fadeAnimation ease 4s;
 }
 
 @keyframes fadeAnimation {
