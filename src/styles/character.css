@@ -85,7 +85,7 @@
 
 .country p {
   font-size: 3rem;
-  font-weight: 100;
+  font-weight: 300;
   padding-top: 10vw;
 }
 
@@ -95,7 +95,6 @@
 }
 
 .country .countryinfo {
-  align-self: flex-end;
   width: 50%;
   height: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
@@ -115,6 +114,132 @@
   }
 }
 
+.characterpage {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 60px);
+}
+
+.charimage {
+  align-self: center;
+  width: 40%;
+}
+
+.charimage2{
+  width: 45%;
+  margin-right: -5vw;
+  margin-bottom: 5vw;
+}
+
+.charimage4{
+  width: 45%;
+  margin-right: -5vw;
+}
+
+.charPortrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% -130%;
+  transform: scale(3) translateX(-2%);
+}
+
+.charPortrait2{
+  transform: scale(3) translateX(10%) translateY(17%);
+}
+
+.charPortrait3{
+  transform: scale(3) translateX(10%) translateY(-13%);
+}
+
+.charPortrait4{
+  transform: scale(2.5) translateX(-4%) translateY(15%);
+}
+
+.charPortrait5{
+  transform: scale(3) translateX(-9%) translateY(-25%);
+}
+
+.portraitContainer {
+  width: 40%;
+  aspect-ratio: 1/1;
+  border: 5px transparent solid;
+  overflow: hidden;
+  border-image: url(../images/gameplaygoldenborder.png);
+  border-image-slice: 20%;
+  border-image-width: 8% 8%;
+  transition: all 0.3s ease-out;
+}
+
+.portraitContainer:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 10px white;
+}
+
+.charSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+.characterinfo {
+  animation: fadeIn 2s;
+}
+
+.characterinfo p,
+.charactertitle h2 {
+  margin: 0;
+}
+
+.countryinfo h3 {
+  font-style: italic;
+  margin-bottom: 3vh;
+}
+
+.charactertitle {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 13%;
+  border-bottom: 1px white solid;
+}
+
+.charDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-bottom: 5vh;
+}
+
+.charStats {
+  display: flex;
+  padding-top: 2vh;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: repeat(6, 1fr);
+  flex: 1;
+}
+
+.charTalent {
+  width: 70%;
+}
+
+.charAbility {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.progress {
+  min-width: 0px !important;
+}
+
 @media (max-width: 1000px) {
   .country div p {
     font-size: 0.7rem;
@@ -125,7 +250,7 @@
   .country .countryinfo p {
     font-size: 0.7rem;
   }
-  .country .countryinfo h2{
+  .country .countryinfo h2 {
     font-size: 1.2rem;
   }
   .country.active .countryBG {

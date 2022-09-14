@@ -19,19 +19,45 @@ import { Mooninfo, Moontitle } from "./components/Country5.js";
 const Character = () => {
   const [displayInfo, setDisplayInfo] = useState(false);
   const [displayTitle, setDisplayTitle] = useState(true);
+  const [displayCountry, setDisplayCountry] = useState(true);
+  const [displayChar, setDisplayChar] = useState({
+    char1: false,
+    char2: false,
+    char3: false,
+    char4: false,
+    char5: false,
+  });
 
   const expand = (e) => {
-    if (!displayInfo) {
+    if (
+      !displayInfo &&
+      Object.values(displayChar).every((value) => value === false)
+    ) {
       e.currentTarget.classList.add("active");
       setDisplayTitle(false);
       setDisplayInfo(true);
+      setDisplayCountry(true);
     }
   };
   const contract = () => {
     const activeSection = document.querySelector(".active");
     activeSection.classList.remove("active");
     setDisplayInfo(false);
+    setDisplayChar({
+      char1: false,
+      char2: false,
+      char3: false,
+      char4: false,
+      char5: false,
+    });
     setDisplayTitle(true);
+  };
+
+  const showCharacterInfo = (charIndex) => {
+    let copy = { ...displayChar };
+    copy[charIndex] = true;
+    setDisplayChar(copy);
+    setDisplayCountry(false);
   };
 
   return (
@@ -46,15 +72,31 @@ const Character = () => {
             <source src={cityofendvid} type="video/webm" />
           </video>
           <Cityofendtitle title={displayTitle} />
-          <Cityofendinfo displayStatus={displayInfo} onClickEvent={contract} />
+          <Cityofendinfo
+            displayStatus={displayInfo}
+            onClickEvent={contract}
+            characterOnClick={() => showCharacterInfo("char1")}
+            displayCountry={displayCountry}
+            displayChar={displayChar.char1}
+          />
         </div>
         <div onClick={expand} className="country seraphinecontainer">
-          <img className="seraphine countryBG" src={seraphine} alt="seraphine" />
+          <img
+            className="seraphine countryBG"
+            src={seraphine}
+            alt="seraphine"
+          />
           <video className="seraphine" poster={seraphine} autoPlay muted loop>
             <source src={seraphinevid} type="video/webm" />
           </video>
           <Seraphinetitle title={displayTitle} />
-          <Seraphineinfo displayStatus={displayInfo} onClickEvent={contract} />
+          <Seraphineinfo
+            displayStatus={displayInfo}
+            onClickEvent={contract}
+            characterOnClick={() => showCharacterInfo("char2")}
+            displayCountry={displayCountry}
+            displayChar={displayChar.char2}
+          />
         </div>
         <div onClick={expand} className="country roamcontainer">
           <img className="roam countryBG" src={roam} alt="roam" />
@@ -62,22 +104,39 @@ const Character = () => {
             <source src={roamvid} type="video/webm" />
           </video>
           <Roamtitle title={displayTitle} />
-          <Roaminfo displayStatus={displayInfo} onClickEvent={contract} />
+          <Roaminfo
+            displayStatus={displayInfo}
+            onClickEvent={contract}
+            characterOnClick={() => showCharacterInfo("char3")}
+            displayCountry={displayCountry}
+            displayChar={displayChar.char3}
+          />
         </div>
         <div onClick={expand} className="country timecontainer">
           <img className="time countryBG" src={time} alt="time" />
           <video className="time" poster={time} autoPlay muted loop></video>
           <Timetitle title={displayTitle} />
-          <Timeinfo displayStatus={displayInfo} onClickEvent={contract} />
+          <Timeinfo
+            displayStatus={displayInfo}
+            onClickEvent={contract}
+            characterOnClick={() => showCharacterInfo("char4")}
+            displayCountry={displayCountry}
+            displayChar={displayChar.char4}
+          />
         </div>
         <div onClick={expand} className="country moonislecontainer">
           <img className="moonisle countryBG" src={moonisle} alt="moon isle" />
           <video className="moonisle" poster={moonisle} autoPlay muted loop>
-            {" "}
             <source src={moonislevid} type="video/webm" />
           </video>
           <Moontitle title={displayTitle} />
-          <Mooninfo displayStatus={displayInfo} onClickEvent={contract} />
+          <Mooninfo
+            displayStatus={displayInfo}
+            onClickEvent={contract}
+            characterOnClick={() => showCharacterInfo("char5")}
+            displayCountry={displayCountry}
+            displayChar={displayChar.char5}
+          />
         </div>
       </div>
     </div>
