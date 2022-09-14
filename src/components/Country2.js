@@ -16,7 +16,7 @@ const Seraphineinfo = (props) => {
       <div className="characterpage">
         {props.displayChar && (
           <img
-            className="charimage animate__animated animate__slideInLeft"
+            className="charimage charimage2 animate__animated animate__slideInLeft"
             src={character2}
             alt="character"
           />
