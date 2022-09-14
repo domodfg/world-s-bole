@@ -17,9 +17,12 @@ import { Timeinfo, Timetitle } from "./components/Country4.js";
 import { Mooninfo, Moontitle } from "./components/Country5.js";
 
 const Character = () => {
-  const [displayInfo, setDisplayInfo] = useState(false);
-  const [displayTitle, setDisplayTitle] = useState(true);
-  const [displayCountry, setDisplayCountry] = useState(true);
+  const [displayInfo, setDisplayInfo] = useState({
+    active: false,
+    title: true,
+    country: false,
+  });
+
   const [displayChar, setDisplayChar] = useState({
     char1: false,
     char2: false,
@@ -30,34 +33,41 @@ const Character = () => {
 
   const expand = (e) => {
     if (
-      !displayInfo &&
+      !displayInfo.active &&
       Object.values(displayChar).every((value) => value === false)
     ) {
       e.currentTarget.classList.add("active");
-      setDisplayTitle(false);
-      setDisplayInfo(true);
-      setDisplayCountry(true);
+      let copy = { ...displayInfo };
+      copy.title = false;
+      copy.active = true;
+      copy.country = true;
+      setDisplayInfo(copy);
     }
   };
+
   const contract = () => {
     const activeSection = document.querySelector(".active");
     activeSection.classList.remove("active");
-    setDisplayInfo(false);
-    setDisplayChar({
-      char1: false,
-      char2: false,
-      char3: false,
-      char4: false,
-      char5: false,
-    });
-    setDisplayTitle(true);
+    let copy = { ...displayInfo };
+    let charcopy = { ...displayChar };
+    copy.active = false;
+    copy.title = true;
+    charcopy.char1 = false;
+    charcopy.char2 = false;
+    charcopy.char3 = false;
+    charcopy.char4 = false;
+    charcopy.char5 = false;
+    setDisplayInfo(copy);
+    setDisplayChar(charcopy);
   };
 
   const showCharacterInfo = (charIndex) => {
-    let copy = { ...displayChar };
-    copy[charIndex] = true;
-    setDisplayChar(copy);
-    setDisplayCountry(false);
+    let copy = { ...displayInfo };
+    let charcopy = { ...displayChar };
+    charcopy[charIndex] = true;
+    copy.country = false;
+    setDisplayInfo(copy);
+    setDisplayChar(charcopy);
   };
 
   return (
@@ -71,13 +81,13 @@ const Character = () => {
           <video poster={cityofend} autoPlay muted loop>
             <source src={cityofendvid} type="video/webm" />
           </video>
-          <Cityofendtitle title={displayTitle} />
+          <Cityofendtitle title={displayInfo.title} />
           <Cityofendinfo
-            displayStatus={displayInfo}
+            displayStatus={displayInfo.active}
+            displayCountry={displayInfo.country}
+            displayChar={displayChar.char1}
             onClickEvent={contract}
             characterOnClick={() => showCharacterInfo("char1")}
-            displayCountry={displayCountry}
-            displayChar={displayChar.char1}
           />
         </div>
         <div onClick={expand} className="country seraphinecontainer">
@@ -89,13 +99,13 @@ const Character = () => {
           <video className="seraphine" poster={seraphine} autoPlay muted loop>
             <source src={seraphinevid} type="video/webm" />
           </video>
-          <Seraphinetitle title={displayTitle} />
+          <Seraphinetitle title={displayInfo.title} />
           <Seraphineinfo
-            displayStatus={displayInfo}
+            displayStatus={displayInfo.active}
+            displayCountry={displayInfo.country}
+            displayChar={displayChar.char2}
             onClickEvent={contract}
             characterOnClick={() => showCharacterInfo("char2")}
-            displayCountry={displayCountry}
-            displayChar={displayChar.char2}
           />
         </div>
         <div onClick={expand} className="country roamcontainer">
@@ -103,25 +113,25 @@ const Character = () => {
           <video className="roam" poster={roam} autoPlay muted loop>
             <source src={roamvid} type="video/webm" />
           </video>
-          <Roamtitle title={displayTitle} />
+          <Roamtitle title={displayInfo.title} />
           <Roaminfo
-            displayStatus={displayInfo}
+            displayStatus={displayInfo.active}
+            displayCountry={displayInfo.country}
+            displayChar={displayChar.char3}
             onClickEvent={contract}
             characterOnClick={() => showCharacterInfo("char3")}
-            displayCountry={displayCountry}
-            displayChar={displayChar.char3}
           />
         </div>
         <div onClick={expand} className="country timecontainer">
           <img className="time countryBG" src={time} alt="time" />
           <video className="time" poster={time} autoPlay muted loop></video>
-          <Timetitle title={displayTitle} />
+          <Timetitle title={displayInfo.title} />
           <Timeinfo
-            displayStatus={displayInfo}
+            displayStatus={displayInfo.active}
+            displayCountry={displayInfo.country}
+            displayChar={displayChar.char4}
             onClickEvent={contract}
             characterOnClick={() => showCharacterInfo("char4")}
-            displayCountry={displayCountry}
-            displayChar={displayChar.char4}
           />
         </div>
         <div onClick={expand} className="country moonislecontainer">
@@ -129,13 +139,13 @@ const Character = () => {
           <video className="moonisle" poster={moonisle} autoPlay muted loop>
             <source src={moonislevid} type="video/webm" />
           </video>
-          <Moontitle title={displayTitle} />
+          <Moontitle title={displayInfo.title} />
           <Mooninfo
-            displayStatus={displayInfo}
+            displayStatus={displayInfo.active}
+            displayCountry={displayInfo.country}
+            displayChar={displayChar.char5}
             onClickEvent={contract}
             characterOnClick={() => showCharacterInfo("char5")}
-            displayCountry={displayCountry}
-            displayChar={displayChar.char5}
           />
         </div>
       </div>

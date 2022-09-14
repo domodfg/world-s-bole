@@ -37,7 +37,7 @@ const Roaminfo = (props) => {
               </p>
               <div className="divider">
                 <img src={divider} className="dividermirror" alt="divider" />
-                <h2>角色資訊</h2>
+                <h2>登場角色</h2>
                 <img src={divider} alt="divider" />
               </div>
               <div className="charSelect">
