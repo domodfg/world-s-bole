@@ -4,7 +4,7 @@ import "./styles/footerpolicy.css";
 import Navbar from "./components/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
 import Gameplay from "./components/Gameplay.js";
-import News from "./components/News.js";
+import {News} from "./components/News.js";
 import Footer from "./components/footer.js";
 import Map from "./components/Map.js";
 import mainvideo from "./images/main.webm";

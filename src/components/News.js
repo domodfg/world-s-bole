@@ -79,4 +79,4 @@ const News = () => {
   );
 };
 
-export default News;
+export {News, SampleNextArrow, SamplePrevArrow};

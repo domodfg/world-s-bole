@@ -1,8 +1,8 @@
 import React from "react";
 import divider from "../images/divider.png";
 import close from "../images/gameinfo/close.png";
-import ProgressBar from "react-bootstrap/ProgressBar";
 import character5 from "../images/character/character5.png";
+import { Character5, Character5Stat, Character5Slider } from "./Character5.js";
 
 const Moontitle = (props) => {
   if (props.title) {
@@ -16,7 +16,7 @@ const Mooninfo = (props) => {
       <div className="characterpage">
         {props.displayChar && (
           <img
-            className="charimage animate__animated animate__slideInLeft"
+            className="charimage charimage5 animate__animated animate__slideInLeft"
             src={character5}
             alt="character"
           />
@@ -54,63 +54,11 @@ const Mooninfo = (props) => {
           )}
           {props.displayChar && (
             <div className="characterinfo">
-              <div className="charactertitle">
-                <h2>機械工程師</h2>
-                <p>CV配音：花澤香菜</p>
+              <div className="characterinfoDesktop">
+                <Character5 />
+                <Character5Stat />
               </div>
-              <h3>艾曼紐·麗</h3>
-              <div className="charDescription">
-                <p>
-                  艾曼紐在學校裡的成績並不怎麼樣，因為她一開始就很討厭數學和工程。
-                </p>
-                <p>
-                  不知道怎麼地，工程學與她的命運卻緊密相連，這可能是因為父母的緣故，使她的美術生生涯就此終結。
-                </p>
-                <p>
-                  但可不要小看這位恬靜的文科生哦！即使在運用機械方面，她還是有十足的把握去用科學對付魔法！
-                </p>
-                <p>
-                  平時跟在她背後的這隻機器人......不對，應該是天線寶寶？看來並不是什麼好惹的角色。
-                </p>
-              </div>
-
-              <div className="divider">
-                <img src={divider} className="dividermirror" alt="divider" />
-                <h2 className="charAbility">初始天賦/綜合平均值</h2>
-                <img src={divider} alt="divider" />
-              </div>
-              <div className="charStats">
-                <div className="statsGrid">
-                  <p>力量</p>
-                  <p>65</p>
-                  <p>耐久 </p>
-                  <p>70</p>
-                  <p>敏捷 </p>
-                  <p>81</p>
-                  <p>心靈</p>
-                  <p>121</p>
-                  <p>知識 </p>
-                  <p>180</p>
-                  <p>神性</p>
-                  <p>123</p>
-                </div>
-                <div className="charTalent">
-                  <p className="text-left">武力值</p>
-                  <ProgressBar variant="warning" now={25} />
-                  <p className="text-left">魔力值</p>
-                  <ProgressBar variant="primary" now={69} />
-                  <p className="text-left">速度值</p>
-                  <ProgressBar variant="info" now={33} />
-                  <p className="text-left">幸運值</p>
-                  <ProgressBar variant="danger" now={78} />
-                </div>
-              </div>
-              <img
-                src={close}
-                alt="close"
-                onClick={props.onClickEvent}
-                className="close"
-              />
+              <Character5Slider />
             </div>
           )}
           <img
