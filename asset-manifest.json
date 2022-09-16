@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.9bbf9e3d.css",
-    "main.js": "/world-s-bole/static/js/main.ed54d262.js",
+    "main.css": "/world-s-bole/static/css/main.85eb4706.css",
+    "main.js": "/world-s-bole/static/js/main.16f1b508.js",
     "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/moonisle.webm": "/world-s-bole/static/media/moonisle.ea3076c3cf3fad63bb00.webm",
@@ -15,7 +15,9 @@
     "static/media/parry.mov": "/world-s-bole/static/media/parry.f6eaad09c392d5ed494b.mov",
     "static/media/attack.mov": "/world-s-bole/static/media/attack.4fc58d90432e5255197e.mov",
     "static/media/gameplayheader.webm": "/world-s-bole/static/media/gameplayheader.45cb30aea71d88782d0c.webm",
+    "static/media/character5.png": "/world-s-bole/static/media/character5.e234040aeb3641d4df0c.png",
     "static/media/newcompany.webm": "/world-s-bole/static/media/newcompany.d712b234707b9e01bfd4.webm",
+    "static/media/character3.png": "/world-s-bole/static/media/character3.88e9de4060292f88fde8.png",
     "static/media/field.jpeg": "/world-s-bole/static/media/field.3d7e04ef75be837b85ad.jpeg",
     "static/media/seraphine.webm": "/world-s-bole/static/media/seraphine.88705e4cd9663bb5d796.webm",
     "static/media/dungeon.jpeg": "/world-s-bole/static/media/dungeon.4ab3f09b3f8e86843768.jpeg",
@@ -31,12 +33,16 @@
     "static/media/frame_flower_mandal_element_generated.png": "/world-s-bole/static/media/frame_flower_mandal_element_generated.2b8c2f78bad6ed594db5.png",
     "static/media/gameplaygoldenborder.png": "/world-s-bole/static/media/gameplaygoldenborder.13f3bd687a25d0097b90.png",
     "static/media/gameinfo1.jpg": "/world-s-bole/static/media/gameinfo1.d5381a3e1a86b34f0224.jpg",
+    "static/media/character4.png": "/world-s-bole/static/media/character4.967c801e52d45e18e315.png",
     "static/media/gameplaybackground.jpg": "/world-s-bole/static/media/gameplaybackground.e2d9938682b259e10e8d.jpg",
     "static/media/gameinfo4.webm": "/world-s-bole/static/media/gameinfo4.66662304854be83ca646.webm",
+    "static/media/dragon.webp": "/world-s-bole/static/media/dragon.a89e60e9f07a7243e174.webp",
     "static/media/Fantasy_Spell_Book.png": "/world-s-bole/static/media/Fantasy_Spell_Book.c32aad49dd556c7ac3d1.png",
     "static/media/booktexture.jpg": "/world-s-bole/static/media/booktexture.2d3e450879960f616b4f.jpg",
     "static/media/roam.jpg": "/world-s-bole/static/media/roam.0d08b3a54dbff5270d3b.jpg",
+    "static/media/character2.png": "/world-s-bole/static/media/character2.2f6275240fc3ad238e7b.png",
     "static/media/mainposter.jpg": "/world-s-bole/static/media/mainposter.ad650e2b51e550326856.jpg",
+    "static/media/character1.png": "/world-s-bole/static/media/character1.032db7a49b05e44b47fd.png",
     "static/media/seraphine.jpg": "/world-s-bole/static/media/seraphine.b725c475e9f353788c4d.jpg",
     "static/media/cityofend.jpg": "/world-s-bole/static/media/cityofend.1bb79c96b8104a831cb8.jpg",
     "static/media/moonisle.jpg": "/world-s-bole/static/media/moonisle.96d884ffac801767c119.jpg",
@@ -59,11 +65,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.9bbf9e3d.css.map": "/world-s-bole/static/css/main.9bbf9e3d.css.map",
-    "main.ed54d262.js.map": "/world-s-bole/static/js/main.ed54d262.js.map"
+    "main.85eb4706.css.map": "/world-s-bole/static/css/main.85eb4706.css.map",
+    "main.16f1b508.js.map": "/world-s-bole/static/js/main.16f1b508.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bbf9e3d.css",
-    "static/js/main.ed54d262.js"
+    "static/css/main.85eb4706.css",
+    "static/js/main.16f1b508.js"
   ]
 }
