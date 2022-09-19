@@ -4,30 +4,43 @@ import "./styles/footerpolicy.css";
 import Navbar from "./components/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
 import Gameplay from "./components/Gameplay.js";
-import {News} from "./components/News.js";
+import { News } from "./components/News.js";
 import Footer from "./components/footer.js";
 import Map from "./components/Map.js";
 import mainvideo from "./images/main.webm";
 import mainfallback from "./images/mainposter.jpg";
 import { Subscription } from "./components/Subscription";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <div className="main">
-        <Navbar />
         <video poster={mainfallback} autoPlay muted loop>
           <source src={mainvideo} type="video/webm" />
         </video>
         <div>
           <h1 className="logo">World's Bole</h1>
-          <p>動作幻想 RPG</p>
+          <p className="logoBottom">動作幻想 RPG</p>
         </div>
       </div>
       <Gameinfo />
-      <Gameplay />
+      <AnimationOnScroll
+        animateIn="animate__fadeInUp"
+        duration={2}
+        animateOnce={true}
+      >
+        <Gameplay />
+      </AnimationOnScroll>
       <Map />
-      <News />
+      <AnimationOnScroll
+        animateIn="animate__fadeInUp"
+        duration={2}
+        animateOnce={true}
+      >
+        <News />
+      </AnimationOnScroll>
       <Subscription />
       <Footer />
     </div>

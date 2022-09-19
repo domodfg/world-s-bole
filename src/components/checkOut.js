@@ -132,7 +132,7 @@ const CheckOut = () => {
   if (isEmpty) {
     return (
       <div className="checkOutPage">
-        <div className="main">
+        <div className="navContainer">
           <Navbar />
         </div>
         <div className="empty-shopping-cart">
@@ -150,7 +150,7 @@ const CheckOut = () => {
   } else {
     return (
       <div className="checkOutPage">
-        <div className="main">
+        <div className="navContainer">
           <Navbar />
         </div>
 

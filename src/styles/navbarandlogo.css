@@ -65,11 +65,18 @@ a:hover,
   z-index: 2;
 }
 
+.navContainer {
+  position: relative;
+  display: flex;
+ /*  set to flex so that it stick on the top somehow */
+}
+
 .headerlogo {
   margin: 0;
   font-size: 2.5rem;
   font-family: "lifeCraft", "Aboreto", cursive;
   flex: 1;
+  text-align: center;
 }
 
 .rightlink {
@@ -114,9 +121,11 @@ a:hover,
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 2.5rem;
   color: white;
+  height: 100vh;
 }
 
 .main video {
@@ -129,14 +138,16 @@ a:hover,
 }
 
 .logo {
-  font-size: 7rem;
+  font-size: 10vw;
   font-family: "lifeCraft", "Aboreto", cursive;
   font-weight: 400;
   color: white;
-  margin-top: 250px;
-  margin-bottom: 150px;
   text-align: center;
   width: 100%;
+}
+
+.logoBottom {
+  font-size: max(3vw,1.2rem);
 }
 
 @media (max-width: 700px) {
@@ -144,11 +155,11 @@ a:hover,
     display: none;
   }
   .main {
-    font-size: 1.5rem;
     background-image: url(../images/main.jpg);
     background-position: 0%;
     background-size: cover;
     background-attachment: fixed;
+    height: 70vh;
   }
   .header {
     font-size: 1rem;

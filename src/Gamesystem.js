@@ -8,7 +8,7 @@ import heading from "./images/gameplayheader.webm";
 const GamePlay = () => {
   return (
     <div className="Gamesystem">
-      <div className="main">
+      <div className="navContainer">
         <Navbar />
       </div>
       <div className="Gamesystemheading">

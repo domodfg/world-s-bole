@@ -7,6 +7,7 @@ import seraphinevid from "./images/country/seraphine.webm";
 import roam from "./images/country/roam.jpg";
 import roamvid from "./images/country/roam.webm";
 import time from "./images/country/time.jpg";
+import timevid from "./images/country/time.webm";
 import moonislevid from "./images/country/moonisle.webm";
 import moonisle from "./images/country/moonisle.jpg";
 import React, { useState } from "react";
@@ -72,7 +73,7 @@ const Character = () => {
 
   return (
     <div>
-      <div className="main">
+      <div className="navContainer">
         <Navbar />
       </div>
       <div className="character">
@@ -124,7 +125,9 @@ const Character = () => {
         </div>
         <div onClick={expand} className="country timecontainer">
           <img className="time countryBG" src={time} alt="time" />
-          <video className="time" poster={time} autoPlay muted loop></video>
+          <video className="time" poster={time} autoPlay muted loop>
+            <source src={timevid} type="video/webm" />
+          </video>
           <Timetitle title={displayInfo.title} />
           <Timeinfo
             displayStatus={displayInfo.active}

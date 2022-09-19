@@ -5,7 +5,7 @@ import Footer from "./footer.js";
 const Cookiepolicy = () => {
   return (
     <div className="App">
-      <div className="main">
+      <div className="navContainer">
         <Navbar />
       </div>
       <div className="usepolicy">

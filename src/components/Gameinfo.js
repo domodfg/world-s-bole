@@ -38,11 +38,10 @@ const Gameinfo = () => {
   return (
     <div className="content">
       <AnimationOnScroll
-        animateIn="animate__fadeIn"
-        animateOut="animate__fadeOut"
+        animateIn="animate__fadeInUp"
         className="gameinfocard"
-        duration={0.7}
-        offset={300}
+        duration={2}
+        animateOnce={true}
       >
         <div className="imagecontainer">
           <img src={gameinfo1} className="cardimage" alt="Dread realm" />
@@ -62,11 +61,10 @@ const Gameinfo = () => {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
-        animateIn="animate__fadeIn"
-        animateOut="animate__fadeOut"
+        animateIn="animate__fadeInUp"
         className="cardmirrored gameinfocard"
-        duration={0.7}
-        offset={300}
+        duration={2}
+        animateOnce={true}
       >
         <div className="cardLeft">
           <div className="flames bannerleft"></div>
@@ -85,11 +83,10 @@ const Gameinfo = () => {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
-        animateIn="animate__fadeIn"
-        animateOut="animate__fadeOut"
+        animateIn="animate__fadeInUp"
         className="gameinfocard"
-        duration={0.7}
-        offset={300}
+        duration={2}
+        animateOnce={true}
       >
         <div className="imagecontainer">
           <img src={gameinfo3} className="cardimage" alt="Floating land" />
@@ -108,11 +105,10 @@ const Gameinfo = () => {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
-        animateIn="animate__fadeIn"
-        animateOut="animate__fadeOut"
+        animateIn="animate__fadeInUp"
         className="cardmirrored gameinfocard"
-        duration={0.7}
-        offset={300}
+        duration={2}
+        animateOnce={true}
       >
         <div className="cardLeft">
           <div className="magic bannerleft"></div>

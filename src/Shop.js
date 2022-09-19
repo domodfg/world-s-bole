@@ -55,9 +55,7 @@ const Shop = () => {
 
   return (
     <div className="shop">
-      <div className="main">
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="gamecopy">
         <div className="gameProductInfo">
           <img src={pc} alt="pc game case" />
