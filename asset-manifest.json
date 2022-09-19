@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.85eb4706.css",
-    "main.js": "/world-s-bole/static/js/main.16f1b508.js",
+    "main.css": "/world-s-bole/static/css/main.b7d44cfb.css",
+    "main.js": "/world-s-bole/static/js/main.1c74c961.js",
     "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/moonisle.webm": "/world-s-bole/static/media/moonisle.ea3076c3cf3fad63bb00.webm",
@@ -10,8 +10,8 @@
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/mapframe.jpg": "/world-s-bole/static/media/mapframe.070adb379d3ab3c67397.jpg",
     "static/media/guard.mov": "/world-s-bole/static/media/guard.7ec7b585fb59f31ff873.mov",
-    "static/media/dragonroar.webm": "/world-s-bole/static/media/dragonroar.2020ab19c363c38a7938.webm",
-    "static/media/time.jpg": "/world-s-bole/static/media/time.dc247f50449122071aa3.jpg",
+    "static/media/news.jpeg": "/world-s-bole/static/media/news.444277a6ce416097a820.jpeg",
+    "static/media/time.webm": "/world-s-bole/static/media/time.ca22f97f40f4b3ac9efd.webm",
     "static/media/parry.mov": "/world-s-bole/static/media/parry.f6eaad09c392d5ed494b.mov",
     "static/media/attack.mov": "/world-s-bole/static/media/attack.4fc58d90432e5255197e.mov",
     "static/media/gameplayheader.webm": "/world-s-bole/static/media/gameplayheader.45cb30aea71d88782d0c.webm",
@@ -42,6 +42,7 @@
     "static/media/roam.jpg": "/world-s-bole/static/media/roam.0d08b3a54dbff5270d3b.jpg",
     "static/media/character2.png": "/world-s-bole/static/media/character2.2f6275240fc3ad238e7b.png",
     "static/media/mainposter.jpg": "/world-s-bole/static/media/mainposter.ad650e2b51e550326856.jpg",
+    "static/media/time.jpg": "/world-s-bole/static/media/time.c7007153a868ea0141d0.jpg",
     "static/media/character1.png": "/world-s-bole/static/media/character1.032db7a49b05e44b47fd.png",
     "static/media/seraphine.jpg": "/world-s-bole/static/media/seraphine.b725c475e9f353788c4d.jpg",
     "static/media/cityofend.jpg": "/world-s-bole/static/media/cityofend.1bb79c96b8104a831cb8.jpg",
@@ -50,9 +51,9 @@
     "static/media/gameinfo3.jpg": "/world-s-bole/static/media/gameinfo3.51aa5406e9b064253fed.jpg",
     "static/media/gameinfo2.jpg": "/world-s-bole/static/media/gameinfo2.7240f5d3add5eb3dbe92.jpg",
     "static/media/bookcover.jpg": "/world-s-bole/static/media/bookcover.c1ef33a405a90d08d532.jpg",
+    "static/media/dragonroar.jpg": "/world-s-bole/static/media/dragonroar.15c02efd9eed68f91c6a.jpg",
     "static/media/goldborder.png": "/world-s-bole/static/media/goldborder.99704147f0834e032568.png",
     "static/media/lifeCraftFont.ttf": "/world-s-bole/static/media/lifeCraftFont.7f2bcab913fb2c2796e0.ttf",
-    "static/media/dragonroar.jpeg": "/world-s-bole/static/media/dragonroar.f1969f43c57f6b666018.jpeg",
     "static/media/leavebackground.png": "/world-s-bole/static/media/leavebackground.bf2eb035e0b87a78c784.png",
     "static/media/diamond.png": "/world-s-bole/static/media/diamond.7131c5b2d40e613a5897.png",
     "static/media/user.png": "/world-s-bole/static/media/user.bcc74561d38db661b53f.png",
@@ -65,11 +66,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.85eb4706.css.map": "/world-s-bole/static/css/main.85eb4706.css.map",
-    "main.16f1b508.js.map": "/world-s-bole/static/js/main.16f1b508.js.map"
+    "main.b7d44cfb.css.map": "/world-s-bole/static/css/main.b7d44cfb.css.map",
+    "main.1c74c961.js.map": "/world-s-bole/static/js/main.1c74c961.js.map"
   },
   "entrypoints": [
-    "static/css/main.85eb4706.css",
-    "static/js/main.16f1b508.js"
+    "static/css/main.b7d44cfb.css",
+    "static/js/main.1c74c961.js"
   ]
 }
