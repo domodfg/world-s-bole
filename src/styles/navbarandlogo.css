@@ -68,7 +68,7 @@ a:hover,
 .navContainer {
   position: relative;
   display: flex;
- /*  set to flex so that it stick on the top somehow */
+  /*  set to flex so that it stick on the top somehow */
 }
 
 .headerlogo {
@@ -120,12 +120,11 @@ a:hover,
 .main {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
   font-size: 2.5rem;
   color: white;
-  height: 100vh;
+  height: 90vh;
 }
 
 .main video {
@@ -147,7 +146,25 @@ a:hover,
 }
 
 .logoBottom {
-  font-size: max(3vw,1.2rem);
+  font-size: max(3vw, 1.2rem);
+}
+
+.awardsList {
+  flex: 1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  align-items: center;
+}
+.awards {
+  width: 30%;
+}
+.awards h2,
+.awards p {
+  background: -webkit-linear-gradient(top, #fff3b5 30%, #f4e678 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: min(1.8rem, 4.5vw);
 }
 
 @media (max-width: 700px) {
@@ -159,13 +176,13 @@ a:hover,
     background-position: 0%;
     background-size: cover;
     background-attachment: fixed;
-    height: 70vh;
+    height: auto;
   }
   .header {
     font-size: 1rem;
     gap: 15px;
   }
-  .rightlink{
+  .rightlink {
     justify-content: end;
     padding-right: 1.5rem;
   }
@@ -176,5 +193,12 @@ a:hover,
   }
   .logo {
     font-size: 4.5rem;
+    margin-top: 20vh;
+  }
+  .awardsList{
+    flex-direction: column;
+  }
+  .awards{
+    width: 80%;
   }
 }
