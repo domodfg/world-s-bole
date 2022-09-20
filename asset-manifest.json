@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.b7d44cfb.css",
-    "main.js": "/world-s-bole/static/js/main.1c74c961.js",
+    "main.css": "/world-s-bole/static/css/main.0e2551d9.css",
+    "main.js": "/world-s-bole/static/js/main.d60982ed.js",
     "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/moonisle.webm": "/world-s-bole/static/media/moonisle.ea3076c3cf3fad63bb00.webm",
@@ -10,6 +10,7 @@
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/mapframe.jpg": "/world-s-bole/static/media/mapframe.070adb379d3ab3c67397.jpg",
     "static/media/guard.mov": "/world-s-bole/static/media/guard.7ec7b585fb59f31ff873.mov",
+    "static/media/reaper.jpg": "/world-s-bole/static/media/reaper.670d0539c5fb0ad5f868.jpg",
     "static/media/news.jpeg": "/world-s-bole/static/media/news.444277a6ce416097a820.jpeg",
     "static/media/time.webm": "/world-s-bole/static/media/time.ca22f97f40f4b3ac9efd.webm",
     "static/media/parry.mov": "/world-s-bole/static/media/parry.f6eaad09c392d5ed494b.mov",
@@ -26,6 +27,7 @@
     "static/media/area.jpeg": "/world-s-bole/static/media/area.f42c34a4a20fe5f33968.jpeg",
     "static/media/map.jpeg": "/world-s-bole/static/media/map.72c74dc3cdcc9a74e14e.jpeg",
     "static/media/Phoneix.webm": "/world-s-bole/static/media/Phoneix.07a2f5eeaa1f18af177b.webm",
+    "static/media/Leaflet.webp": "/world-s-bole/static/media/Leaflet.aeb1a5cf0f43b55f319a.webp",
     "static/media/ps5gamecase.jpeg": "/world-s-bole/static/media/ps5gamecase.c06e5b96d24481374f58.jpeg",
     "static/media/spider.webm": "/world-s-bole/static/media/spider.0c3b0fb47a130baeec69.webm",
     "static/media/cityofend.webm": "/world-s-bole/static/media/cityofend.c5bd885ea0a0f3097274.webm",
@@ -66,11 +68,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.b7d44cfb.css.map": "/world-s-bole/static/css/main.b7d44cfb.css.map",
-    "main.1c74c961.js.map": "/world-s-bole/static/js/main.1c74c961.js.map"
+    "main.0e2551d9.css.map": "/world-s-bole/static/css/main.0e2551d9.css.map",
+    "main.d60982ed.js.map": "/world-s-bole/static/js/main.d60982ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7d44cfb.css",
-    "static/js/main.1c74c961.js"
+    "static/css/main.0e2551d9.css",
+    "static/js/main.d60982ed.js"
   ]
 }
