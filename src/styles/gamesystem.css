@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(../images/gameplaybackground.jpg);
+  background: url(../images/gamesystembackground3.jpg);
   background-size: cover;
   background-attachment: fixed;
 }

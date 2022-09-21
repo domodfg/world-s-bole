@@ -6,6 +6,7 @@ import "./styles/battlesystem.css";
 import heading from "./images/gameplayheader.webm";
 
 const GamePlay = () => {
+
   return (
     <div className="Gamesystem">
       <div className="main">

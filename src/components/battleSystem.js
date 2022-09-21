@@ -5,35 +5,48 @@ import divider from "../images/divider.png";
 import React, { useState } from "react";
 
 const Battlesystem = () => {
-  const attack = {
-      methodDescription: "運用不同的武器和戰技，削減敵人的體力。",
-      battleVideo: Attack,
-    },
-    guard = {
-      methodDescription: "使用防禦抵擋敵人猛烈的攻勢，等待反擊的機會。",
-      battleVideo: Guard,
-    },
-    parry = {
-      methodDescription:
-        "在適當的時機進行格檔，可使敵人失衡，制造出有利的輸出空間。",
-      battleVideo: Parry,
-    };
 
   const [battleMethod, setBattleMethod] = useState({
-    Description: attack.methodDescription,
-    Video: (
+    activeObject: {
+      name: "攻擊",
+      methodDescription: "運用不同的武器和戰技，削減敵人的體力。",
+      battleVideo:(
       <video autoPlay muted loop>
-        <source src={attack.battleVideo} type="video/mp4" />
+        <source src={Attack} type="video/mp4" />
       </video>
-    ),
+      )
+    },
+    methods: [{
+      name: "攻擊",
+      methodDescription: "運用不同的武器和戰技，削減敵人的體力。",
+      battleVideo:
+      <video autoPlay muted loop src={Attack} type="video/mov" />,
+    }, {
+      name: "防禦",
+      methodDescription: "使用防禦抵擋敵人猛烈的攻勢，等待反擊的機會。",
+      battleVideo:
+      <video autoPlay muted loop src={Guard} type="video/mov" />,
+    }, {
+      name: "格檔",
+      methodDescription:
+        "在適當的時機進行格檔，可使敵人失衡，制造出有利的輸出空間。",
+      battleVideo:
+      <video autoPlay muted loop src={Parry} type="video/mov" />,
+    }]
   });
 
-  const changeMethod = (description, method) => {
-    setBattleMethod({
-      Description: description,
-      Video: <video autoPlay muted loop src={method} type="video/mov" />,
-    });
-  };
+  function toggleActive(index) {
+    setBattleMethod({...battleMethod, activeObject: battleMethod.methods[index]});
+  }
+
+  function toggleActiveStyles(index) {
+    if(battleMethod.methods[index] === battleMethod.activeObject){
+      return "gamesystembutton active";
+    } else{
+      return "gamesystembutton inactive";
+    }
+  }
+
   return (
     <>
       <div className="battlesystem">
@@ -45,34 +58,24 @@ const Battlesystem = () => {
           </div>
         </div>
         <div className="battlemethod">
-          <button
-            onClick={() =>
-              changeMethod(attack.methodDescription, attack.battleVideo)
-            }
-          >
-            攻擊
-          </button>
-          <button
-            onClick={() =>
-              changeMethod(guard.methodDescription, guard.battleVideo)
-            }
-          >
-            防禦
-          </button>
-          <button
-            onClick={() =>
-              changeMethod(parry.methodDescription, parry.battleVideo)
-            }
-          >
-            格檔
-          </button>
+          {battleMethod.methods.map((elements, index) => (
+            <button
+              key={index}
+              className={toggleActiveStyles(index)}
+              onClick={()=>{
+                toggleActive(index);
+              }}
+            >{battleMethod.methods[index].name}</button>
+          ))}
         </div>
         <div className="battlemethoddetail">
           <div className="battledescription">
-            <p>{battleMethod.Description}</p>
+            <div className="textbox">
+              <p>{battleMethod.activeObject.methodDescription}</p>
+            </div>
           </div>
           <div className="battlevideo">
-            {battleMethod.Video}
+            {battleMethod.activeObject.battleVideo}
           </div>
         </div>
       </div>
