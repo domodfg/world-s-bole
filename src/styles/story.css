@@ -65,7 +65,7 @@
   font-weight: 500;
 }
 
-.progress {
+.progress_custom {
   height: 0.65rem;
   min-width: 400px;
   max-width: 860px;
@@ -73,7 +73,7 @@
   border-radius: 10px 10px 0 0;
 }
 
-.progress-bar {
+.progress-bar_custom {
   background-color:rgb(225,142,45);
 }
 
