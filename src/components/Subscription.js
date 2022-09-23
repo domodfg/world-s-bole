@@ -1,16 +1,18 @@
 import React, { useRef, useState, useEffect } from 'react';
 import "../styles/subscription.css"
 
-// email: kaikaiday@hotmail.com
-// password: 1a23456678@
-// elasticemail: kaikaiday@hotmail.com
-// password: 1a23456678@
+// email = "wbsoftware_01@hotmail.com"
+// password = "1a23456678@"
+// elasticEmail = "wbsoftware_01@hotmail.com"
+// elasticPassword = "1a23456678@"
 
-// Your security token is 16c1bebd-ee7d-48ea-b5fe-84ea8658adc9 Please take note of this.
-// emailAPI: kaikaiday@hotmail.com
-// password: 982D2AAADC56FC7B3ECB896467E9CEDC630B
+// The service is temporary unavilable because the service provider cancel its free trial plan.
+
+// Username: wbsoftware_01@hotmail.com
+// Password: C21C4E64F1AB7400CFBA332C0E094BFADA8F
 // smtp.elasticemail.com
-// port:2525
+// 2525
+// Your security token is a123fd77-5910-4e29-8e54-1213b417109c Please take note of this.
 
 export const Subscription = () => {
   const [displayAlert, setDisplayAlert] = useState(false);
@@ -29,14 +31,14 @@ export const Subscription = () => {
       subs_btn.disabled = false
     } else {
       window.Email.send({
-        SecureToken: "16c1bebd-ee7d-48ea-b5fe-84ea8658adc9",
+        SecureToken : "a123fd77-5910-4e29-8e54-1213b417109c",
         To: input.value,
-        From: "kaikaiday@hotmail.com",
+        From: "wbsoftware_01@hotmail.com",
         Subject: "恭喜您! 已成功訂閱World's Bole電子報!",
         Body: "恭喜您! 已成功訂閱World's Bole電子報!",
         Attachments: [
           {
-            name: "leaflet.png",
+            name: "leaflet.webp",
             path: "https://i.ibb.co/PZYn7Kj/Leaflet.webp"
           }]
       }).then(
@@ -51,6 +53,7 @@ export const Subscription = () => {
     setTimeout(() => {
       setDisplayAlert(false)
       document.getElementsByClassName("subs-btn")[0].disabled = false
+      document.getElementsByClassName("email-addr")[0].classList.remove("error")
     }, 5000)
   }, [displayAlert]);
 
