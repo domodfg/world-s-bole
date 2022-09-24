@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar.js";
 import CustomInput from "./input";
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCount, setShopContent } from '../utils/shopSlicer'
@@ -11,11 +11,9 @@ import "../styles/checkOut.css";
 const CheckOut = () => {
   const [total, setTotal] = useState(0);
   const [shippingCost, setShippingCost] = useState(100);
-  // const [cartItems, setCartItems] = useState([]);
   const [editable, setEditable] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
   const { isAuthenticated } = useAuth0();
-  // const firstRun = useRef(true);
   const cartItems = useSelector(selectCount)
   const dispatch = useDispatch()
 
@@ -26,13 +24,6 @@ const CheckOut = () => {
     return accumulator + quantity * price;
   };
 
-  // useEffect(() => {
-  //   // const cartItems = JSON.parse(localStorage.getItem("projectStorage"));
-  //   if (count) {
-  //     dispatch(setShopContent(count));
-  //   }
-  // }, []);
-
   useEffect(() => {
     if (isAuthenticated) {
       setShippingCost(0);
@@ -41,11 +32,6 @@ const CheckOut = () => {
 
   useEffect(() => {
     setTotal(cartItems.reduce(add, 0));
-    // if (!firstRun.current) {
-    //   localStorage.setItem("projectStorage", JSON.stringify(cartItems));
-    // }
-    // firstRun.current = false;
-
     if (cartItems.length === 0) {
       setIsEmpty(true)
     } else {

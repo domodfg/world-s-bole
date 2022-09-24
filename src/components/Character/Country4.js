@@ -1,7 +1,7 @@
 import React from "react";
-import divider from "../images/divider.png";
-import close from "../images/gameinfo/close.png";
-import character4 from "../images/character/character4.png";
+import divider from "../../images/divider.png";
+import close from "../../images/gameinfo/close.png";
+import character4 from "../../images/character/character4.png";
 import { Character4, Character4Stat, Character4Slider } from "./Character4.js";
 
 const Timetitle = (props) => {

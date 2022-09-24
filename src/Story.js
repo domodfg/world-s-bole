@@ -1,5 +1,5 @@
 import "./styles/story.css";
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar/Navbar.js";
 import Footer from "./components/footer.js";
 import React, { useRef, useState, useCallback } from "react";
 import HTMLFlipBook from "react-pageflip";

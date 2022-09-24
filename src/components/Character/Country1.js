@@ -1,7 +1,7 @@
 import React from "react";
-import divider from "../images/divider.png";
-import close from "../images/gameinfo/close.png";
-import character1 from "../images/character/character1.png";
+import divider from "../../images/divider.png";
+import close from "../../images/gameinfo/close.png";
+import character1 from "../../images/character/character1.png";
 import { Character1, Character1Stat, Character1Slider } from "./Character1.js";
 
 const Cityofendtitle = (props) => {

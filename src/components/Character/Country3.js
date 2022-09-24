@@ -1,7 +1,7 @@
 import React from "react";
-import divider from "../images/divider.png";
-import close from "../images/gameinfo/close.png";
-import character3 from "../images/character/character3.png";
+import divider from "../../images/divider.png";
+import close from "../../images/gameinfo/close.png";
+import character3 from "../../images/character/character3.png";
 import { Character3, Character3Stat, Character3Slider } from "./Character3";
 
 const Roamtitle = (props) => {

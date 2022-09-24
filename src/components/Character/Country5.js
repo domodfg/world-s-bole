@@ -1,7 +1,7 @@
 import React from "react";
-import divider from "../images/divider.png";
-import close from "../images/gameinfo/close.png";
-import character5 from "../images/character/character5.png";
+import divider from "../../images/divider.png";
+import close from "../../images/gameinfo/close.png";
+import character5 from "../../images/character/character5.png";
 import { Character5, Character5Stat, Character5Slider } from "./Character5.js";
 
 const Moontitle = (props) => {

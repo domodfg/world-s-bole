@@ -1,7 +1,7 @@
 import React from "react";
-import divider from "../images/divider.png";
-import close from "../images/gameinfo/close.png";
-import character2 from "../images/character/character2.png";
+import divider from "../../images/divider.png";
+import close from "../../images/gameinfo/close.png";
+import character2 from "../../images/character/character2.png";
 import { Character2, Character2Stat, Character2Slider } from "./Character2.js";
 
 const Seraphinetitle = (props) => {

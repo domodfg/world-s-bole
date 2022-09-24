@@ -1,32 +1,34 @@
 import ProgressBar from "react-bootstrap/ProgressBar";
-import divider from "../images/divider.png";
+import divider from "../../images/divider.png";
 import Slider from "react-slick";
-import { SampleNextArrow, SamplePrevArrow } from "./News.js";
+import { SampleNextArrow, SamplePrevArrow } from "../News.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Character3 = () => {
+const Character4 = () => {
   return (
     <div>
       <div className="charactertitle">
-        <h2>狂野獵犬</h2>
-        <p>CV配音：小林沙苗</p>
+        <h2>元素魔女</h2>
+        <p>CV配音：東山奈央</p>
       </div>
-      <h3>圖夫</h3>
+      <h3>莎缇娜</h3>
       <div className="charDescription">
-        <p>外表看起來兇猛冷酷，但內心其實是非常小孩子氣的大叔？</p>
         <p>
-          因為生活的地方長期在森林裏頭，所以對外部世界很感興趣，好奇心旺盛的他，會被隊友當作是吉祥物。
+          莎緹娜是一位極具魔法天賦能力的少女，她的母親是人稱時之國的最高魔法天才皇帝：魔女梅杜莎！
         </p>
         <p>
-          擅長用利爪和尖牙粉碎敵人的咽喉！不過，對自己的隊友卻是出奇地溫和，因此是隻能幹的...忠犬？？
+          性格倔强，個性率直的她，很快就成為了一名聞名遐邇的魔女實習生，並且擅長使用各種燃燒魔法。
+        </p>
+        <p>
+          不過因為大家閨秀的生活習慣，養成了不愛說話和貪錢的小毛病，所以跟隊友的相處好像也並不和睦？
         </p>
       </div>
     </div>
   );
 };
 
-const Character3Stat = () => {
+const Character4Stat = () => {
   return (
     <div>
       <div className="divider">
@@ -37,34 +39,34 @@ const Character3Stat = () => {
       <div className="charStats">
         <div className="statsGrid">
           <p>力量</p>
-          <p>197</p>
+          <p>25</p>
           <p>耐久 </p>
-          <p>158</p>
+          <p>36</p>
           <p>敏捷 </p>
-          <p>126</p>
+          <p>97</p>
           <p>心靈</p>
-          <p>60</p>
+          <p>186</p>
           <p>知識 </p>
-          <p>15</p>
+          <p>174</p>
           <p>神性</p>
-          <p>?</p>
+          <p>36</p>
         </div>
         <div className="charTalent">
           <p className="text-left">武力值</p>
-          <ProgressBar variant="warning" now={90} />
+          <ProgressBar variant="warning" now={11} />
           <p className="text-left">魔力值</p>
-          <ProgressBar variant="primary" now={8} />
+          <ProgressBar variant="primary" now={89} />
           <p className="text-left">速度值</p>
-          <ProgressBar variant="info" now={56} />
+          <ProgressBar variant="info" now={36} />
           <p className="text-left">幸運值</p>
-          <ProgressBar variant="danger" now={30} />
+          <ProgressBar variant="danger" now={29} />
         </div>
       </div>
     </div>
   );
 };
 
-const Character3Slider = () => {
+const Character4Slider = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -76,10 +78,10 @@ const Character3Slider = () => {
   };
   return (
     <Slider {...settings} className="characterinfomobile">
-      <Character3 />
-      <Character3Stat />
+      <Character4 />
+      <Character4Stat />
     </Slider>
   );
 };
 
-export { Character3, Character3Stat, Character3Slider };
+export { Character4, Character4Stat, Character4Slider };

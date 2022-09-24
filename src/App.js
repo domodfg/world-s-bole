@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/App.css";
 import "./styles/footerpolicy.css";
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar/Navbar.js";
 import Gameinfo from "./components/Gameinfo.js";
 import Gameplay from "./components/Gameplay.js";
 import { News } from "./components/News.js";

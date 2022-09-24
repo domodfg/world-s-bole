@@ -1,7 +1,7 @@
 import ProgressBar from "react-bootstrap/ProgressBar";
-import divider from "../images/divider.png";
+import divider from "../../images/divider.png";
 import Slider from "react-slick";
-import { SampleNextArrow, SamplePrevArrow } from "./News.js";
+import { SampleNextArrow, SamplePrevArrow } from "../News.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar/Navbar.js";
 import "./styles/character.css";
 import cityofend from "./images/country/cityofend.jpg";
 import cityofendvid from "./images/country/cityofend.webm";
@@ -11,11 +11,11 @@ import timevid from "./images/country/time.webm";
 import moonislevid from "./images/country/moonisle.webm";
 import moonisle from "./images/country/moonisle.jpg";
 import React, { useState } from "react";
-import { Cityofendinfo, Cityofendtitle } from "./components/Country1.js";
-import { Seraphineinfo, Seraphinetitle } from "./components/Country2.js";
-import { Roaminfo, Roamtitle } from "./components/Country3.js";
-import { Timeinfo, Timetitle } from "./components/Country4.js";
-import { Mooninfo, Moontitle } from "./components/Country5.js";
+import { Cityofendinfo, Cityofendtitle } from "./components/Character/Country1.js";
+import { Seraphineinfo, Seraphinetitle } from "./components/Character/Country2.js";
+import { Roaminfo, Roamtitle } from "./components/Character/Country3.js";
+import { Timeinfo, Timetitle } from "./components/Character/Country4.js";
+import { Mooninfo, Moontitle } from "./components/Character/Country5.js";
 
 const Character = () => {
   const [displayInfo, setDisplayInfo] = useState({

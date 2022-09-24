@@ -3,12 +3,12 @@ import App from "./App.js";
 import Character from "./Character.js";
 import Gamesystem from "./Gamesystem.js";
 import Shop from "./Shop.js";
-import CheckOut from "./components/checkOut";
+import CheckOut from "./components/CheckOut.js";
 import Story from "./Story.js";
-import Usepolicy from "./components/Usepolicy.js";
-import Privacy from "./components/Privacy.js";
-import Cookiepolicy from "./components/Cookiepolicy.js";
-import Contactus from "./components/Contactus.js";
+import Usepolicy from "./components/FooterPolicy/Usepolicy.js";
+import Privacy from "./components/FooterPolicy/Privacy.js";
+import Cookiepolicy from "./components/FooterPolicy/Cookiepolicy.js";
+import Contactus from "./components/FooterPolicy/Contactus.js";
 import ScrollToTop from "./components/Scrolltotop.js";
 
 const RouteSwitch = () => {
