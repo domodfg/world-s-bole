@@ -20,8 +20,8 @@ function Story() {
         <Navbar />
       </div>
       <div className="story">
-        <div className="progress">
-          <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ width: `${percent}%` }}>
+        <div className="progress progress_custom">
+          <div className="progress-bar progress-bar-striped progress-bar-animated progress-bar_custom" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ width: `${percent}%` }}>
           </div>
         </div>
         <HTMLFlipBook
