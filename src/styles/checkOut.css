@@ -220,29 +220,15 @@ input[type="number"] {
     color: white;
   }
 
-  .payment-btn-container {
-    margin: auto;
-  }
-
-  .payment-btn {
-    width: 100%;
-    border: none;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    background-color: rgba(6, 107, 147, 0.267);
-    color: white;
-  }
-
   .empty-shopping-cart {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50%;
-    gap: 20px;
-    font-size: 25px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50%;
+      gap: 20px;
+      font-size: 25px;
   }
 
   .quantity-details {

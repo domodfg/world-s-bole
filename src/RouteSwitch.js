@@ -3,7 +3,8 @@ import App from "./App.js";
 import Character from "./Character.js";
 import Gamesystem from "./Gamesystem.js";
 import Shop from "./Shop.js";
-import CheckOut from "./components/CheckOut.js";
+import CheckOut from "./components/CheckOut";
+import SuccessPage from "./components/SuccessPage";
 import Story from "./Story.js";
 import Usepolicy from "./components/FooterPolicy/Usepolicy.js";
 import Privacy from "./components/FooterPolicy/Privacy.js";
@@ -21,6 +22,7 @@ const RouteSwitch = () => {
         <Route path="/gamesystem" element={<Gamesystem />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/check-out" element={<CheckOut />} />
+        <Route path="/success" element={<SuccessPage />} />
         <Route path="/story" element={<Story />} />
         <Route path="/usepolicy" element={<Usepolicy />} />
         <Route path="/privacy" element={<Privacy />} />
