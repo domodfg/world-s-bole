@@ -18,7 +18,7 @@ const PaymentForm = ({ total, shippingCost }) => {
     }
 
     return (
-        <form onSubmit={onSubmitHandler}>
+        <form className="paymentForm" onSubmit={onSubmitHandler}>
             <div className="row">
                 <div className='col-md-6'>
                     <label for="recipient">收件人姓名</label>
