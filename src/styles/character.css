@@ -14,7 +14,7 @@
   border-left: 1px black ridge;
   box-sizing: border-box;
   opacity: 0.5;
-  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease-in-out;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-in-out;
 }
 
 .country:hover {
@@ -61,7 +61,6 @@
   z-index: -1;
 }
 
-.country.active .countryBG,
 .country video {
   display: none;
 }
@@ -90,7 +89,7 @@
 }
 
 .country .countryinfo p {
-  font-size: 1.2rem;
+  font-size: calc(0.8rem + 0.4vw);
   padding: 0;
 }
 
@@ -127,15 +126,12 @@
   width: 40%;
 }
 
-.charimage2{
-  width: 45%;
-  margin-right: -5vw;
-  margin-bottom: 5vw;
+.charimage2 {
+  margin-right: -1vw;
 }
 
-.charimage4{
+.charimage4 {
   width: 45%;
-  margin-right: -5vw;
 }
 
 .charPortrait {
@@ -146,19 +142,19 @@
   transform: scale(3) translateX(-2%);
 }
 
-.charPortrait2{
-  transform: scale(3) translateX(10%) translateY(17%);
+.charPortrait2 {
+  transform: scale(3) translateX(-4%) translateY(-20%);
 }
 
-.charPortrait3{
+.charPortrait3 {
   transform: scale(3) translateX(10%) translateY(-13%);
 }
 
-.charPortrait4{
+.charPortrait4 {
   transform: scale(2.5) translateX(-4%) translateY(15%);
 }
 
-.charPortrait5{
+.charPortrait5 {
   transform: scale(3) translateX(-9%) translateY(-25%);
 }
 
@@ -240,21 +236,47 @@
   min-width: 0px !important;
 }
 
-@media (max-width: 1000px) {
-  .country div p {
-    font-size: 0.7rem;
-  }
+.characterinfomobile {
+  display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .characterpage {
+    flex-direction: column;
+  }
+  .portraitContainer {
+    width: 200px;
+  }
+  .charimage {
+    width: 350px;
+    margin-bottom: -1rem;
+  }
+  .charimage1,
+  .charimage2,
+  .charimage5 {
+    width: 300px;
+  }
+  .charimage3 {
+    width: 250px;
+  }
+  .characterinfomobile {
+    display: block;
+  }
+  .characterinfoDesktop {
+    display: none;
+  }
+  .country .countryinfo {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 3% 10%;
+  }
+
   .country .countryinfo p {
-    font-size: 0.7rem;
+    font-size: calc(0.7rem + 0.4vw);
   }
   .country .countryinfo h2 {
-    font-size: 1.2rem;
-  }
-  .country.active .countryBG {
-    display: block;
+    font-size: 1.15rem;
   }
   .country.active video {
     display: none;

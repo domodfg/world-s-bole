@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import LoginButton from "./login.js";
 import LogoutButton from "./logout.js";
 import { useAuth0 } from "@auth0/auth0-react";
-import shopping_cart from "../images/navbar/shopping-cart.png";
-import diamond from "../images/navbar/diamond.png";
-import usericon from "../images/navbar/user.png";
+import shopping_cart from "../../images/navbar/shopping-cart.png";
+import diamond from "../../images/navbar/diamond.png";
+import usericon from "../../images/navbar/user.png";
 import Burger from "./burgermenu.js";
-import "../styles/burgermenu.css";
-import "../styles/navbarandlogo.css";
+import "../../styles/burgermenu.css";
+import "../../styles/navbarandlogo.css";
 
 const Navbar = () => {
   const { user, isAuthenticated } = useAuth0();

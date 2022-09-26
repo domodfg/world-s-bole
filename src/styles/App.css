@@ -40,7 +40,7 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-.divider {
+.divider, .awards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ h2 {
   height: 50%;
 }
 
-.dividermirror {
+.dividermirror, .awardIconMirror{
   transform: scaleX(-1);
 }
 

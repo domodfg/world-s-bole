@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar/Navbar.js";
 import Battlesystem from "./components/battleSystem.js";
 import Footer from "./components/footer.js";
 import "./styles/gamesystem.css";
@@ -8,7 +8,7 @@ import heading from "./images/gameplayheader.webm";
 const GamePlay = () => {
   return (
     <div className="Gamesystem">
-      <div className="main">
+      <div className="navContainer">
         <Navbar />
       </div>
       <div className="Gamesystemheading">

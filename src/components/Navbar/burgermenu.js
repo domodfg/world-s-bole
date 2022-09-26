@@ -1,8 +1,8 @@
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import React from "react";
-import diamond from "../images/navbar/diamond.png";
-import shopping_cart from "../images/navbar/shopping-cart.png";
+import diamond from "../../images/navbar/diamond.png";
+import shopping_cart from "../../images/navbar/shopping-cart.png";
 
 class Burger extends React.Component {
   showSettings(event) {
