@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SuccessPage = (props) => {
+    const navigate = useNavigate();
 
     return (
         <div className="container">
@@ -13,7 +15,7 @@ const SuccessPage = (props) => {
                         <div className="content">
                             <h1>成功付款!</h1>
                             <p>我們會盡快處理你的訂單。</p>
-                            <a href="#">返回首頁</a>
+                            <button type="button" className="btn btn-primary" onClick={() => navigate("/")}>返回首頁</button>
                         </div>
                     </div>
                 </div>
