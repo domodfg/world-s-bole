@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import CustomInput from "./input";
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCount, setShopContent } from '../utils/shopSlicer'
+import PaymentForm from "./PaymentForm"
 import "../styles/checkOut.css";
 
 
@@ -228,10 +229,8 @@ const CheckOut = () => {
                   ${total + shippingCost}
                 </div>
               </div>
-              <div className="payment-btn-container">
-                <button className="payment-btn">
-                  付款
-                </button>
+              <div>
+                <PaymentForm total={total} shippingCost={shippingCost}/>
               </div>
             </div>
           }

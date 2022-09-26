@@ -103,21 +103,6 @@ input[type=number] {
   justify-content: space-between;
 }
 
-.payment-btn {
-    width: 100%;
-    border: none;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    background-color: rgba(6, 107, 147, 0.267);
-    color: white;
-    transition: background-color linear 0.3s;
-}
-
-.payment-btn:hover {
-    background: rgba(154, 240, 255, 0.558);
-}
-
 .remove-btn {
     width: 100%;
     border: none;
@@ -243,20 +228,6 @@ input[type=number] {
         font-size: 1rem;
         border-radius: 10px;
         background-color: rgba(210, 40, 17, 0.267);
-        color: white;
-    }
-
-    .payment-btn-container {
-        margin: auto;
-    }
-
-    .payment-btn {
-        width: 100%;
-        border: none;
-        padding: 10px 30px;
-        font-size: 1.2rem;
-        border-radius: 10px;
-        background-color: rgba(6, 107, 147, 0.267);
         color: white;
     }
 
