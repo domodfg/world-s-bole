@@ -26,7 +26,7 @@ const PaymentForm = ({ total, shippingCost }) => {
                 </div>
                 <div className='col-md-6'>
                     <label for="phone">聯絡電話</label>
-                    <input type="text" className="form-control" id="phone" placeholder="聯絡電話" required/>
+                    <input type="number" className="form-control" id="phone" placeholder="聯絡電話" required/>
                 </div>
             </div>
             <div className="form-row">
@@ -57,11 +57,11 @@ const PaymentForm = ({ total, shippingCost }) => {
                 <div className='row'>
                     <div className="col-md-6">
                         <label for="expire">到期日</label>
-                        <input type="text" className="form-control" id="expire" placeholder="到期日" required />
+                        <input type="date" className="form-control" id="expire" placeholder="到期日" required />
                     </div>
                     <div className="col-md-6">
                         <label for="csv">CSV</label>
-                        <input type="text" className="form-control" id="csv" placeholder="CSV" required />
+                        <input type="number" className="form-control" id="csv" placeholder="CSV" required />
                     </div>
                 </div>
 
