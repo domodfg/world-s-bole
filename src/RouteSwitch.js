@@ -3,7 +3,7 @@ import App from "./App.js";
 import Character from "./Character.js";
 import Gamesystem from "./Gamesystem.js";
 import Shop from "./Shop.js";
-import CheckOut from "./components/checkOut";
+import CheckOut from "./components/CheckOut";
 import SuccessPage from "./components/SuccessPage";
 import Story from "./Story.js";
 import Usepolicy from "./components/FooterPolicy/Usepolicy.js";
