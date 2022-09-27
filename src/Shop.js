@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar.js";
 import close from "./images/gameinfo/close.png";
 import Footer from "./components/footer.js";
+import uniqid from "uniqid";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCount, setShopContent } from "./utils/shopSlicer";
 import "./styles/shop.css";
@@ -43,7 +44,7 @@ const Shop = () => {
       <div className="gamecopy">
         {gameProduct.map((product) => {
           return (
-            <div className="gameProductInfo">
+            <div className="gameProductInfo" key={uniqid()}>
               <img src={[product.img]} alt="pc game case" />
               <div>
                 <h2>{product.name}</h2>

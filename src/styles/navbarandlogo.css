@@ -164,7 +164,7 @@ a:hover,
   background: -webkit-linear-gradient(top, #fff3b5 30%, #f4e678 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: min(1.8rem, 4.5vw);
+  font-size: clamp(1rem, 1.8vw, 2rem);
 }
 
 @media (max-width: 700px) {
@@ -187,18 +187,21 @@ a:hover,
     padding-right: 1.5rem;
   }
 
-  .inactiveWhenMobile,
-  .linkcard.inactiveWhenMobile {
-    display: none;
-  }
   .logo {
     font-size: 4.5rem;
     margin-top: 20vh;
   }
-  .awardsList{
+  .awardsList {
     flex-direction: column;
   }
-  .awards{
+  .awards {
     width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .inactiveWhenMobile,
+  .linkcard.inactiveWhenMobile {
+    display: none;
   }
 }

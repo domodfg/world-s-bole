@@ -1,0 +1,13 @@
+.receipt ul {
+  list-style: none;
+}
+
+.receipt {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.card {
+  min-width: 40%;
+}

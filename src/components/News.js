@@ -7,7 +7,10 @@ import dragonroar from "../images/news/dragonroar.jpg";
 import newcompany from "../images/news/newcompany.webm";
 import phoneix from "../images/news/Phoneix.webm";
 import spider from "../images/news/spider.webm";
+import spiderjpg from "../images/news/spider.jpg"
 import gameNews from "../images/news/news.jpeg";
+import gameNews2 from "../images/news/news2.jpeg"
+import gameNews3 from "../images/news/news3.jpeg"
 import "../styles/news.css";
 
 function SampleNextArrow(props) {
@@ -54,6 +57,12 @@ const News = () => {
           <img src={gameNews} alt="link to world's bole 2's page" />
         </div>
         <div className="newsCard">
+          <img src={gameNews2} alt="world's bole news" />
+        </div>
+        <div className="newsCard">
+          <img src={gameNews3} alt="world's bole news" />
+        </div>
+        <div className="newsCard">
           <img src={dragonroar} alt="new dungeon release" />
         </div>
         <div className="newsCard">
@@ -67,7 +76,7 @@ const News = () => {
           </video>
         </div>
         <div className="newsCard">
-          <video className="spider" autoPlay muted loop>
+          <video poster={spiderjpg} className="spider" autoPlay muted loop>
             <source src={spider} type="video/webm" />
           </video>
         </div>
