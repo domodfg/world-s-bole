@@ -29,7 +29,7 @@ const CheckOut = () => {
     if (isAuthenticated) {
       setShippingCost(0);
     }
-  },[isAuthenticated]);
+  }, [isAuthenticated]);
 
   useEffect(() => {
     setTotal(cartItems.reduce(add, 0));
@@ -164,10 +164,10 @@ const CheckOut = () => {
 
                         <div onClick={editClick} onKeyDown={handleKeyDown}>
                           {
-                            editable ? <CustomInput id={id} displayValue={quantity} handleChange={handleChange} handleBlur={handleBlur}/> : quantity
+                            editable ? <CustomInput id={id} displayValue={quantity} handleChange={handleChange} handleBlur={handleBlur} /> : quantity
                           }
                         </div>
-                        
+
                         <button id={id} onClick={increaseClick} className="decrease-btn">
                           &#8593;
                         </button>
@@ -193,15 +193,15 @@ const CheckOut = () => {
                 <div className="space-between-container">
                   <div>
                     小計:
-                  </div> 
-                  <div> 
-                    ${total} 
+                  </div>
+                  <div>
+                    ${total}
                   </div>
                 </div>
                 <div className="space-between-container">
                   <div>
                     運費:
-                  </div> 
+                  </div>
                   <div>
                     ${shippingCost}
                   </div>
@@ -216,7 +216,7 @@ const CheckOut = () => {
                 </div>
               </div>
               <div>
-                <PaymentForm total={total} shippingCost={shippingCost}/>
+                <PaymentForm total={total} shippingCost={shippingCost} />
               </div>
             </div>
           }
