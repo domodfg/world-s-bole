@@ -80,6 +80,8 @@ input[type="number"] {
   flex-grow: 20;
   padding: 1%;
   gap: 20px;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .space-between-container {
@@ -190,6 +192,7 @@ input[type="number"] {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
   }
 
   .increase-btn {
@@ -221,14 +224,14 @@ input[type="number"] {
   }
 
   .empty-shopping-cart {
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50%;
-      gap: 20px;
-      font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    gap: 20px;
+    font-size: 25px;
   }
 
   .quantity-details {
