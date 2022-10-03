@@ -18,7 +18,7 @@
   max-width: 1200px;
 }
 
-.gamecopy .gameProductInfo{
+.gamecopy .gameProductInfo {
   font-size: clamp(0.6rem, 1.3vw, 1.3rem);
   width: 70%;
   display: flex;
@@ -33,7 +33,8 @@
   box-sizing: content-box;
 }
 
-.gamecopy h2{
+.gamecopy h2,
+.gameItems h2 {
   font-size: clamp(1rem, 2.5vw, 2rem);
   margin: 0;
 }
@@ -59,11 +60,13 @@
   font-weight: 700;
 }
 
-.gameProductInfo p {
+.gameProductInfo p,
+.gameItemsInfo p {
   margin: 0;
 }
 
-.gamecopy button {
+.gamecopy button,
+.gameItems button {
   align-self: flex-start;
   border: none;
   padding: 5% 10%;
@@ -74,10 +77,106 @@
   transition: background-color ease-in-out 0.3s;
 }
 
-.gamecopy button:hover {
+.gamecopy button:hover,
+.gameItems button:hover {
   background: rgba(0, 132, 184, 0.267);
 }
 
+.gameItems {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2vw;
+  padding: 3rem 0;
+  margin: 0;
+}
+
+.gameItemsInfo,
+.gameItemsDes,
+.gameItemsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: clamp(0.6rem, 1.3vw, 1.3rem);
+  gap: 0.2vw;
+  border: 1px solid rgb(208, 246, 253);
+  border-radius: 1vw;
+}
+
+.gameItemsDes {
+  flex: 1;
+  padding: 5% 8%;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.URgameItem,
+.SSRgameItem,
+.SRgameItem,
+.RgameItem,
+.NgameItem {
+  width: 100%;
+  background: linear-gradient(
+    217deg,
+    rgba(254, 255, 220, 0.9),
+    rgba(197, 255, 247, 0.4) 70.71%
+  );
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.URgameItem {
+  background: linear-gradient(
+    217deg,
+    rgb(253, 211, 255),
+    rgb(255, 74, 222) 70.71%
+  );
+}
+
+.SSRgameItem {
+  background: linear-gradient(
+    217deg,
+    rgba(254, 255, 220, 0.9),
+    rgb(162, 130, 0) 70.71%
+  );
+}
+
+.SRgameItem {
+  background: linear-gradient(
+    217deg,
+    rgba(0, 203, 88),
+    rgba(217, 253, 220, 0.709) 70.71%
+  );
+}
+
+.NgameItem {
+  background: linear-gradient(
+    217deg,
+    rgba(255, 185, 116, 0.9),
+    rgb(105, 56, 0) 70.71%
+  );
+}
+
+.gameItemsInfo button {
+  padding: 4% 7%;
+  align-self: center;
+}
+.gameItemsInfo img {
+  width: 100%;
+}
+.ilevel {
+  font-style: italic;
+}
+.gameItemsInfo h2 {
+  padding-bottom: 1%;
+  border-bottom: 1px groove #a5aa1f;
+  width: 85%;
+  text-align: center;
+}
 .buyingpopup {
   position: fixed;
   display: flex;
@@ -104,4 +203,10 @@
 
 .buyingpopup p {
   margin: 0;
+}
+
+@media (max-width: 700px) {
+  .gameItems {
+    width: 95%;
+  }
 }

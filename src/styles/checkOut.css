@@ -29,7 +29,7 @@ input[type="number"] {
 .checkout-container {
   color: white;
   display: flex;
-  width: 65%;
+  width: 63%;
   margin: 7% 5%;
   gap: 20px;
 }
@@ -46,6 +46,7 @@ input[type="number"] {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  border-bottom: 1px rgb(117, 117, 117) solid;
 }
 
 .button-container {
@@ -68,6 +69,11 @@ input[type="number"] {
 }
 .img-details {
   border-radius: 5px;
+  width: 80%;
+}
+
+.img-container{
+  width: 15%;
 }
 
 .name-details {
@@ -182,8 +188,6 @@ input[type="number"] {
   }
   .img-details {
     width: 100%;
-    min-width: 130px;
-    height: 170px;
   }
   .paymentForm {
     font-size: 1rem;
@@ -197,43 +201,31 @@ input[type="number"] {
 }
 
 @media (max-width: 600px) {
-  .left-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .product-container {
-    flex-direction: column;
-    gap: 10px;
+  .product-container{
+    gap: 0;
   }
   .details-container {
     width: 95%;
     font-size: 0.8rem;
   }
-  .img-container {
-    margin: 1% 5%;
-    width: 95%;
-    text-align: center;
-  }
   .img-details {
-    width: 130px;
-    height: 170px;
+    width: 100%;
   }
   .name-details {
     text-align: center;
   }
-
   .increase-btn,
   .decrease-btn,
   .remove-btn {
-    padding: 5px 10px;
+    padding: 1px 3px;
     font-size: 1rem;
     border-radius: 10px;
     background-color: rgba(134, 136, 137, 0.267);
   }
 
   .remove-btn {
-    width: 80px;
-    padding: 5px 10px;
+    width: 70px;
+    padding: 3px 7px;
     background-color: rgba(210, 40, 17, 0.267);
   }
 

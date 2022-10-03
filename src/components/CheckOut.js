@@ -150,7 +150,7 @@ const CheckOut = () => {
                   <div className="product-container">
                     <div className="img-container">
                       {
-                        <img className="img-details" src={img} width="160px" height="200px" alt="product" />
+                        <img className="img-details" src={img} alt="product" />
                       }
                     </div>
                     <div className="details-container">
