@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.ffc8e531.css",
-    "main.js": "/world-s-bole/static/js/main.b9e90833.js",
+    "main.css": "/world-s-bole/static/css/main.829b243e.css",
+    "main.js": "/world-s-bole/static/js/main.5747d18e.js",
     "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
     "static/media/moonisle.webm": "/world-s-bole/static/media/moonisle.ea3076c3cf3fad63bb00.webm",
@@ -9,6 +9,10 @@
     "static/media/main.webm": "/world-s-bole/static/media/main.3d622f683bbdf5eecd48.webm",
     "static/media/main.jpg": "/world-s-bole/static/media/main.ead27882adaf3cf41fc7.jpg",
     "static/media/mapframe.jpg": "/world-s-bole/static/media/mapframe.070adb379d3ab3c67397.jpg",
+    "static/media/news6.png": "/world-s-bole/static/media/news6.cd3e46e79efeba9391a9.png",
+    "static/media/news7.png": "/world-s-bole/static/media/news7.0235487affaebb5ff054.png",
+    "static/media/news5.png": "/world-s-bole/static/media/news5.e422c1519f188de91de7.png",
+    "static/media/news4.png": "/world-s-bole/static/media/news4.1207dcb7f99a05d41af3.png",
     "static/media/guard.mov": "/world-s-bole/static/media/guard.7ec7b585fb59f31ff873.mov",
     "static/media/reaper.jpg": "/world-s-bole/static/media/reaper.670d0539c5fb0ad5f868.jpg",
     "static/media/news.jpeg": "/world-s-bole/static/media/news.444277a6ce416097a820.jpeg",
@@ -17,7 +21,6 @@
     "static/media/attack.mov": "/world-s-bole/static/media/attack.4fc58d90432e5255197e.mov",
     "static/media/gameplayheader.webm": "/world-s-bole/static/media/gameplayheader.45cb30aea71d88782d0c.webm",
     "static/media/character5.png": "/world-s-bole/static/media/character5.e234040aeb3641d4df0c.png",
-    "static/media/newcompany.webm": "/world-s-bole/static/media/newcompany.d712b234707b9e01bfd4.webm",
     "static/media/news2.jpeg": "/world-s-bole/static/media/news2.17f95e272e6f1c3932a1.jpeg",
     "static/media/field.jpeg": "/world-s-bole/static/media/field.3d7e04ef75be837b85ad.jpeg",
     "static/media/seraphine.webm": "/world-s-bole/static/media/seraphine.88705e4cd9663bb5d796.webm",
@@ -27,10 +30,8 @@
     "static/media/city.jpeg": "/world-s-bole/static/media/city.d97efdcd376aca4000fd.jpeg",
     "static/media/area.jpeg": "/world-s-bole/static/media/area.f42c34a4a20fe5f33968.jpeg",
     "static/media/map.jpeg": "/world-s-bole/static/media/map.72c74dc3cdcc9a74e14e.jpeg",
-    "static/media/Phoneix.webm": "/world-s-bole/static/media/Phoneix.07a2f5eeaa1f18af177b.webm",
     "static/media/Leaflet.webp": "/world-s-bole/static/media/Leaflet.aeb1a5cf0f43b55f319a.webp",
     "static/media/ps5gamecase.jpeg": "/world-s-bole/static/media/ps5gamecase.c06e5b96d24481374f58.jpeg",
-    "static/media/spider.webm": "/world-s-bole/static/media/spider.0c3b0fb47a130baeec69.webm",
     "static/media/cityofend.webm": "/world-s-bole/static/media/cityofend.c5bd885ea0a0f3097274.webm",
     "static/media/news3.jpeg": "/world-s-bole/static/media/news3.910c04892dbf3fa619b2.jpeg",
     "static/media/pcgamecase.jpeg": "/world-s-bole/static/media/pcgamecase.375794062db940c5c2fb.jpeg",
@@ -55,7 +56,6 @@
     "static/media/gameinfo3.jpg": "/world-s-bole/static/media/gameinfo3.51aa5406e9b064253fed.jpg",
     "static/media/gameinfo2.jpg": "/world-s-bole/static/media/gameinfo2.7240f5d3add5eb3dbe92.jpg",
     "static/media/bookcover.jpg": "/world-s-bole/static/media/bookcover.c1ef33a405a90d08d532.jpg",
-    "static/media/dragonroar.jpg": "/world-s-bole/static/media/dragonroar.15c02efd9eed68f91c6a.jpg",
     "static/media/item12.png": "/world-s-bole/static/media/item12.0520904d7bb69f592107.png",
     "static/media/goldborder.png": "/world-s-bole/static/media/goldborder.99704147f0834e032568.png",
     "static/media/item10.png": "/world-s-bole/static/media/item10.d78553bcf0a34f181240.png",
@@ -66,7 +66,6 @@
     "static/media/item7.png": "/world-s-bole/static/media/item7.6e4e425e0de1cecc2889.png",
     "static/media/item3.png": "/world-s-bole/static/media/item3.45a24594eaa3c4679b79.png",
     "static/media/item4.png": "/world-s-bole/static/media/item4.cddeae8696d1806a14b8.png",
-    "static/media/spider.jpg": "/world-s-bole/static/media/spider.7e906bb460e9b55f4f43.jpg",
     "static/media/leavebackground.png": "/world-s-bole/static/media/leavebackground.bf2eb035e0b87a78c784.png",
     "static/media/item1.png": "/world-s-bole/static/media/item1.88f6349a2a4f78d783df.png",
     "static/media/item5.png": "/world-s-bole/static/media/item5.2fb40d283ae1d0496e5c.png",
@@ -83,11 +82,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.ffc8e531.css.map": "/world-s-bole/static/css/main.ffc8e531.css.map",
-    "main.b9e90833.js.map": "/world-s-bole/static/js/main.b9e90833.js.map"
+    "main.829b243e.css.map": "/world-s-bole/static/css/main.829b243e.css.map",
+    "main.5747d18e.js.map": "/world-s-bole/static/js/main.5747d18e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffc8e531.css",
-    "static/js/main.b9e90833.js"
+    "static/css/main.829b243e.css",
+    "static/js/main.5747d18e.js"
   ]
 }
