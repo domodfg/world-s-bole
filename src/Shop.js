@@ -28,6 +28,7 @@ const Shop = () => {
         return cartItem;
       });
     } else {
+      product.quantity = 1;
       cartItemCopy.push(product);
     }
     dispatch(setShopContent(cartItemCopy));
@@ -54,7 +55,12 @@ const Shop = () => {
                 <p>
                   現價：<span className="price">HKD${product.price}</span>
                 </p>
-                <button onClick={() => addToCart(product)}>加入購物車</button>
+                <button
+                  className="addToCart"
+                  onClick={() => addToCart(product)}
+                >
+                  加入購物車
+                </button>
               </div>
             </div>
           );
@@ -93,7 +99,9 @@ const Shop = () => {
               <div className="gameItemsDes">
                 <p>{item.description}</p>
                 <p className="price">HKD${item.price}</p>
-                <button onClick={() => addToCart(item)}>加入購物車</button>
+                <button className="addToCart" onClick={() => addToCart(item)}>
+                  加入購物車
+                </button>
               </div>
             </li>
           );

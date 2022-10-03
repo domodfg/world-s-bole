@@ -62,7 +62,7 @@ a:hover,
     rgba(0, 255, 237, 0.1) 70.71%
   );
   height: 60px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navContainer {
