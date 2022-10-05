@@ -114,6 +114,11 @@
   width: 100%;
 }
 
+.sortButton {
+  width: 70%;
+  text-align: end;
+}
+
 .URgameItem,
 .SSRgameItem,
 .SRgameItem,
@@ -213,5 +218,8 @@
   }
   .gamecopy .gameProductInfo {
     width: 85%;
+  }
+  .sortButton{
+    width: 95%;
   }
 }

@@ -36,7 +36,7 @@ const gameItem = [
     price: 35,
     description: "附加生命吸取的長劍，為國界山附近的沼澤地所發現！",
     level: 45,
-    rarity: "★★★★★✩",
+    rarity: 5,
   },
   {
     id: "item2",
@@ -45,7 +45,7 @@ const gameItem = [
     price: 76,
     description: "一把稀有度極高的良弓，只適用於角色：奧蘭多·奇亞娜！",
     level: 36,
-    rarity: "★★★★★✩",
+    rarity: 5,
   },
   {
     id: "item3",
@@ -55,7 +55,7 @@ const gameItem = [
     description:
       "時之國魔法師的黑暗聖經！傳說是魔君七宗罪將領：傲慢死後留下的秘籍？",
     level: 48,
-    rarity: "★★★★✩✩",
+    rarity: 4,
   },
   {
     id: "item4",
@@ -64,7 +64,7 @@ const gameItem = [
     price: 42,
     description: "七大罪將領：暴食所使用的兇狠利器！只適用於獸人族獵人和刺客。",
     level: 38,
-    rarity: "★★★✩✩✩",
+    rarity: 3,
   },
   {
     id: "item5",
@@ -73,7 +73,7 @@ const gameItem = [
     price: 36,
     description: "相傳為出沒在波斯灣附近的海盜所用，后被新月國加以改造",
     level: 34,
-    rarity: "★★★✩✩✩",
+    rarity: 3,
   },
   {
     id: "item6",
@@ -82,7 +82,7 @@ const gameItem = [
     price: 60,
     description: "蓬瀛國的忍者必備！",
     level: 44,
-    rarity: "★★✩✩✩✩",
+    rarity: 2,
   },
   {
     id: "item7",
@@ -91,7 +91,7 @@ const gameItem = [
     price: 80,
     description: "打開B站次元門的魔法師所擁有！",
     level: 54,
-    rarity: "★★★★★✩",
+    rarity: 5,
   },
   {
     id: "item8",
@@ -100,7 +100,7 @@ const gameItem = [
     price: 75,
     description: "大哥煉獄杏壽郎臨死前留下的刀刃（只適用於鬼滅聯動角色）！",
     level: 60,
-    rarity: "★★★★★✩",
+    rarity: 5,
   },
   {
     id: "item9",
@@ -109,7 +109,7 @@ const gameItem = [
     price: 95,
     description: "涅比雅女神專用的弓矢，據說蘊含神力加成的元素。",
     level: 55,
-    rarity: "★★★★★★",
+    rarity: 6,
   },
   {
     id: "item10",
@@ -118,7 +118,7 @@ const gameItem = [
     price: 88,
     description: "涅比雅化為女神之時曾經戴過的頭飾，也是雅典娜神贈給之物",
     level: 65,
-    rarity: "★★★★★★",
+    rarity: 6,
   },
   {
     id: "item11",
@@ -127,7 +127,7 @@ const gameItem = [
     price: 88,
     description: "魔君奧古斯曾經使用過的寶刀，附有惡魔路西法之力！",
     level: 70,
-    rarity: "★★★★★✩",
+    rarity: 5,
   },
   {
     id: "item12",
@@ -136,7 +136,7 @@ const gameItem = [
     price: 50,
     description: "據說是原神可莉和安柏炸彈公仔的混合體？（僅限原神聯動角色)",
     level: 49,
-    rarity: "★★★✩✩✩",
+    rarity: 3,
   },
 ];
 

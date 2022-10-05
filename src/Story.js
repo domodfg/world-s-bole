@@ -9,9 +9,10 @@ function Story() {
   const [percent, setPercent] = useState(0)
 
   const onFlip = useCallback((e) => {
-    let totalPage = book.current.pageFlip().getPageCount()
-    e.data === 0 ? setPercent(0) : setPercent((e.data + 1) / totalPage * 100)
-    
+    if(book.current) {
+      let totalPage = book.current.pageFlip().getPageCount()
+      e.data === 0 ? setPercent(0) : setPercent((e.data + 1) / totalPage * 100)
+    }
   }, []);
 
   return (
