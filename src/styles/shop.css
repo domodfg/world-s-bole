@@ -3,48 +3,90 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
-.gamecopy {
-  margin-top: calc(3rem + 60px);
+.shopDivider {
+  font-size: 1.7rem;
+  border-bottom: 1px rgb(117, 117, 117) solid;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.shopDivider h2 {
+  font-size: 1.7rem;
+}
+
+.withSort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopFirstDivider {
+  margin-top: calc(1.5rem + 60px);
   margin-bottom: 3rem;
+}
+
+.shopwrapper {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.shopNav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 500px;
+  font-size: 1.2rem;
+  padding: 3% 5%;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shopHome {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  width: 100%;
-  max-width: 1200px;
+  padding-left: 3rem;
+}
+
+.gamecopy {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
 }
 
 .gamecopy .gameProductInfo {
-  font-size: clamp(0.7rem, 1.3vw, 1.3rem);
-  width: 70%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: min(4rem, 5vw);
+  padding: 3% 5%;
   border: 5px solid;
   border-image: url(../images/gameplaygoldenborder.png);
   border-image-slice: 20%;
   border-image-width: 8% 8%;
-  padding: 5%;
-  box-sizing: content-box;
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(206, 192, 0, 0.4) 70.71%
+    ),
+    url(../images/frame_flower_mandal_element_generated.png);
 }
 
 .gamecopy h2,
 .gameItems h2 {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
   margin: 0;
 }
 
 .gameProductInfo div {
-  align-self: stretch;
+  padding: 0 0 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   white-space: nowrap;
+  gap: 1rem;
 }
 
 .gameProductInfo img {
@@ -56,7 +98,7 @@
 .gameProductInfo h3,
 .price {
   margin: 0;
-  font-size: clamp(0.8rem, 1.6vw, 1.7rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.4rem);
   font-weight: 700;
 }
 
@@ -69,7 +111,7 @@
   align-self: flex-start;
   border: none;
   padding: 5% 10%;
-  font-size: clamp(0.8rem, 1.4vw, 1.7rem);
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
   border-radius: 10px;
   background-color: rgba(154, 240, 255, 0.558);
   color: white;
@@ -81,12 +123,11 @@
 }
 
 .gameItems {
-  width: 70%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2vw;
-  padding: 3rem 0;
   margin: 0;
+  padding: 3rem 0;
 }
 
 .gameItemsInfo {
@@ -100,7 +141,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
   gap: 0.2vw;
   border: 1px solid rgb(208, 246, 253);
   border-radius: 1vw;
@@ -115,7 +155,6 @@
 }
 
 .sortButton {
-  width: 70%;
   text-align: end;
 }
 
@@ -172,7 +211,7 @@
   align-self: center;
 }
 .gameItemsInfo img {
-  width: 100%;
+  width: 60%;
 }
 .ilevel {
   font-style: italic;
@@ -193,7 +232,6 @@
   z-index: 2;
   padding: 1% 3%;
   border-radius: 10px;
-  font-size: clamp(0.8rem, 1.3vw, 1.2rem);
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -5%);
@@ -211,15 +249,23 @@
   margin: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
+  .gamecopy {
+    flex-direction: column;
+  }
   .gameItems {
-    width: 95%;
     grid-template-columns: repeat(2, 1fr);
   }
-  .gamecopy .gameProductInfo {
-    width: 85%;
-  }
-  .sortButton{
+}
+
+@media (max-width: 700px) {
+  .shopwrapper {
     width: 95%;
+  }
+  .shopHome {
+    padding: 0;
+  }
+  .shopNav {
+    display: none;
   }
 }

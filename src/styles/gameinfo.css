@@ -32,7 +32,7 @@
 
 .gameinfocard {
   display: flex;
-  font-size: clamp(0.8rem, 1.3vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.3vw, 1.2rem);
   width: 70%;
   max-width: 1200px;
   color: white;
