@@ -1,15 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactPaginate from "react-paginate";
 import { gameItem } from "./gameProduct.js";
 import uniqid from "uniqid";
 import Dropdown from "react-bootstrap/Dropdown";
 
 const ShopWeapon = (props) => {
+  const [sortedItem, setSortedItem] = useState(gameItem);
   const [itemList, setItemList] = useState(gameItem);
+  const [pageCount, setPageCount] = useState(0);
+  const [itemOffset, setItemOffset] = useState(0);
+
+  useEffect(() => {
+    const endOffset = itemOffset + props.itemsPerPage;
+    setItemList(sortedItem.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(gameItem.length / props.itemsPerPage));
+  }, [itemOffset, props.itemsPerPage, sortedItem]);
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * props.itemsPerPage) % gameItem.length;
+    setItemOffset(newOffset);
+  };
+
   const sortItem = (rule, sign1, sign2) => {
-    let sortedItem = [...gameItem];
+    let sortedItemCopy = [...gameItem];
     switch (rule) {
       case "price":
-        sortedItem.sort((a, b) =>
+        sortedItemCopy.sort((a, b) =>
           a.price < b.price
             ? Number(sign1.concat(1))
             : b.price < a.price
@@ -18,7 +34,7 @@ const ShopWeapon = (props) => {
         );
         break;
       case "rarity":
-        sortedItem.sort((a, b) =>
+        sortedItemCopy.sort((a, b) =>
           a.rarity < b.rarity
             ? Number(sign1.concat(1))
             : b.rarity < a.rarity
@@ -27,7 +43,7 @@ const ShopWeapon = (props) => {
         );
         break;
       case "level":
-        sortedItem.sort((a, b) =>
+        sortedItemCopy.sort((a, b) =>
           a.level < b.level
             ? Number(sign1.concat(1))
             : b.level < a.level
@@ -36,16 +52,16 @@ const ShopWeapon = (props) => {
         );
         break;
       case "reset":
-        sortedItem = [...gameItem];
+        sortedItemCopy = [...gameItem];
         break;
       default:
-        sortedItem = [...gameItem];
+        sortedItemCopy = [...gameItem];
     }
-    setItemList(sortedItem);
+    setSortedItem(sortedItemCopy);
   };
 
   return (
-    <div style={props.margin}>
+    <div className={props.class}>
       <div className="shopDivider withSort">
         <h2>武器</h2>
         <Dropdown className="sortButton text-light">
@@ -135,6 +151,27 @@ const ShopWeapon = (props) => {
           );
         })}
       </ul>
+      {props.showPage && (
+        <div className="paginationContainer">
+          <ReactPaginate
+            className="pagination"
+            pageClassName="page-item"
+            pageLinkClassName="page-link bg-dark text-light border border-light"
+            previousClassName="page-item"
+            previousLinkClassName="page-link bg-dark text-light border border-light"
+            nextClassName="page-item"
+            nextLinkClassName="page-link bg-dark text-light border border-light"
+            activeClassName="active"
+            breakLabel="..."
+            nextLabel="下一頁"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel="上一頁"
+            renderOnZeroPageCount={null}
+          />
+        </div>
+      )}
     </div>
   );
 };

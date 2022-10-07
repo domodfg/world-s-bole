@@ -3,7 +3,7 @@ import uniqid from "uniqid";
 
 const ShopMerch = (props) => {
   return (
-    <div style={props.margin}>
+    <div className={props.class}>
       <h2 className="shopDivider">遊戲周邊</h2>
       <ul className="gameMerch">
         {gameMerch.map((item) => {

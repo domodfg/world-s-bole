@@ -12,6 +12,17 @@ import item9 from "../../images/shop/item9.png";
 import item10 from "../../images/shop/item10.png";
 import item11 from "../../images/shop/item11.png";
 import item12 from "../../images/shop/item12.png";
+import item13 from "../../images/shop/item13.png";
+import item14 from "../../images/shop/item14.png";
+import item15 from "../../images/shop/item15.png";
+import item16 from "../../images/shop/item16.png";
+import item17 from "../../images/shop/item17.png";
+import item18 from "../../images/shop/item18.png";
+import item19 from "../../images/shop/item19.png";
+import item20 from "../../images/shop/item20.png";
+import item21 from "../../images/shop/item21.png";
+import item22 from "../../images/shop/item22.png";
+import item23 from "../../images/shop/item23.png";
 import merch1 from "../../images/shop/merch1.png";
 import merch2 from "../../images/shop/merch2.png";
 import merch3 from "../../images/shop/merch3.png";
@@ -140,6 +151,33 @@ const gameItem = [
     description: "據說是原神可莉和安柏炸彈公仔的混合體？（僅限原神聯動角色)",
     level: 49,
     rarity: 3,
+  },
+  {
+    id: "item13",
+    img: item13,
+    name: "煌弓",
+    price: 63,
+    description: "古代帝具其一",
+    level: 47,
+    rarity: 4,
+  },
+  {
+    id: "item14",
+    img: item14,
+    name: "龍鱗",
+    price: 69,
+    description: "古代帝具其二",
+    level: 44,
+    rarity: 3,
+  },
+  {
+    id: "item15",
+    img: item15,
+    name: "煌黑大劍",
+    price: 119,
+    description: "傳說遠古巨龍的龍牙",
+    level: 99,
+    rarity: 6,
   },
 ];
 

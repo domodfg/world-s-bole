@@ -54,14 +54,23 @@ const Shop = () => {
               <ShopGame handleCart={addToCart} />
               <ShopMerch handleCart={addToCart} />
               <img className="merchPromo" src={shopBanner} alt="banner" />
-              <ShopWeapon handleCart={addToCart} />
+              <ShopWeapon
+                handleCart={addToCart}
+                showPage={false}
+                itemsPerPage={12}
+              />
             </div>
           )}
           {category === "weapon" && (
-            <ShopWeapon handleCart={addToCart} margin={{ marginTop: "5rem" }} />
+            <ShopWeapon
+              handleCart={addToCart}
+              class="shopMargin"
+              showPage={true}
+              itemsPerPage={12}
+            />
           )}
           {category === "merch" && (
-            <ShopMerch handleCart={addToCart} margin={{ marginTop: "5rem" }} />
+            <ShopMerch handleCart={addToCart} class="shopMargin" />
           )}
         </div>
       </div>

@@ -12,6 +12,11 @@
   border-bottom: 1px rgb(117, 117, 117) solid;
   width: 100%;
   padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.shopMargin {
+  margin-top: 5rem;
 }
 
 .shopDivider h2 {
@@ -25,7 +30,6 @@
 
 .shopFirstDivider {
   margin-top: calc(1.5rem + 60px);
-  margin-bottom: 3rem;
 }
 
 .shopwrapper {
@@ -152,7 +156,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2vw;
   margin: 0;
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
 }
 
 .gameMerch {
@@ -179,7 +183,6 @@
   justify-content: space-between;
   gap: 0.2vw;
   border: 0.5px solid rgb(117, 117, 117);
- 
 }
 
 .gameItemsDes {
@@ -258,6 +261,14 @@
   width: 85%;
   text-align: center;
 }
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+}
+.active > .page-link {
+  background-color: rgb(0, 151, 151) !important;
+}
 .buyingpopup {
   position: fixed;
   display: flex;
@@ -289,19 +300,27 @@
   .gamecopy {
     flex-direction: column;
   }
-  .gameItems, .gameMerch {
+  .gameItems,
+  .gameMerch {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 700px) {
   .shopwrapper {
-    width: 95%;
+    flex-direction: column;
+  }
+  .shopMargin, .shopFirstDivider{
+    margin: 0;
   }
   .shopHome {
     padding: 0;
   }
   .shopNav {
-    display: none;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    width: 70%;
+    border-radius: 0 0 20px 20px;
   }
 }
