@@ -4,15 +4,19 @@ import close from "./images/gameinfo/close.png";
 import Footer from "./components/footer.js";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCount, setShopContent } from "./utils/shopSlicer";
+import { useParams } from "react-router-dom";
 import "./styles/shop.css";
 import ShopNav from "./components/Shop/ShopNav.js";
 import ShopWeapon from "./components/Shop/ShopWeapon.js";
 import ShopGame from "./components/Shop/ShopGame.js";
+import ShopMerch from "./components/Shop/ShopMerch.js";
+import shopBanner from "./images/shop/shopbanner.png";
 
 const Shop = () => {
   const [displayAlert, setDisplayAlert] = useState(false);
   const cartItems = useSelector(selectCount);
   const dispatch = useDispatch();
+  const { category } = useParams();
 
   const addToCart = (product) => {
     let cartItemCopy = [...cartItems];
@@ -41,24 +45,32 @@ const Shop = () => {
   return (
     <div className="shop">
       <Navbar />
-      <div className="shopwrapper">
+      <div className="shopwrapper  container-lg">
         <ShopNav />
         <div className="shopHome">
-          <h2 className="shopDivider shopFirstDivider">購買遊戲</h2>
-          <ShopGame handleCart={addToCart} />
-          <ShopWeapon handleCart={addToCart} />
-          {displayAlert && (
-            <div className="buyingpopup">
-              <p>成功添加至購物車</p>
-              <img
-                src={close}
-                alt="close"
-                onClick={() => setDisplayAlert(false)}
-              />
+          {!category && (
+            <div>
+              <h2 className="shopDivider shopFirstDivider">購買遊戲</h2>
+              <ShopGame handleCart={addToCart} />
+              <ShopMerch handleCart={addToCart} />
+              <img className="merchPromo" src={shopBanner} alt="banner" />
+              <ShopWeapon handleCart={addToCart} />
             </div>
+          )}
+          {category === "weapon" && (
+            <ShopWeapon handleCart={addToCart} margin={{ marginTop: "5rem" }} />
+          )}
+          {category === "merch" && (
+            <ShopMerch handleCart={addToCart} margin={{ marginTop: "5rem" }} />
           )}
         </div>
       </div>
+      {displayAlert && (
+        <div className="buyingpopup">
+          <p>成功添加至購物車</p>
+          <img src={close} alt="close" onClick={() => setDisplayAlert(false)} />
+        </div>
+      )}
       <Footer />
     </div>
   );

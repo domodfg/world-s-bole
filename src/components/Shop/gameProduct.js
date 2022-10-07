@@ -12,6 +12,9 @@ import item9 from "../../images/shop/item9.png";
 import item10 from "../../images/shop/item10.png";
 import item11 from "../../images/shop/item11.png";
 import item12 from "../../images/shop/item12.png";
+import merch1 from "../../images/shop/merch1.png";
+import merch2 from "../../images/shop/merch2.png";
+import merch3 from "../../images/shop/merch3.png";
 
 const gameProduct = [
   {
@@ -140,4 +143,25 @@ const gameItem = [
   },
 ];
 
-export { gameProduct, gameItem };
+const gameMerch = [
+  {
+    id: "merch1",
+    img: merch1,
+    name: "T-shirt",
+    price: 149,
+  },
+  {
+    id: "merch2",
+    img: merch2,
+    name: "連帽衛衣",
+    price: 239,
+  },
+  {
+    id: "merch3",
+    img: merch3,
+    name: "WB帽",
+    price: 99,
+  },
+];
+
+export { gameProduct, gameItem, gameMerch };

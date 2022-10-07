@@ -45,7 +45,7 @@ const ShopWeapon = (props) => {
   };
 
   return (
-    <div>
+    <div style={props.margin}>
       <div className="shopDivider withSort">
         <h2>武器</h2>
         <Dropdown className="sortButton text-light">

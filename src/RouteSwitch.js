@@ -28,6 +28,7 @@ const RouteSwitch = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/cookiepolicy" element={<Cookiepolicy />} />
         <Route path="/contactus" element={<Contactus />} />
+        <Route path="shop/:category" element={<Shop />} />
       </Routes>
     </HashRouter>
   );
