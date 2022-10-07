@@ -1,0 +1,104 @@
+.craftsystem {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 8%;
+    background: url(../images/gamesystembackground1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(6px);
+}
+
+.craftdetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8%;
+    justify-content: center;
+}
+
+.mapresource {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.bossfight {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;    
+}
+
+.crafttable {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;   
+    z-index: 2;
+}
+
+.craftsystemdescription {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.craftsystemtitlebox {
+    background: url(../images/systemtextbox2.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    width: 100%;
+    height: 9vw;
+    text-align: center;
+}
+
+.craftsystemtitlebox p {
+    margin-bottom: 2rem;
+    font-family: "Noto Serif TC", serif;
+    font-size: 2vw;
+    padding: 6.5% 2% 6% 6%;
+    word-wrap: break-word;
+    width: 80%;
+}
+
+.craftsystemtextbox {
+    width: 100%;
+    height: 18vw;
+    padding: 0% 10%;
+}
+
+.craftsystemtextbox p {
+    font-family: "Noto Serif TC", serif;
+    font-size: 2vw;
+    padding: 0%;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 3% 0% 3% 3%;
+    font-weight: bold;
+}
+
+.craftsystemimgbox {
+    border: 12px solid;
+    border-image: url(../images/gameplaygoldenborder.png);
+    border-image-slice: 30%;
+    border-image-width: 80px 80px;
+    width: 50%;
+    height: 28.5vw;
+}
+
+.craftsystemimgbox img {
+    width: 100%;
+}
+
+.systemshadow {
+    background: url(../images/systemshadow.png) repeat-x;
+    height: 20vw;
+    width: 100%;
+    position: absolute;
+}

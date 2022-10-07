@@ -1,8 +1,8 @@
 import Attack from "../images/attack.mov";
 import Guard from "../images/guard.mov";
 import Parry from "../images/parry.mov";
-import divider from "../images/divider.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Battlesystem = () => {
 
@@ -39,44 +39,72 @@ const Battlesystem = () => {
     setBattleMethod({...battleMethod, activeObject: battleMethod.methods[index]});
   }
 
+  useEffect(() => {
+    toggleActive(0);
+  },[]);
+
   function toggleActiveStyles(index) {
     if(battleMethod.methods[index] === battleMethod.activeObject){
-      return "gamesystembutton active";
+      return "gamesystembutton systembtnactive";
     } else{
-      return "gamesystembutton inactive";
+      return "gamesystembutton systembtninactive";
     }
   }
 
   return (
     <>
       <div className="battlesystem">
-        <div className="battlesystemtitle">
-          <div className="divider">
-            <img src={divider} className="dividermirror" alt="divider" />
-            <h2>戰 鬥 系 統</h2>
-            <img src={divider} alt="divider" />
+        <div className="leaveshadow">
+          <div className="systemdivideline"></div>
+          <AnimationOnScroll
+            animateIn="animate__fadein"
+            animateOnce="true"
+            className="systemtitle"
+            duration={1.5}
+            offset={100}
+          >
+            <h1>戰 鬥 系 統</h1>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadein"
+            animateOnce="true"
+            className="battlemethod"
+            duration={1.5}
+            offset={100}
+          >      
+              {battleMethod.methods.map((elements, index) => (
+                <button
+                  key={index}
+                  className={toggleActiveStyles(index)}
+                  onClick={()=>{
+                    toggleActive(index);
+                  }}
+                >{battleMethod.methods[index].name}</button>
+              ))}
+          </AnimationOnScroll>
+          <div className="battlemethoddetail">
+            <AnimationOnScroll
+              animateIn="animate__fadeinleft"
+              animateOnce="true"
+              className="battledescription"
+              duration={1.5}
+              offset={300}
+            >
+              <div className="textbox">
+                <p>{battleMethod.activeObject.methodDescription}</p>
+              </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateIn="animate__fadeinright"
+              animateOnce="true"
+              className="battlevideo"
+              duration={1.5}
+              offset={300}
+            >
+              {battleMethod.activeObject.battleVideo}
+            </AnimationOnScroll>                
           </div>
-        </div>
-        <div className="battlemethod">
-          {battleMethod.methods.map((elements, index) => (
-            <button
-              key={index}
-              className={toggleActiveStyles(index)}
-              onClick={()=>{
-                toggleActive(index);
-              }}
-            >{battleMethod.methods[index].name}</button>
-          ))}
-        </div>
-        <div className="battlemethoddetail">
-          <div className="battledescription">
-            <div className="textbox">
-              <p>{battleMethod.activeObject.methodDescription}</p>
-            </div>
-          </div>
-          <div className="battlevideo">
-            {battleMethod.activeObject.battleVideo}
-          </div>
+          <div className="systemdivideline"></div>
         </div>
       </div>
     </>

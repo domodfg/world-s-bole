@@ -1,18 +1,50 @@
-.battlesystemtitle {
-  margin: 50px;
+.systemtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vw;
+  margin-top: 5%;
+  background: url(../images/systemtitlebox.png) center no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+
+.systemtitle h1 {
+  text-align: center;
+  padding: 3%;
+  font-weight: bold;
+  background: url(../images/whitetextbg.jpg) center no-repeat;
+  background-size: cover;
+  color: transparent;
+  background-clip: text;
+}
+
+.systemdivideline {
+  display: block;
+  width: 100%;
+  height: 3vw;
+  background: url(../images/systemdivideline.png) center no-repeat;
+  background-size: cover;
 }
 
 .battlesystem {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url(../images/leavebackground.png);
+  background: url(../images/systembg3_dark.jpg);
   background-size: cover;
+}
+
+.leaveshadow {
+  width: 100%;
+  background: url(../images/leaveshadow.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 .battlemethod {
   display: flex;
-  margin: 10px 14%;
+  margin: 5% 14% 1%;
   justify-content: space-around;
   white-space: nowrap;
 }
@@ -26,13 +58,13 @@
   margin: 0% 5%;
 }
 
-.active {
+.systembtnactive {
   background: url(../images/gamesystembuttonafter.png) center no-repeat;
   background-size: contain;
   color: black;
 }
 
-.inactive {
+.systembtninactive {
   background: url(../images/gamesystembuttonbefore.png) center no-repeat;
   background-size: contain;
   color: rgb(209, 168, 106);
@@ -60,10 +92,11 @@
   align-items: flex-end;
   width: 50%;
   margin-right: -10vw;
+  z-index: 3;
 }
 
 .battlemethoddetail .battledescription .textbox {
-  background: url(../images/gamesystemtextbox.png) no-repeat;
+  background: url(../images/systemtextbox.png) no-repeat;
   background-size: contain;
   display: flex;
   z-index: 2;
@@ -75,7 +108,7 @@
   margin-bottom: 2rem;
   font-family: "Noto Serif TC", serif;
   font-size: 2vw;
-  padding: 6% 2% 6% 6%;
+  padding: 7% 2% 6% 4%;
   word-wrap: break-word;
   width: 80%;
 }
@@ -96,4 +129,76 @@
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+.animate__fadein {
+  position: relative;
+  animation: fadein ease;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+.animate__fadeinleft {
+  position: relative;
+  animation: fadeinleft ease;
+}
+
+@keyframes fadeinleft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+    filter: blur(3px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.animate__fadeinright {
+  position: relative;
+  animation: fadeinright ease;
+}
+
+@keyframes fadeinright {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+    filter: blur(3px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.animate__fadeintop {
+  position: relative;
+  animation: fadeintop ease;
+}
+
+@keyframes fadeintop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+    filter: blur(3px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
 }

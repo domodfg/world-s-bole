@@ -1,0 +1,31 @@
+.ridesystem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 8%;
+    background: url(../images/gamesystembackground4.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.ridedetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.slick-thumb {
+    bottom: -45px;
+}
+
+.slick-thumb li {
+    width: 60px;
+    height: 45px;
+}
+
+.ridesystem img {
+    max-width: 100%;
+    margin: 0 0 1.45rem;
+    padding: 0;
+}
