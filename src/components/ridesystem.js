@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import ride1 from "../images/horse.png"
-import ride2 from "../images/wolf.png"
-import ride1_thumbnail from "../images/horse_thumbnail.png"
-import ride2_thumbnail from "../images/wolf_thumbnail.png"
+import ride1 from "../images/ridesystem/horse.png"
+import ride2 from "../images/ridesystem/wolf.png"
+import ride1_thumbnail from "../images/ridesystem/horse_thumbnail.png"
+import ride2_thumbnail from "../images/ridesystem/wolf_thumbnail.png"
 
 const Ridesystem = () => {
     const rides = [ride1_thumbnail, ride2_thumbnail] 
@@ -14,9 +14,7 @@ const Ridesystem = () => {
     const settings = {
         customPaging: function(i) {
           return (
-            <a>
-              <img src={rides[i]} />
-            </a>
+              <img src={rides[i]} alt="rides"/>
           );
         },
         dots: true,
@@ -28,7 +26,7 @@ const Ridesystem = () => {
       };
 
     return (
-        <div className="ridesystem">
+        <div className="ridesystem" id="ridesystem">
             <AnimationOnScroll
             animateIn="animate__fadein"
             animateOnce="true"
@@ -41,10 +39,10 @@ const Ridesystem = () => {
             <div className="ridedetail">
                 <Slider {...settings}>
                     <div>
-                        <img src={ride1} />
+                        <img src={ride1}  alt="horse"/>
                     </div>
                     <div>
-                        <img src={ride2} />
+                        <img src={ride2} alt="wolf"/>
                     </div>
                 </Slider>
             </div>

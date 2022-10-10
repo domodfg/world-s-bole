@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 8%;
-    background: url(../images/gamesystembackground1.jpg) no-repeat;
+    background: url(../images/craftsystem/craftsystembg.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     backdrop-filter: blur(6px);
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 8%;
+    margin-top: 6%;
     justify-content: center;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .craftsystemtitlebox {
-    background: url(../images/systemtextbox2.png) no-repeat;
+    background: url(../images/craftsystem/craftsystemtextbox.png) no-repeat;
     background-size: contain;
     display: flex;
     z-index: 2;
@@ -90,6 +90,7 @@
     border-image-width: 80px 80px;
     width: 50%;
     height: 28.5vw;
+    box-shadow: 5px 8px 8px black;
 }
 
 .craftsystemimgbox img {
@@ -97,7 +98,7 @@
 }
 
 .systemshadow {
-    background: url(../images/systemshadow.png) repeat-x;
+    background: url(../images/craftsystem/craftsystemshadow.png) repeat-x;
     height: 20vw;
     width: 100%;
     position: absolute;

@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 8%;
-    background: url(../images/gamesystembackground4.jpg) no-repeat;
+    background: url(../images/ridesystem/ridesystembg.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -28,4 +28,5 @@
     max-width: 100%;
     margin: 0 0 1.45rem;
     padding: 0;
+    background-color: #d5d5d5;
 }

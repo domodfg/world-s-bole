@@ -1,6 +1,6 @@
-import Attack from "../images/attack.mov";
-import Guard from "../images/guard.mov";
-import Parry from "../images/parry.mov";
+import Attack from "../images/battlesystem/attack.mov";
+import Guard from "../images/battlesystem/guard.mov";
+import Parry from "../images/battlesystem/parry.mov";
 import React, { useState, useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -53,7 +53,7 @@ const Battlesystem = () => {
 
   return (
     <>
-      <div className="battlesystem">
+      <div className="battlesystem" id="battlesystem">
         <div className="leaveshadow">
           <div className="systemdivideline"></div>
           <AnimationOnScroll

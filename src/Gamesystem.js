@@ -7,8 +7,9 @@ import "./styles/gamesystem.css";
 import "./styles/battlesystem.css";
 import "./styles/craftsystem.css";
 import "./styles/ridesystem.css";
-import heading from "./images/gameplayheader.webm";
+import heading from "./images/gamesystem/gamesystemheading.webm";
 import React from "react";
+import { HashLink } from 'react-router-hash-link';
 
 const GamePlay = () => {
   return (
@@ -17,36 +18,14 @@ const GamePlay = () => {
         <Navbar />
       </div>
       <div className="Gamesystemheading">
-        <div className="systemheadtext">
-          <h1>
-            <span>在</span>
-            <span>開</span>
-            <span>放</span>
-            <span>式</span>
-            <span>地</span>
-            <span>圖</span>
-            <span>中</span>
-            <span>自</span>
-            <span>由</span>
-            <span>探</span>
-            <span>索</span><br></br>
-            <span>爽</span>
-            <span>快</span>
-            <span>的</span>
-            <span>戰</span>
-            <span>鬥</span>
-            <span>系</span>
-            <span>統</span><br></br>
-            <span>多</span>
-            <span>人</span>
-            <span>連</span>
-            <span>線</span>
-            <span>合</span>
-            <span>作</span>
-            <span>闖</span>
-            <span>關</span>
-          </h1>
+        <div className="systemnav">
+          <HashLink className="systemnavbox1" smooth to={"/Gamesystem#battlesystem"}>戰 鬥 系 統</HashLink>
+
+          <HashLink className="systemnavbox2" smooth to={"/Gamesystem#craftsystem"}>合 成 系 統</HashLink>
+
+          <HashLink className="systemnavbox3" smooth to={"/Gamesystem#ridesystem"}>坐 騎 系 統</HashLink>
         </div>
+        
         <video autoPlay muted loop>
           <source src={heading} type="video/mp4" />
         </video>

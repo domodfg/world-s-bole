@@ -1,11 +1,12 @@
 import React from "react";
-import mapresource from "../images/map resources.jpg"
-import bossfight from "../images/bossfight.jpg"
+import mapresource from "../images/craftsystem/mapresources.jpg"
+import bossfight from "../images/craftsystem/bossfight.jpg"
+import crafttable from "../images/craftsystem/crafttable.jpg"
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Craftsystem = () => {
   return (
-    <div className="craftsystem">
+    <div className="craftsystem" id="craftsystem">
       <div className="systemshadow"></div>
       <AnimationOnScroll
         animateIn="animate__fadein"
@@ -91,7 +92,7 @@ const Craftsystem = () => {
             duration={1.5}
             offset={300}
           >
-            <img src={mapresource} alt="mapresource"></img>
+            <img src={crafttable} alt="crafttable"></img>
           </AnimationOnScroll>
           <div className="craftsystemdescription">
             <AnimationOnScroll
