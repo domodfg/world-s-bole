@@ -3,13 +3,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import ride1 from "../images/ridesystem/horse.png"
-import ride2 from "../images/ridesystem/wolf.png"
-import ride1_thumbnail from "../images/ridesystem/horse_thumbnail.png"
-import ride2_thumbnail from "../images/ridesystem/wolf_thumbnail.png"
+import horse from "../images/ridesystem/horse.png"
+import wolf from "../images/ridesystem/wolf.png"
+import mocola from "../images/ridesystem/mocola.png"
+import gwagwabird from "../images/ridesystem/gwagwabird.png"
+import dragon from "../images/ridesystem/dragon.png"
+import horse_thumbnail from "../images/ridesystem/horse_thumbnail.png"
+import wolf_thumbnail from "../images/ridesystem/wolf_thumbnail.png"
+import mocola_thumbnail from "../images/ridesystem/mocola_thumbnail.png"
+import gwagwabird_thumbnail from "../images/ridesystem/gwagwabird_thumbnail.png"
+import dragon_thumbnail from "../images/ridesystem/dragon_thumbnail.png"
 
 const Ridesystem = () => {
-    const rides = [ride1_thumbnail, ride2_thumbnail] 
+    const rides = [horse_thumbnail, wolf_thumbnail, mocola_thumbnail, gwagwabird_thumbnail, dragon_thumbnail] 
 
     const settings = {
         customPaging: function(i) {
@@ -39,10 +45,19 @@ const Ridesystem = () => {
             <div className="ridedetail">
                 <Slider {...settings}>
                     <div>
-                        <img src={ride1}  alt="horse"/>
+                        <img src={horse}  alt="horse"/>
                     </div>
                     <div>
-                        <img src={ride2} alt="wolf"/>
+                        <img src={wolf} alt="wolf"/>
+                    </div>
+                    <div>
+                        <img src={mocola} alt="mocola"/>
+                    </div>
+                    <div>
+                        <img src={gwagwabird} alt="gwagwabird"/>
+                    </div>
+                    <div>
+                        <img src={dragon} alt="dragon"/>
                     </div>
                 </Slider>
             </div>
