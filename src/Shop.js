@@ -5,6 +5,7 @@ import Footer from "./components/footer.js";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCount, setShopContent } from "./utils/shopSlicer";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./styles/shop.css";
 import ShopNav from "./components/Shop/ShopNav.js";
 import ShopWeapon from "./components/Shop/ShopWeapon.js";
@@ -17,6 +18,7 @@ const Shop = () => {
   const cartItems = useSelector(selectCount);
   const dispatch = useDispatch();
   const { category } = useParams();
+  const navigate = useNavigate();
 
   const addToCart = (product) => {
     let cartItemCopy = [...cartItems];
@@ -49,7 +51,7 @@ const Shop = () => {
         <ShopNav />
         <div className="shopHome">
           {!category && (
-            <div>
+            <div class>
               <h2 className="shopDivider shopFirstDivider">購買遊戲</h2>
               <ShopGame handleCart={addToCart} />
               <ShopMerch handleCart={addToCart} />
@@ -59,6 +61,14 @@ const Shop = () => {
                 showPage={false}
                 itemsPerPage={12}
               />
+              <div className="text-center">
+                <button
+                  className="btn-secondary btn moreWeapon"
+                  onClick={() => navigate("/shop/weapon")}
+                >
+                  查看更多
+                </button>
+              </div>
             </div>
           )}
           {category === "weapon" && (
