@@ -61,7 +61,7 @@ const Battlesystem = () => {
             animateOnce="true"
             className="systemtitle"
             duration={1.5}
-            offset={100}
+            offset={200}
           >
             <h1>戰 鬥 系 統</h1>
           </AnimationOnScroll>

@@ -16,31 +16,34 @@
 }
 
 .slick-thumb {
-    bottom: -45px;
+    bottom: -15%;
 }
 
 .slick-thumb li {
     width: 60px;
-    height: 45px;
 }
 
 .ridesystem img {
-    max-width: 100%;
+    width: 100%;
     margin: 0 0 1.45rem;
     padding: 0;
+}
+
+.slick-prev {
+    left: 3%;
+    z-index: -1;
+}
+  .slick-next {
+    right: 3%;
+    z-index: -1;
 }
 
 @media (max-width: 700px) {
     .ridesystem {
         padding-bottom: 17%;
     }
-}
 
-.slick-prev {
-    left: 3%;
-    z-index: -1;
-  }
-  .slick-next {
-    right: 3%;
-    z-index: -1;
-  }
+    .slick-thumb li {
+        width: 10vw;
+    }
+}

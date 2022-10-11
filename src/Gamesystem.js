@@ -7,7 +7,7 @@ import "./styles/gamesystem.css";
 import "./styles/battlesystem.css";
 import "./styles/craftsystem.css";
 import "./styles/ridesystem.css";
-import heading from "./images/gamesystem/gamesystemheading.mp4";
+import heading from "./images/gamesystem/gamesystemheading.webm";
 import React from "react";
 import { HashLink } from 'react-router-hash-link';
 
