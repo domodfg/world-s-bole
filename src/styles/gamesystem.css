@@ -8,7 +8,8 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  height: 41vw;
+  align-items: center;
+  height: 750px;
   flex-direction: column;
 }
 
@@ -17,6 +18,7 @@
   width: 100%;
   justify-content: space-around;
   z-index: 1;
+  font-weight: bold;
 }
 
 .systemnavbox1 {
@@ -65,5 +67,31 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
-  z-index: 0;
+}
+
+@media (max-width: 700px) {
+  .systemnav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65%;
+  }
+
+  .systemnavbox1 {
+    width: 55%;
+    height: 24vw;
+    font-size: 4vw;
+  }
+
+  .systemnavbox2 {
+    width: 55%;
+    height: 24vw;
+    font-size: 4vw;
+  }
+
+  .systemnavbox3 {
+    width: 55%;
+    height: 24vw;
+    font-size: 4vw;
+  }
 }

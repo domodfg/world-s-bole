@@ -45,9 +45,9 @@ const Battlesystem = () => {
 
   function toggleActiveStyles(index) {
     if(battleMethod.methods[index] === battleMethod.activeObject){
-      return "gamesystembutton systembtnactive";
+      return "battlesystembutton systembtnactive";
     } else{
-      return "gamesystembutton systembtninactive";
+      return "battlesystembutton systembtninactive";
     }
   }
 
@@ -55,7 +55,7 @@ const Battlesystem = () => {
     <>
       <div className="battlesystem" id="battlesystem">
         <div className="leaveshadow">
-          <div className="systemdivideline"></div>
+          <div className="battlesystemdivideline"></div>
           <AnimationOnScroll
             animateIn="animate__fadein"
             animateOnce="true"
@@ -104,7 +104,7 @@ const Battlesystem = () => {
               {battleMethod.activeObject.battleVideo}
             </AnimationOnScroll>                
           </div>
-          <div className="systemdivideline"></div>
+          <div className="battlesystemdivideline"></div>
         </div>
       </div>
     </>

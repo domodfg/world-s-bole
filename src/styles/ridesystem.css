@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 8%;
-    background: url(../images/ridesystem/ridesystembg.jpg) no-repeat;
+    background: url(../images/ridesystem/ridesystembg.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -29,3 +29,18 @@
     margin: 0 0 1.45rem;
     padding: 0;
 }
+
+@media (max-width: 700px) {
+    .ridesystem {
+        padding-bottom: 17%;
+    }
+}
+
+.slick-prev {
+    left: 3%;
+    z-index: -1;
+  }
+  .slick-next {
+    right: 3%;
+    z-index: -1;
+  }

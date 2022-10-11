@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 8%;
-    background: url(../images/craftsystem/craftsystembg.jpg) no-repeat;
+    background: url(../images/craftsystem/craftsystembg.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     backdrop-filter: blur(6px);
@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-left: 2%;
 }
 
 .craftsystemtitlebox {
@@ -53,18 +54,19 @@
     display: flex;
     z-index: 2;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 9vw;
+    height: 7vw;
     text-align: center;
 }
 
 .craftsystemtitlebox p {
-    margin-bottom: 2rem;
+    margin: 0;
     font-family: "Noto Serif TC", serif;
     font-size: 2vw;
-    padding: 6.5% 2% 6% 6%;
     word-wrap: break-word;
     width: 80%;
+    font-weight: bold;
 }
 
 .craftsystemtextbox {
@@ -84,22 +86,78 @@
 }
 
 .craftsystemimgbox {
-    border: 12px solid;
+    border: 0.8vw solid;
     border-image: url(../images/gameplaygoldenborder.png);
     border-image-slice: 30%;
     border-image-width: 80px 80px;
     width: 50%;
     height: 28.5vw;
-    box-shadow: 5px 8px 8px black;
+    box-shadow: 1vw 1vw 8px black;
 }
 
 .craftsystemimgbox img {
     width: 100%;
+    height: 100%;
 }
 
 .systemshadow {
     background: url(../images/craftsystem/craftsystemshadow.png) repeat-x;
     height: 20vw;
     width: 100%;
+    background-size: auto 100%;
     position: absolute;
+}
+
+@media (max-width: 700px) {
+    .mapresource {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .craftsystemimgbox {
+        width: 80%;
+        height: 45.6vw;
+    }
+
+    .craftsystemdescription {
+        align-self: flex-start;
+        padding: 0% 10%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: -5vw;
+    }
+
+    .craftsystemtitlebox {
+        width: 70%;
+        height: 10vw;
+        margin-left: -6vw;
+    }
+
+    .craftsystemtitlebox p {
+        font-size: 4vw;
+    }
+
+    .craftsystemtextbox {
+        padding: 0;
+        height: 30vw;
+    }
+
+    .craftsystemtextbox p {
+        font-size: 4vw;
+    }
+
+    .bossfight {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .crafttable {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bossfight .craftsystemdescription .craftsystemtitlebox {
+        align-self: flex-end;
+        margin-right: -6vw;
+    }
 }
