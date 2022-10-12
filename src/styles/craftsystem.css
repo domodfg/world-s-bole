@@ -1,0 +1,163 @@
+.craftsystem {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 8%;
+    background: url(../images/craftsystem/craftsystembg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(6px);
+}
+
+.craftdetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6%;
+    justify-content: center;
+}
+
+.mapresource {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.bossfight {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;    
+}
+
+.crafttable {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;   
+    z-index: 2;
+}
+
+.craftsystemdescription {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 2%;
+}
+
+.craftsystemtitlebox {
+    background: url(../images/craftsystem/craftsystemtextbox.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vw;
+    text-align: center;
+}
+
+.craftsystemtitlebox p {
+    margin: 0;
+    font-family: "Noto Serif TC", serif;
+    font-size: 2vw;
+    word-wrap: break-word;
+    width: 80%;
+    font-weight: bold;
+}
+
+.craftsystemtextbox {
+    width: 100%;
+    height: 18vw;
+    padding: 0% 10%;
+}
+
+.craftsystemtextbox p {
+    font-family: "Noto Serif TC", serif;
+    font-size: 2vw;
+    padding: 0%;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 3% 0% 3% 3%;
+    font-weight: bold;
+}
+
+.craftsystemimgbox {
+    border: 0.8vw solid;
+    border-image: url(../images/gameplaygoldenborder.png);
+    border-image-slice: 30%;
+    border-image-width: 80px 80px;
+    width: 50%;
+    height: 28.5vw;
+    box-shadow: 1vw 1vw 8px black;
+}
+
+.craftsystemimgbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.systemshadow {
+    background: url(../images/craftsystem/craftsystemshadow.png) repeat-x;
+    height: 20vw;
+    width: 100%;
+    background-size: auto 100%;
+    position: absolute;
+}
+
+@media (max-width: 700px) {
+    .mapresource {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .craftsystemimgbox {
+        width: 80%;
+        height: 45.6vw;
+    }
+
+    .craftsystemdescription {
+        align-self: flex-start;
+        padding: 0% 10%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: -5vw;
+    }
+
+    .craftsystemtitlebox {
+        width: 70%;
+        height: 10vw;
+        margin-left: -6vw;
+    }
+
+    .craftsystemtitlebox p {
+        font-size: 4vw;
+    }
+
+    .craftsystemtextbox {
+        padding: 0;
+        height: 30vw;
+    }
+
+    .craftsystemtextbox p {
+        font-size: 4vw;
+    }
+
+    .bossfight {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .crafttable {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bossfight .craftsystemdescription .craftsystemtitlebox {
+        align-self: flex-end;
+        margin-right: -6vw;
+    }
+}

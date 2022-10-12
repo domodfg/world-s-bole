@@ -1,79 +1,110 @@
-import Attack from "../images/attack.mov";
-import Guard from "../images/guard.mov";
-import Parry from "../images/parry.mov";
-import divider from "../images/divider.png";
-import React, { useState } from "react";
+import Attack from "../images/battlesystem/attack.mov";
+import Guard from "../images/battlesystem/guard.mov";
+import Parry from "../images/battlesystem/parry.mov";
+import React, { useState, useEffect } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Battlesystem = () => {
-  const attack = {
-      methodDescription: "運用不同的武器和戰技，削減敵人的體力。",
-      battleVideo: Attack,
-    },
-    guard = {
-      methodDescription: "使用防禦抵擋敵人猛烈的攻勢，等待反擊的機會。",
-      battleVideo: Guard,
-    },
-    parry = {
-      methodDescription:
-        "在適當的時機進行格檔，可使敵人失衡，制造出有利的輸出空間。",
-      battleVideo: Parry,
-    };
 
   const [battleMethod, setBattleMethod] = useState({
-    Description: attack.methodDescription,
-    Video: (
+    activeObject: {
+      name: "攻擊",
+      methodDescription: "運用不同的武器和戰技，削減敵人的體力。",
+      battleVideo:(
       <video autoPlay muted loop>
-        <source src={attack.battleVideo} type="video/mp4" />
+        <source src={Attack} type="video/mp4" />
       </video>
-    ),
+      )
+    },
+    methods: [{
+      name: "攻擊",
+      methodDescription: "運用不同的武器和戰技，削減敵人的體力。",
+      battleVideo:
+      <video autoPlay muted loop src={Attack} type="video/mov" />,
+    }, {
+      name: "防禦",
+      methodDescription: "使用防禦抵擋敵人猛烈的攻勢，等待反擊的機會。",
+      battleVideo:
+      <video autoPlay muted loop src={Guard} type="video/mov" />,
+    }, {
+      name: "格檔",
+      methodDescription:
+        "在適當的時機進行格檔，可使敵人失衡，制造出有利的輸出空間。",
+      battleVideo:
+      <video autoPlay muted loop src={Parry} type="video/mov" />,
+    }]
   });
 
-  const changeMethod = (description, method) => {
-    setBattleMethod({
-      Description: description,
-      Video: <video autoPlay muted loop src={method} type="video/mov" />,
-    });
-  };
+  function toggleActive(index) {
+    setBattleMethod({...battleMethod, activeObject: battleMethod.methods[index]});
+  }
+
+  useEffect(() => {
+    toggleActive(0);
+  },[]);
+
+  function toggleActiveStyles(index) {
+    if(battleMethod.methods[index] === battleMethod.activeObject){
+      return "battlesystembutton systembtnactive";
+    } else{
+      return "battlesystembutton systembtninactive";
+    }
+  }
+
   return (
     <>
-      <div className="battlesystem">
-        <div className="battlesystemtitle">
-          <div className="divider">
-            <img src={divider} className="dividermirror" alt="divider" />
-            <h2>戰 鬥 系 統</h2>
-            <img src={divider} alt="divider" />
-          </div>
-        </div>
-        <div className="battlemethod">
-          <button
-            onClick={() =>
-              changeMethod(attack.methodDescription, attack.battleVideo)
-            }
+      <div className="battlesystem" id="battlesystem">
+        <div className="leaveshadow">
+          <div className="battlesystemdivideline"></div>
+          <AnimationOnScroll
+            animateIn="animate__fadein"
+            animateOnce="true"
+            className="systemtitle"
+            duration={1.5}
+            offset={200}
           >
-            攻擊
-          </button>
-          <button
-            onClick={() =>
-              changeMethod(guard.methodDescription, guard.battleVideo)
-            }
-          >
-            防禦
-          </button>
-          <button
-            onClick={() =>
-              changeMethod(parry.methodDescription, parry.battleVideo)
-            }
-          >
-            格檔
-          </button>
-        </div>
-        <div className="battlemethoddetail">
-          <div className="battledescription">
-            <p>{battleMethod.Description}</p>
+            <h1>戰 鬥 系 統</h1>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadein"
+            animateOnce="true"
+            className="battlemethod"
+            duration={1.5}
+            offset={100}
+          >      
+              {battleMethod.methods.map((elements, index) => (
+                <button
+                  key={index}
+                  className={toggleActiveStyles(index)}
+                  onClick={()=>{
+                    toggleActive(index);
+                  }}
+                >{battleMethod.methods[index].name}</button>
+              ))}
+          </AnimationOnScroll>
+          <div className="battlemethoddetail">
+            <AnimationOnScroll
+              animateIn="animate__fadeinleft"
+              animateOnce="true"
+              className="battledescription"
+              duration={1.5}
+              offset={300}
+            >
+              <div className="textbox">
+                <p>{battleMethod.activeObject.methodDescription}</p>
+              </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateIn="animate__fadeinright"
+              animateOnce="true"
+              className="battlevideo"
+              duration={1.5}
+              offset={300}
+            >
+              {battleMethod.activeObject.battleVideo}
+            </AnimationOnScroll>                
           </div>
-          <div className="battlevideo">
-            {battleMethod.Video}
-          </div>
+          <div className="battlesystemdivideline"></div>
         </div>
       </div>
     </>

@@ -2,15 +2,64 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(../images/gameplaybackground.jpg);
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .Gamesystemheading {
   position: relative;
   display: flex;
-  height: 50vh;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.systemnav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.systemnavbox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: url(../images/gamesystem/systemnavimg.png) no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 13vw;
+  animation: fadeinbottom 1.5s ease;
+  font-family: "Noto Serif TC", serif;
+  font-size: 2vw;
+}
+
+.systemnavbox2 {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: url(../images/gamesystem/systemnavimg.png) no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 13vw;
+  animation: fadeinbottom 1.5s forwards 0.5s ease;
+  font-family: "Noto Serif TC", serif;
+  font-size: 2vw;
+  opacity: 0;
+}
+
+.systemnavbox3 {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: url(../images/gamesystem/systemnavimg.png) no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 13vw;
+  animation: fadeinbottom 1.5s forwards 1s ease;
+  font-family: "Noto Serif TC", serif;
+  font-size: 2vw;
+  opacity: 0;
 }
 
 .Gamesystemheading video {
@@ -18,11 +67,31 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
-  z-index: 0;
 }
 
-.Gamesystemheading h1 {
-  padding-top: 4rem;
-  position: relative;
-  z-index: 1;
+@media (max-width: 700px) {
+  .systemnav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65%;
+  }
+
+  .systemnavbox1 {
+    width: 55%;
+    height: 24vw;
+    font-size: 4vw;
+  }
+
+  .systemnavbox2 {
+    width: 55%;
+    height: 24vw;
+    font-size: 4vw;
+  }
+
+  .systemnavbox3 {
+    width: 55%;
+    height: 24vw;
+    font-size: 4vw;
+  }
 }

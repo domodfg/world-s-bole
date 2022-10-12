@@ -1,0 +1,49 @@
+.ridesystem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 8%;
+    background: url(../images/ridesystem/ridesystembg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.ridedetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.slick-thumb {
+    bottom: -15%;
+}
+
+.slick-thumb li {
+    width: 60px;
+}
+
+.ridesystem img {
+    width: 100%;
+    margin: 0 0 1.45rem;
+    padding: 0;
+}
+
+.slick-prev {
+    left: 3%;
+    z-index: -1;
+}
+  .slick-next {
+    right: 3%;
+    z-index: -1;
+}
+
+@media (max-width: 700px) {
+    .ridesystem {
+        padding-bottom: 17%;
+    }
+
+    .slick-thumb li {
+        width: 10vw;
+    }
+}
