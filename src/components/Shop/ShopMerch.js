@@ -1,7 +1,10 @@
 import { gameMerch } from "./gameProduct.js";
 import uniqid from "uniqid";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ShopMerch = (props) => {
+  const navigate = useNavigate();
   return (
     <div className={props.class}>
       <h2 className="shopDivider">遊戲周邊</h2>
@@ -9,9 +12,15 @@ const ShopMerch = (props) => {
         {gameMerch.map((item) => {
           return (
             <li className="gameItemsInfo gameMerchInfo" key={uniqid()}>
-              <img src={item.img} alt="Products" />
+              <img
+                src={item.img}
+                alt="Products"
+                onClick={() => navigate(`/shop/product/${item.id}`)}
+              />
               <div>
-                <h2>{item.name}</h2>
+                <Link to={`/shop/product/${item.id}`}>
+                  <h2>{item.name}</h2>
+                </Link>
                 <p className="price">HKD${item.price}</p>
                 <button
                   className="addToCart"

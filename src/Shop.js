@@ -34,7 +34,9 @@ const Shop = () => {
         return cartItem;
       });
     } else {
-      product.quantity = 1;
+      if (!product.quantity) {
+        product.quantity = 1;
+      }
       cartItemCopy.push(product);
     }
     dispatch(setShopContent(cartItemCopy));
@@ -51,7 +53,7 @@ const Shop = () => {
         <ShopNav />
         <div className="shopHome">
           {!category && (
-            <div class>
+            <div>
               <h2 className="shopDivider shopFirstDivider">購買遊戲</h2>
               <ShopGame handleCart={addToCart} />
               <ShopMerch handleCart={addToCart} />

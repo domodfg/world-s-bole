@@ -1,0 +1,12 @@
+.productContainer {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.productContainer img{
+    width: 50%;
+}
+
+.productContainer button {
+    padding: 0.7rem 1.5rem;
+}

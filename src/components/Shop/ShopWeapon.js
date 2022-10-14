@@ -3,12 +3,15 @@ import ReactPaginate from "react-paginate";
 import { gameItem } from "./gameProduct.js";
 import uniqid from "uniqid";
 import Dropdown from "react-bootstrap/Dropdown";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ShopWeapon = (props) => {
   const [sortedItem, setSortedItem] = useState(gameItem);
   const [itemList, setItemList] = useState(gameItem);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const endOffset = itemOffset + props.itemsPerPage;
@@ -135,8 +138,15 @@ const ShopWeapon = (props) => {
                 </p>
                 <p className="ilevel">等級需求：{item.level}</p>
               </div>
-              <img src={item.img} alt="Products" />
-              <h2>{item.name}</h2>
+              <img
+                src={item.img}
+                alt="Products"
+                onClick={() => navigate(`/shop/product/${item.id}`)}
+              />
+              <Link to={`/shop/product/${item.id}`}>
+                <h2>{item.name}</h2>
+              </Link>
+
               <div className="gameItemsDes">
                 <p>{item.description}</p>
                 <p className="price">HKD${item.price}</p>

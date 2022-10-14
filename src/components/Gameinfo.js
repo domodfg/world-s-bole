@@ -2,6 +2,7 @@ import gameinfo1 from "../images/gameinfo/gameinfo1.jpg";
 import gameinfo3 from "../images/gameinfo/gameinfo3.jpg";
 import gameinfo2 from "../images/gameinfo/gameinfo2.jpg";
 import gameinfo4 from "../images/gameinfo/gameinfo4.webm";
+import gameinfo4fallback from "../images/gameinfo/gameinfo4.jpg";
 import moreinfo from "../images/gameinfo/Fantasy_Spell_Book.png";
 import close from "../images/gameinfo/close.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -117,7 +118,13 @@ const Gameinfo = () => {
           </p>
         </div>
         <div className="imagecontainer rightimage">
-          <video className="cardimage" autoPlay muted loop>
+          <video
+            poster={gameinfo4fallback}
+            className="cardimage"
+            autoPlay
+            muted
+            loop
+          >
             <source src={gameinfo4} type="video/webm" />
           </video>
         </div>

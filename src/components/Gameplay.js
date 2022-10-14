@@ -1,6 +1,7 @@
 import React from "react";
 import divider from "../images/divider.png";
 import gamefootage from "../images/gameplay/gameplay.mp4";
+import gameplay from "../images/gameplay/gameplay.jpg";
 import "../styles/gameplay.css";
 
 const Gameplay = () => {
@@ -12,7 +13,7 @@ const Gameplay = () => {
         <img src={divider} alt="divider" />
       </div>
       <div className="gameplaymain">
-        <video className="gamefootage" autoPlay muted loop>
+        <video poster={gameplay} className="gamefootage" autoPlay muted loop>
           <source src={gamefootage} type="video/mp4" />
         </video>
         <div className="gamecaption">

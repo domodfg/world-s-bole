@@ -132,6 +132,7 @@
   width: 100%;
   text-align: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 0.2vw;
 }
@@ -260,15 +261,21 @@
 }
 .gameItemsInfo img {
   width: 60%;
+  cursor: pointer;
 }
 .ilevel {
   font-style: italic;
 }
-.gameItemsInfo h2 {
+.gameItemsInfo h2,
+.gameItemsInfo div h2 {
   padding-bottom: 1%;
   border-bottom: 1px groove #a5aa1f;
-  width: 85%;
   text-align: center;
+}
+
+.gameItemsInfo a,
+.gameItemsInfo div h2 {
+  width: 85%;
 }
 
 .paginationContainer {
@@ -339,10 +346,10 @@
     border-radius: 0 0 20px 20px;
     border-bottom: 1px solid rgb(204, 204, 204);
   }
-  .shopNav a{
+  .shopNav a {
     margin: 0;
   }
-  .shopNav hr{
+  .shopNav hr {
     display: none;
   }
 }

@@ -11,6 +11,7 @@ import Privacy from "./components/FooterPolicy/Privacy.js";
 import Cookiepolicy from "./components/FooterPolicy/Cookiepolicy.js";
 import Contactus from "./components/FooterPolicy/Contactus.js";
 import ScrollToTop from "./components/Scrolltotop.js";
+import ProductDetail from "./components/Shop/ProductDetail.js";
 
 const RouteSwitch = () => {
   return (
@@ -28,7 +29,8 @@ const RouteSwitch = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/cookiepolicy" element={<Cookiepolicy />} />
         <Route path="/contactus" element={<Contactus />} />
-        <Route path="shop/:category" element={<Shop />} />
+        <Route path="/shop/:category" element={<Shop />} />
+        <Route path="/shop/product/:id" element={<ProductDetail />} />
       </Routes>
     </HashRouter>
   );
