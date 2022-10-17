@@ -39,17 +39,17 @@
 }
 
 .shopNav {
-  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 60px;
-  width: 218px;
   font-size: 1.2rem;
   padding: 3% 0%;
   gap: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-right: 1px solid rgb(54, 54, 54);
+  width: 250px;
+  flex: 0 0 auto;
 }
 .shopNav hr {
   align-self: stretch;
@@ -64,6 +64,8 @@
   flex-direction: column;
   align-items: center;
   padding-left: 3rem;
+  padding-right: 0;
+  flex: 1 0 0;
 }
 
 .gamecopy {
@@ -342,9 +344,9 @@
     flex-direction: row;
     align-self: center;
     justify-content: space-around;
-    width: 90%;
     border-radius: 0 0 20px 20px;
     border-bottom: 1px solid rgb(204, 204, 204);
+    width: 100%;
   }
   .shopNav a {
     margin: 0;

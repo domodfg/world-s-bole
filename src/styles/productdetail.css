@@ -1,12 +1,52 @@
 .productContainer {
-    display: flex;
-    margin-top: 5rem;
+  display: flex;
+  margin-top: 5rem;
 }
 
-.productContainer img{
-    width: 50%;
+.productContainer img {
+  width: 50%;
+  border: 1px rgb(117, 117, 117) solid;
 }
 
-.productContainer button {
-    padding: 0.7rem 1.5rem;
+.productContainer .detailCart {
+  padding: 0.7rem 1.5rem;
+}
+
+.productContainer .detail-btn {
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.5rem;
+}
+
+.productContainer h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px rgb(117, 117, 117) solid;
+}
+
+.productContainer p {
+  font-size: 1rem;
+}
+
+.productContainer .price {
+  font-size: 1.2rem;
+}
+
+.productContainer input {
+  width: 10%;
+  text-align: center;
+}
+
+.productdetailcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 1000px) {
+  .productContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productContainer img {
+    width: 90%;
+  }
 }

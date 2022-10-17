@@ -1,0 +1,120 @@
+.gachaSlide {
+  margin-top: 6rem;
+}
+
+.gachaSlide img,
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.gachaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gachaContainer h2 {
+  margin-top: 1rem;
+}
+
+.gachaCharContainer {
+  display: flex;
+  background-image: linear-gradient(#00000080, #00000080),
+    url(../images/country/roam.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 1px solid;
+  border-image: url(../images/gameplaygoldenborder.png);
+  border-image-slice: 20%;
+  border-image-width: 8% 8%;
+  padding: 1rem;
+}
+
+.gachaCharContainer3 {
+  background-image: linear-gradient(#00000080, #00000080),
+    url(../images/shop/gacha3BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gachaCharContainer img {
+  width: 50%;
+}
+
+.gachaCharContainer .charAbility {
+  width: 10%;
+}
+
+.drawButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.drawMachine {
+  margin-top: 3rem;
+  background-image: url(../images/shop/gachaMachine.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 1000px;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.drawMachine .gameItemsInfo {
+  background-image: linear-gradient(#00000080, #00000080);
+}
+
+.drawMachine .gameItemsInfo h3 {
+  font-size: 1.2rem;
+}
+
+.gachaCongrat {
+  color: black;
+}
+
+.drawMachine .gameItemsInfo img {
+  width: 30%;
+  cursor: auto;
+}
+
+.drawMachine .gameItemsInfo .URprize {
+  width: 50%;
+}
+
+.drawMachine .gameItemsInfo.UR {
+  box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
+    /* inner left magenta short */ inset -20px 0 80px #0ff,
+    /* inner right cyan short */ inset 20px 0 300px #f0f,
+    /* inner left magenta broad */ inset -20px 0 300px #0ff,
+    /* inner right cyan broad */ 0 0 50px #fff,
+    /* outer white */ -10px 0 80px #f0f,
+    /* outer left magenta */ 10px 0 80px #0ff; /* outer right cyan */
+}
+
+.lootList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .gachaCharContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gachaCharContainer img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .lootList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

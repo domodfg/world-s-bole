@@ -12,6 +12,7 @@ import ShopWeapon from "./components/Shop/ShopWeapon.js";
 import ShopGame from "./components/Shop/ShopGame.js";
 import ShopMerch from "./components/Shop/ShopMerch.js";
 import shopBanner from "./images/shop/shopbanner.png";
+import ShopGacha from "./components/Shop/ShopGacha.js";
 
 const Shop = () => {
   const [displayAlert, setDisplayAlert] = useState(false);
@@ -36,8 +37,12 @@ const Shop = () => {
     } else {
       if (!product.quantity) {
         product.quantity = 1;
+        cartItemCopy.push(product);
+      } else {
+        let productClone = { ...product };
+        productClone.quantity = 1;
+        cartItemCopy.push(productClone);
       }
-      cartItemCopy.push(product);
     }
     dispatch(setShopContent(cartItemCopy));
     setDisplayAlert(true);
@@ -83,6 +88,11 @@ const Shop = () => {
           )}
           {category === "merch" && (
             <ShopMerch handleCart={addToCart} class="shopMargin" />
+          )}
+          {category === "gacha" && (
+           <div>
+            <ShopGacha />
+           </div>
           )}
         </div>
       </div>

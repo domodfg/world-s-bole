@@ -9,6 +9,8 @@ const ShopNav = () => {
       <hr/>
       <Link to="/shop/merch">遊戲周邊</Link>
       <hr/>
+      <Link to="/shop/gacha">角色抽卡</Link>
+      <hr/>
     </nav>
   );
 };

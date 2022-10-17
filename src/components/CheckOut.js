@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import Navbar from "./Navbar/Navbar.js";
 import CustomInput from "./input";
 import { useSelector, useDispatch } from 'react-redux'
@@ -11,10 +10,8 @@ import "../styles/checkOut.css";
 
 const CheckOut = () => {
   const [total, setTotal] = useState(0);
-  const [shippingCost, setShippingCost] = useState(100);
   const [editable, setEditable] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const { isAuthenticated } = useAuth0();
   const cartItems = useSelector(selectCount)
   const dispatch = useDispatch()
 
@@ -24,12 +21,6 @@ const CheckOut = () => {
   const add = (accumulator, { quantity, price }) => {
     return accumulator + quantity * price;
   };
-
-  useEffect(() => {
-    if (isAuthenticated) {
-      setShippingCost(0);
-    }
-  }, [isAuthenticated]);
 
   useEffect(() => {
     setTotal(cartItems.reduce(add, 0));
@@ -203,7 +194,7 @@ const CheckOut = () => {
                     運費:
                   </div>
                   <div>
-                    ${shippingCost}
+                    $0
                   </div>
                 </div>
               </div>
@@ -212,11 +203,11 @@ const CheckOut = () => {
                   總額:
                 </div>
                 <div>
-                  ${total + shippingCost}
+                  ${total}
                 </div>
               </div>
               <div>
-                <PaymentForm total={total} shippingCost={shippingCost} />
+                <PaymentForm total={total} shippingCost={0} />
               </div>
             </div>
           }

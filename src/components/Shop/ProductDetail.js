@@ -25,7 +25,7 @@ const ProductDetail = () => {
     } else {
       setProduct(gameItem[foundIndex]);
     }
-  }, []);
+  }, [id]);
 
   const addToCart = () => {
     let cartItemCopy = [...cartItems];
@@ -42,7 +42,7 @@ const ProductDetail = () => {
       });
     } else {
       if (!product.quantity) {
-        product.quantity = 1;
+        product.quantity = buyQuantity;
         cartItemCopy.push(product);
       } else {
         let productClone = { ...product };
@@ -66,16 +66,19 @@ const ProductDetail = () => {
         <div className="shopHome">
           <div className="productContainer">
             <img src={product.img} alt="Products" />
-            <div>
+            <div className="productdetailcontainer">
               <h2>{product.name}</h2>
               <p>{product.description}</p>
-              <p className="price">HKD${product.price}</p>
+              <p>
+                HKD<span className="price">${product.price}</span>
+              </p>
               <p>
                 我要買
                 <button
                   onClick={() => {
                     setBuyQuantity(buyQuantity + 1);
                   }}
+                  className="increase-btn detail-btn"
                 >
                   +
                 </button>
@@ -91,11 +94,12 @@ const ProductDetail = () => {
                       setBuyQuantity(buyQuantity - 1);
                     }
                   }}
+                  className="decrease-btn detail-btn"
                 >
                   -
                 </button>
               </p>
-              <button className="addToCart" onClick={addToCart}>
+              <button className="addToCart detailCart" onClick={addToCart}>
                 加入購物車
               </button>
             </div>
