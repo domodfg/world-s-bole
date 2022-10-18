@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.d6c4e4f7.css",
+    "main.css": "/world-s-bole/static/css/main.b55fd345.css",
     "main.js": "/world-s-bole/static/js/main.641e36cb.js",
     "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
@@ -123,11 +123,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.d6c4e4f7.css.map": "/world-s-bole/static/css/main.d6c4e4f7.css.map",
+    "main.b55fd345.css.map": "/world-s-bole/static/css/main.b55fd345.css.map",
     "main.641e36cb.js.map": "/world-s-bole/static/js/main.641e36cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6c4e4f7.css",
+    "static/css/main.b55fd345.css",
     "static/js/main.641e36cb.js"
   ]
 }
