@@ -105,12 +105,20 @@ const GachaInfo1 = (props) => {
       </div>
       <div className="drawMachine">
         <div className="drawButton">
-          <img onClick={() => props.draw(1)} src={draw1} alt="draw one time" />
-          <img
-            onClick={() => props.draw(10)}
-            src={draw10}
-            alt="draw ten time"
-          />
+          <button>
+            <img
+              onClick={() => props.draw(1, 1)}
+              src={draw1}
+              alt="draw one time"
+            />
+          </button>
+          <button>
+            <img
+              onClick={() => props.draw(10, 1)}
+              src={draw10}
+              alt="draw ten time"
+            />
+          </button>
         </div>
         {props.lootList}
       </div>

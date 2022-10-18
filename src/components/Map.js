@@ -1,8 +1,8 @@
-import map from "../images/map/map.jpeg";
-import area from "../images/map/area.jpeg";
-import city from "../images/map/city.jpeg";
-import dungeon from "../images/map/dungeon.jpeg";
-import field from "../images/map/field.jpeg";
+import map from "../images/map/map.jpg";
+import area from "../images/map/area.jpg";
+import city from "../images/map/city.jpg";
+import dungeon from "../images/map/dungeon.jpg";
+import field from "../images/map/field.jpg";
 import divider from "../images/divider.png";
 import React, { useState } from "react";
 import "../styles/map.css";

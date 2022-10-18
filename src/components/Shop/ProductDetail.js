@@ -41,14 +41,9 @@ const ProductDetail = () => {
         return cartItem;
       });
     } else {
-      if (!product.quantity) {
-        product.quantity = buyQuantity;
-        cartItemCopy.push(product);
-      } else {
-        let productClone = { ...product };
-        productClone.quantity = buyQuantity;
-        cartItemCopy.push(productClone);
-      }
+      let productClone = { ...product };
+      productClone.quantity = buyQuantity;
+      cartItemCopy.push(productClone);
     }
 
     dispatch(setShopContent(cartItemCopy));

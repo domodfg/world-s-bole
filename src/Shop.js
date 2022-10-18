@@ -35,14 +35,9 @@ const Shop = () => {
         return cartItem;
       });
     } else {
-      if (!product.quantity) {
-        product.quantity = 1;
-        cartItemCopy.push(product);
-      } else {
-        let productClone = { ...product };
-        productClone.quantity = 1;
-        cartItemCopy.push(productClone);
-      }
+      let productClone = { ...product };
+      productClone.quantity = 1;
+      cartItemCopy.push(productClone);
     }
     dispatch(setShopContent(cartItemCopy));
     setDisplayAlert(true);
@@ -90,9 +85,9 @@ const Shop = () => {
             <ShopMerch handleCart={addToCart} class="shopMargin" />
           )}
           {category === "gacha" && (
-           <div>
-            <ShopGacha />
-           </div>
+            <div>
+              <ShopGacha />
+            </div>
           )}
         </div>
       </div>

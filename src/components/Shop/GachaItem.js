@@ -18,8 +18,13 @@ const GachaItem = (props) => {
               : item.rarity === 3
               ? "RgameItem"
               : "NgameItem";
-          if (item === "prize") return <GachaPrize />;
-          else
+          if (item === "prize") {
+            return <GachaPrize prize={1} key={uniqid()}/>;
+          } else if (item === "prize3") {
+            return <GachaPrize prize={3} key={uniqid()}/>;
+          } else if (item === "prize2") {
+            return <GachaPrize prize={2} key={uniqid()}/>;
+          } else
             return (
               <li className="gameItemsInfo" key={uniqid()}>
                 <div className={`gameItemsHeader ${rarity}`}>
@@ -27,13 +32,9 @@ const GachaItem = (props) => {
                     稀有度:
                     {`${"★".repeat(item.rarity) + "✩".repeat(6 - item.rarity)}`}
                   </p>
-                  <p className="ilevel">等級需求：{item.level}</p>
                 </div>
                 <img src={item.img} alt="Products" />
                 <h3>{item.name}</h3>
-                <div className="gameItemsDes">
-                  <p>{item.description}</p>
-                </div>
               </li>
             );
         })}

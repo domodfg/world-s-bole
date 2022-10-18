@@ -18,6 +18,10 @@
   margin-top: 1rem;
 }
 
+.table-dark {
+  --bs-table-bg: transparent;
+}
+
 .gachaCharContainer {
   display: flex;
   background-image: linear-gradient(#00000080, #00000080),
@@ -26,15 +30,35 @@
   background-position: center;
   border-radius: 10px;
   border: 1px solid;
-  border-image: url(../images/gameplaygoldenborder.png);
+  border-image: url(../images/goldborder.png);
   border-image-slice: 20%;
-  border-image-width: 8% 8%;
-  padding: 1rem;
+  border-image-width: 8% 16%;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+
+.gachaCharContainer2 {
+  background-image: linear-gradient(#00000080, #00000080),
+    url(../images/shop/gacha2BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gachaCharContainer2_5 {
+  background-image: linear-gradient(#00000031, #00000030),
+    url(../images/shop/gacha2-5BG.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .gachaCharContainer3 {
-  background-image: linear-gradient(#00000080, #00000080),
-    url(../images/shop/gacha3BG.jpg);
+  background-image: url(../images/shop/gacha3BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gachaCharContainer4 {
+  background-image: url(../images/shop/gacha4BG.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -51,11 +75,25 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+
+.drawButton button {
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  padding: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.drawButton button:hover,
+.drawMachine .gameItemsInfo:hover {
+  transform: scale(1.05);
 }
 
 .drawMachine {
-  margin-top: 3rem;
+  margin: 3rem 0;
   background-image: url(../images/shop/gachaMachine.png);
   background-size: cover;
   background-position: center;
@@ -67,6 +105,7 @@
 
 .drawMachine .gameItemsInfo {
   background-image: linear-gradient(#00000080, #00000080);
+  transition: transform 0.2s ease-in-out;
 }
 
 .drawMachine .gameItemsInfo h3 {
@@ -74,16 +113,27 @@
 }
 
 .gachaCongrat {
-  color: black;
+  text-shadow: 10px 10px 30px rgb(232, 193, 0);
+  margin-top: 1rem;
 }
 
 .drawMachine .gameItemsInfo img {
-  width: 30%;
+  width: 80%;
   cursor: auto;
 }
 
 .drawMachine .gameItemsInfo .URprize {
   width: 50%;
+}
+.drawMachine .gameItemsInfo .URprize.gachaChar2,
+.drawMachine .gameItemsInfo .URprize.gachaChar2_5 {
+  width: 70%;
+}
+.drawMachine .gameItemsInfo .URprize.gachaChar3 {
+  width: 100%;
+}
+.drawMachine .gameItemsInfo .URprize.gachaChar4 {
+  width: 80%;
 }
 
 .drawMachine .gameItemsInfo.UR {
@@ -116,5 +166,17 @@
 @media (max-width: 1000px) {
   .lootList {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .gachaSlide {
+    margin-top: 3rem;
+  }
+  .gachaCharContainer {
+    padding: 1rem;
+  }
+  .drawMachine {
+    min-height: 1229px;
   }
 }
