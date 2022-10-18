@@ -28,15 +28,15 @@ const ShopGacha = () => {
       for (let i = 0; i < times; i++) {
         const randomNumber = Math.floor(Math.random() * 100) + 1;
         switch (true) {
-          case randomNumber >= 1 && randomNumber <= 84:
+          case randomNumber >= 1 && randomNumber <= 85:
             const R = Rweapon[Math.floor(Math.random() * Rweapon.length)];
             lootArray.push(R);
             break;
-          case randomNumber >= 85 && randomNumber <= 94:
+          case randomNumber >= 86 && randomNumber <=95:
             const SR = SRweapon[Math.floor(Math.random() * SRweapon.length)];
             lootArray.push(SR);
             break;
-          case randomNumber >= 95 && randomNumber <= 99:
+          case randomNumber >= 96 && randomNumber <= 99:
             const UR = URweapon[Math.floor(Math.random() * URweapon.length)];
             lootArray.push(UR);
             break;
