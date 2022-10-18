@@ -28,6 +28,11 @@ const GachaInfo2 = (props) => {
             <td>近戰法師 鐵木耳·零</td>
           </tr>
           <tr>
+            <th scope="row">4%</th>
+            <td>超稀有</td>
+            <td>5-6星武器</td>
+          </tr>
+          <tr>
             <th scope="row">10%</th>
             <td>稀有</td>
             <td>3-4星武器</td>
