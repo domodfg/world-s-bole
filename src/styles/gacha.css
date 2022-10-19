@@ -18,6 +18,10 @@
   margin-top: 1rem;
 }
 
+.gachaCharContainer h2 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
 .gachaCharContainer .table-dark {
   --bs-table-bg: transparent;
 }
@@ -37,7 +41,7 @@
   align-items: center;
 }
 
-.gachaCharContainer div {
+.gachaCharDes {
   flex: 1 0 50%;
 }
 
@@ -67,8 +71,40 @@
   background-position: center;
 }
 
+.gachaCharContainer5 {
+  background-image: url(../images/shop/gacha4BG_2.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  border: none;
+}
+
+.gachaChar5Des {
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 0rem 3rem 2rem 3rem;
+  width: 100%;
+}
+
+.gachaCharContainer6 {
+  background-image: url(../images/shop/gacha5BG.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  border: none;
+}
+
 .gachaCharContainer img {
   width: 50%;
+}
+
+.gachaCharContainer5 img {
+  width: 70%;
+}
+
+.gachaCharContainer6 img {
+  width: 70%;
 }
 
 .gachaCharContainer .charAbility {
@@ -139,6 +175,12 @@
 .drawMachine .gameItemsInfo .URprize.gachaChar4 {
   width: 80%;
 }
+.drawMachine .gameItemsInfo .URprize.gachaChar5 {
+  width: 110%;
+}
+.drawMachine .gameItemsInfo .URprize.gachaChar6 {
+  width: 120%;
+}
 
 .drawMachine .gameItemsInfo.UR {
   box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
@@ -165,6 +207,10 @@
   .gachaCharContainer img {
     width: 60%;
   }
+  .gachaCharContainer5 img,
+  .gachaCharContainer6 img {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -179,6 +225,13 @@
   }
   .gachaCharContainer {
     padding: 1rem;
+  }
+  .gachaCharContainer5,
+  .gachaCharContainer6 {
+    padding: 0;
+  }
+  .gachaCharDes {
+    padding: 0rem 1rem 1rem 1rem;
   }
   .drawMachine {
     min-height: 1229px;

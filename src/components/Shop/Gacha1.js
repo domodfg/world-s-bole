@@ -43,8 +43,9 @@ const GachaInfo1 = (props) => {
       </table>
       <div className="gachaCharContainer">
         <img src={gachachar1} alt="gacha character" />
-        <div>
+        <div className="gachaCharDes">
           <h2>史提爾·朵拉</h2>
+          <hr />
           <p>CV：上白石萌音 / 職業：妖術師 / 稱號：幽靈公主 / 稀有度：★★★★★★</p>
           <p>
             生活在隆密國的朵拉是一位愛民如子的公主，常年居住在與世隔絕的叢林裡頭。因為得到了遠古妖術師之神索菲婭的垂青，

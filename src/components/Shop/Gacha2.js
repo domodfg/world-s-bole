@@ -46,8 +46,9 @@ const GachaInfo2 = (props) => {
       </table>
       <div className="gachaCharContainer gachaCharContainer2">
         <img src={gachachar2} alt="gacha character" />
-        <div>
+        <div className="gachaCharDes">
           <h2>李古斯·蘭兒</h2>
+          <hr />
           <p>CV：川澄绫子</p>
           <p>
             盔甲，盾牌，大劍和方陣！種種男人浪漫的要素，全都體現在了蘭兒的身上。
@@ -95,6 +96,7 @@ const GachaInfo2 = (props) => {
         <img src={gachachar2_5} alt="gacha character" />
         <div>
           <h2>鐵木耳·零</h2>
+          <hr />
           <p>CV：松岡禎丞</p>
           <p>
             施法靠聖光，物理方面全點滿......這些用來形容鐵木耳這位鐵骨錚錚的少年最為貼切？

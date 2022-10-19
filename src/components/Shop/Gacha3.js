@@ -46,8 +46,9 @@ const GachaInfo3 = (props) => {
       </table>
       <div className="gachaCharContainer gachaCharContainer3">
         <img src={gachachar3} alt="gacha character" />
-        <div>
+        <div className="gachaCharDes">
           <h2>艾薇兒</h2>
+          <hr/>
           <p>CV配音：戶松遙</p>
           <p>
             艾薇兒是一位思想成熟的女孩。生於新月聯邦的她，早就掌握了運用核心科技的力量去對抗邪惡。
@@ -94,6 +95,7 @@ const GachaInfo3 = (props) => {
         <img src={gachachar4} alt="gacha character" />
         <div>
           <h2>八海忍</h2>
+          <hr/>
           <p>CV配音：钉宫理惠</p>
           <p>進入成年禮後的八海，一直以貫徹自己的忍道為目標而戰鬥。</p>
           <p>

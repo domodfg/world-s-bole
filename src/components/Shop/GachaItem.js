@@ -18,15 +18,19 @@ const GachaItem = (props) => {
               : item.rarity === 3
               ? "RgameItem"
               : "NgameItem";
-          if (item === "prize") {
-            return <GachaPrize prize={1} key={uniqid()}/>;
+          if (item === "prize1") {
+            return <GachaPrize prize={1} key={uniqid()}  />;
           } else if (item === "prize3") {
-            return <GachaPrize prize={3} key={uniqid()}/>;
+            return <GachaPrize prize={3} key={uniqid()} />;
           } else if (item === "prize2") {
-            return <GachaPrize prize={2} key={uniqid()}/>;
+            return <GachaPrize prize={2} key={uniqid()}  />;
+          } else if (item === "prize4") {
+            return <GachaPrize prize={4} key={uniqid()} />;
+          } else if (item === "prize5") {
+            return <GachaPrize prize={5} key={uniqid()} />;
           } else
             return (
-              <li className="gameItemsInfo" key={uniqid()}>
+              <li className="gameItemsInfo animate__animated animate__flipInY" key={uniqid()}>
                 <div className={`gameItemsHeader ${rarity}`}>
                   <p>
                     稀有度:
