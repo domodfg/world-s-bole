@@ -41,7 +41,7 @@ const GachaInfo1 = (props) => {
           </tr>
         </tbody>
       </table>
-      <div className="gachaCharContainer">
+      <div className="gachaCharContainer gachaCharContainer1">
         <img src={gachachar1} alt="gacha character" />
         <div className="gachaCharDes">
           <h2>史提爾·朵拉</h2>

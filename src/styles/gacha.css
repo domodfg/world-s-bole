@@ -1,5 +1,44 @@
 .gachaSlide {
   margin-top: 6rem;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.gachaBG0,
+.gachaBG1,
+.gachaBG2,
+.gachaBG3,
+.gachaBG4 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.gachaBG0 {
+  background-image: url(../images/country/seraphine.jpg);
+}
+
+.gachaBG1 {
+  background-image: url(../images/shop/gacha2-5BG.jpg);
+}
+
+.gachaBG2 {
+  background-image: url(../images/shop/gacha4BG.jpg);
+}
+
+
+.gachaBG4 {
+  background-image: url(../images/shop/gachashopBG4.jpg);
+}
+
+.gachaBG3 {
+  background-image: url(../images/shop/gachashopBG3.jpg);
 }
 
 .gachaSlide img,
@@ -28,10 +67,6 @@
 
 .gachaCharContainer {
   display: flex;
-  background-image: linear-gradient(#00000080, #00000080),
-    url(../images/country/roam.jpg);
-  background-size: cover;
-  background-position: center;
   border-radius: 10px;
   border: 1px solid;
   border-image: url(../images/goldborder.png);
@@ -39,60 +74,32 @@
   border-image-width: 8% 16%;
   padding: 1rem 3rem;
   align-items: center;
+  background-image: linear-gradient(#00000080, #00000080);
 }
 
 .gachaCharDes {
   flex: 1 0 50%;
 }
 
-.gachaCharContainer2 {
-  background-image: linear-gradient(#00000080, #00000080),
-    url(../images/shop/gacha2BG.jpg);
-  background-size: cover;
-  background-position: center;
+.gachaCharContainer1 {
+
+  border-radius: 30px;
 }
 
-.gachaCharContainer2_5 {
-  background-image: linear-gradient(#00000031, #00000030),
-    url(../images/shop/gacha2-5BG.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.gachaCharContainer3 {
-  background-image: url(../images/shop/gacha3BG.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.gachaCharContainer4 {
-  background-image: url(../images/shop/gacha4BG.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.gachaCharContainer5 {
-  background-image: url(../images/shop/gacha4BG_2.jpg);
-  background-size: cover;
-  background-position: center;
+.gachaCharContainer5,
+.gachaCharContainer6 {
+  background-image: none;
+  border-image: url(../images/gameplaygoldenborder.png);
+  border-image-slice: 20%;
+  border-image-width: 4% 12%;
   flex-direction: column;
   padding: 2rem 0 0 0;
-  border: none;
 }
 
 .gachaChar5Des {
   background-color: rgba(0, 0, 0, 0.555);
   padding: 0rem 3rem 2rem 3rem;
   width: 100%;
-}
-
-.gachaCharContainer6 {
-  background-image: url(../images/shop/gacha5BG.jpg);
-  background-size: cover;
-  background-position: center;
-  flex-direction: column;
-  padding: 2rem 0 0 0;
-  border: none;
 }
 
 .gachaCharContainer img {
@@ -197,6 +204,33 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem;
+}
+
+.shopPromotion {
+  background-color: rgba(254, 255, 196, 0.705);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  position: fixed;
+  right: 0%;
+  top: 25%;
+  border-radius: 10px 0px 0px 10px;
+  padding-top: 1rem;
+  min-width: 70px;
+  cursor: pointer;
+}
+
+.shopPromotion h2{
+  font-size: 1rem;
+  background: -webkit-linear-gradient(top, #3a3300 30%, #161400 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.shopPromotion img{
+  width: 100%;
 }
 
 @media (max-width: 1200px) {

@@ -74,8 +74,18 @@ const ShopGacha = () => {
     setLoot();
   }, [currentSlide]);
 
+  useEffect(() => {
+    document.querySelector(".shop").classList = `shop gachaBG3`;
+    return () => {
+      if (document.querySelector(".shop")) {
+        document.querySelector(".shop").classList = `shop`;
+      }
+    };
+  }, []);
+
   const detectCurrentSlide = (eventKey) => {
     setCurrentSlide(eventKey);
+    document.querySelector(".shop").classList = `shop gachaBG${eventKey}`;
   };
 
   return (

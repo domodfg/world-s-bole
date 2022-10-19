@@ -13,6 +13,7 @@ import ShopGame from "./components/Shop/ShopGame.js";
 import ShopMerch from "./components/Shop/ShopMerch.js";
 import shopBanner from "./images/shop/shopbanner.png";
 import ShopGacha from "./components/Shop/ShopGacha.js";
+import drawMachine from "./images/shop/gachaMachine.png";
 
 const Shop = () => {
   const [displayAlert, setDisplayAlert] = useState(false);
@@ -70,6 +71,11 @@ const Shop = () => {
                 >
                   查看更多
                 </button>
+              </div>
+              <div className="shopPromotion" onClick={() => navigate("/shop/gacha")}>
+                <h2>角色抽卡</h2>
+                <h2>機率乘3!</h2>
+                <img src={drawMachine} alt="gacha promotion" />
               </div>
             </div>
           )}
