@@ -37,6 +37,10 @@
   align-items: center;
 }
 
+.gachaCharContainer div {
+  flex: 1 0 50%;
+}
+
 .gachaCharContainer2 {
   background-image: linear-gradient(#00000080, #00000080),
     url(../images/shop/gacha2BG.jpg);
