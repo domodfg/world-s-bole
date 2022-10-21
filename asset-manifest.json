@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-s-bole/static/css/main.0d6c6b9e.css",
-    "main.js": "/world-s-bole/static/js/main.5ddda77b.js",
+    "main.css": "/world-s-bole/static/css/main.3aaa903d.css",
+    "main.js": "/world-s-bole/static/js/main.a31d9169.js",
     "static/media/gameplay.mp4": "/world-s-bole/static/media/gameplay.ecfaaca60f9378e482fa.mp4",
     "static/media/gacha4.png": "/world-s-bole/static/media/gacha4.973972acac7cd6f46209.png",
     "static/media/background.jpg": "/world-s-bole/static/media/background.2d689e6ddbbda20568b3.jpg",
@@ -31,6 +31,7 @@
     "static/media/gacha5.png": "/world-s-bole/static/media/gacha5.558ce8cc99b07b73c287.png",
     "static/media/time.webm": "/world-s-bole/static/media/time.ca22f97f40f4b3ac9efd.webm",
     "static/media/area.jpg": "/world-s-bole/static/media/area.f4635e8ceaca0620f4df.jpg",
+    "static/media/anime-forest-scenery.jpg": "/world-s-bole/static/media/anime-forest-scenery.302d0c9d2f0920fba6e9.jpg",
     "static/media/parry.mov": "/world-s-bole/static/media/parry.f6eaad09c392d5ed494b.mov",
     "static/media/attack.mov": "/world-s-bole/static/media/attack.4fc58d90432e5255197e.mov",
     "static/media/character5.png": "/world-s-bole/static/media/character5.e234040aeb3641d4df0c.png",
@@ -39,6 +40,7 @@
     "static/media/seraphine.webm": "/world-s-bole/static/media/seraphine.88705e4cd9663bb5d796.webm",
     "static/media/roam.webm": "/world-s-bole/static/media/roam.36c5ff2491d40263d1b9.webm",
     "static/media/character3.png": "/world-s-bole/static/media/character3.ab8ef1aa260a0d107c86.png",
+    "static/media/gacha4BG_2.jpg": "/world-s-bole/static/media/gacha4BG_2.b89cd26c6247685c36c3.jpg",
     "static/media/shopbanner.png": "/world-s-bole/static/media/shopbanner.f6f0fd3826ddc3224473.png",
     "static/media/Leaflet.webp": "/world-s-bole/static/media/Leaflet.aeb1a5cf0f43b55f319a.webp",
     "static/media/gachachar1.png": "/world-s-bole/static/media/gachachar1.be58f02de2a6bc7a7766.png",
@@ -55,7 +57,6 @@
     "static/media/gachachar6.png": "/world-s-bole/static/media/gachachar6.b2dec81fc321f97fb1fc.png",
     "static/media/mapresources.jpg": "/world-s-bole/static/media/mapresources.f104e9ff2f26c6993064.jpg",
     "static/media/frame_flower_mandal_element_generated.png": "/world-s-bole/static/media/frame_flower_mandal_element_generated.2b8c2f78bad6ed594db5.png",
-    "static/media/gachashopBG3.jpg": "/world-s-bole/static/media/gachashopBG3.a392390e7c637c461fee.jpg",
     "static/media/gameplaygoldenborder.png": "/world-s-bole/static/media/gameplaygoldenborder.13f3bd687a25d0097b90.png",
     "static/media/gameinfo1.jpg": "/world-s-bole/static/media/gameinfo1.d5381a3e1a86b34f0224.jpg",
     "static/media/gachachar3.png": "/world-s-bole/static/media/gachachar3.72d65ccd139bcb68ba3e.png",
@@ -127,11 +128,11 @@
     "static/media/slick.ttf": "/world-s-bole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/world-s-bole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/world-s-bole/index.html",
-    "main.0d6c6b9e.css.map": "/world-s-bole/static/css/main.0d6c6b9e.css.map",
-    "main.5ddda77b.js.map": "/world-s-bole/static/js/main.5ddda77b.js.map"
+    "main.3aaa903d.css.map": "/world-s-bole/static/css/main.3aaa903d.css.map",
+    "main.a31d9169.js.map": "/world-s-bole/static/js/main.a31d9169.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d6c6b9e.css",
-    "static/js/main.5ddda77b.js"
+    "static/css/main.3aaa903d.css",
+    "static/js/main.a31d9169.js"
   ]
 }
