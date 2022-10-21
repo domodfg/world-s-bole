@@ -39,11 +39,24 @@
   box-shadow: -2px 0.5px 10px black;
 }
 
+.gameTrailer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.trailerContainer {
+  gap: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+
 @media (max-width: 700px) {
   .gameplay {
     padding-bottom: 4.5rem;
   }
-  .gameplay .gameplaymain{
+  .gameplay .gameplaymain, .trailerContainer {
     width: 95%;
   }
 }

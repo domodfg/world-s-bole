@@ -21,6 +21,21 @@ const Gameplay = () => {
           史詩級冒險
         </div>
       </div>
+      <div className="trailerContainer">
+        <div className="divider">
+          <img src={divider} className="dividermirror" alt="divider" />
+          <h2>宣傳影片</h2>
+          <img src={divider} alt="divider" />
+        </div>
+        <iframe
+          className="gameTrailer"
+          src="https://www.youtube.com/embed/g3ydUeC1mm4"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   );
 };

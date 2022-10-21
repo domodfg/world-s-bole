@@ -17,7 +17,7 @@ import GachaInfo5 from "./Gacha5.js";
 const ShopGacha = () => {
   const [displayLoot, setDisplayLoot] = useState();
   const [lootList, setLoot] = useState();
-  const [currentSlide, setCurrentSlide] = useState(3);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const draw = (times, gachaNumber) => {
     const URweapon = gameItem.filter((item) => item.rarity === 6);
@@ -75,7 +75,7 @@ const ShopGacha = () => {
   }, [currentSlide]);
 
   useEffect(() => {
-    document.querySelector(".shop").classList = `shop gachaBG3`;
+    document.querySelector(".shop").classList = `shop gachaBG0`;
     return () => {
       if (document.querySelector(".shop")) {
         document.querySelector(".shop").classList = `shop`;
@@ -95,7 +95,6 @@ const ShopGacha = () => {
         onSelect={(eventKey) => detectCurrentSlide(eventKey)}
         interval={null}
         variant="dark"
-        defaultActiveIndex={3}
       >
         <Carousel.Item>
           <img

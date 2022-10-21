@@ -1,5 +1,5 @@
 .gachaSlide {
-  margin-top: 6rem;
+  margin-top: 1.5rem;
   border-radius: 10px;
   border: 1px solid white;
 }
@@ -18,10 +18,11 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  transition: background-image 0.5s linear;
 }
 
 .gachaBG0 {
-  background-image: url(../images/country/seraphine.jpg);
+  background-image: url(../images/shop/anime-forest-scenery.jpg);
 }
 
 .gachaBG1 {
@@ -38,7 +39,7 @@
 }
 
 .gachaBG3 {
-  background-image: url(../images/shop/gachashopBG3.jpg);
+  background-image: url(../images/shop/gacha4BG_2.jpg);
 }
 
 .gachaSlide img,
@@ -222,15 +223,20 @@
 }
 
 .shopPromotion h2{
+  text-align: center;
+  width: 100%;
   font-size: 1rem;
   background: -webkit-linear-gradient(top, #3a3300 30%, #161400 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-
 .shopPromotion img{
   width: 100%;
+}
+
+.shopPromotion .upArrow{
+  width: 20px;
 }
 
 @media (max-width: 1200px) {

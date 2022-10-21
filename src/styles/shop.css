@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   font-size: clamp(0.8rem, 1vw, 1.2rem);
+  margin-top: 60px;
 }
 
 .shopDivider {
@@ -16,7 +17,7 @@
 }
 
 .shopMargin {
-  margin-top: 5rem;
+  margin-top: 1.5rem;
 }
 
 .shopDivider h2 {
@@ -29,7 +30,7 @@
 }
 
 .shopFirstDivider {
-  margin-top: calc(1.5rem + 60px);
+  margin-top: 1.5rem;
 }
 
 .shopwrapper {
@@ -42,11 +43,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 60px;
   font-size: 1.2rem;
   padding: 3% 0%;
   gap: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border-right: 1px solid rgb(54, 54, 54);
   width: 250px;
   flex: 0 0 auto;

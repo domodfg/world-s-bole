@@ -40,7 +40,7 @@ const GachaInfo5 = (props) => {
       </table>
       <div className="gachaCharContainer gachaCharContainer6">
         <img src={gachachar6} alt="gacha character" />
-        <div className="gachaChar5Des gachaCharDes gachaChar5Des">
+        <div className="gachaChar5Des gachaCharDes">
           <h2>「綠洲戰士」愛蜜莉雅</h2>
           <hr />
           <p>愛蜜莉雅是一位不怎麼擅長懂得和外界交流的人。</p>

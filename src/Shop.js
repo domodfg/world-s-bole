@@ -14,6 +14,7 @@ import ShopMerch from "./components/Shop/ShopMerch.js";
 import shopBanner from "./images/shop/shopbanner.png";
 import ShopGacha from "./components/Shop/ShopGacha.js";
 import drawMachine from "./images/shop/gachaMachine.png";
+import upArrow from "./images/shop/upArrow.png";
 
 const Shop = () => {
   const [displayAlert, setDisplayAlert] = useState(false);
@@ -48,62 +49,74 @@ const Shop = () => {
   };
 
   return (
-    <div className="shop">
+    <div className="App">
       <Navbar />
-      <div className="shopwrapper  container-lg">
-        <ShopNav />
-        <div className="shopHome">
-          {!category && (
-            <div>
-              <h2 className="shopDivider shopFirstDivider">購買遊戲</h2>
-              <ShopGame handleCart={addToCart} />
-              <ShopMerch handleCart={addToCart} />
-              <img className="merchPromo" src={shopBanner} alt="banner" />
+      <div className="shop">
+        <div className="shopwrapper  container-lg">
+          <ShopNav />
+          <div className="shopHome">
+            {!category && (
+              <div>
+                <h2 className="shopDivider shopFirstDivider">購買遊戲</h2>
+                <ShopGame handleCart={addToCart} />
+                <ShopMerch handleCart={addToCart} />
+                <img className="merchPromo" src={shopBanner} alt="banner" />
+                <ShopWeapon
+                  handleCart={addToCart}
+                  showPage={false}
+                  itemsPerPage={12}
+                />
+                <div className="text-center">
+                  <button
+                    className="btn-secondary btn moreWeapon"
+                    onClick={() => navigate("/shop/weapon")}
+                  >
+                    查看更多
+                  </button>
+                </div>
+                <div
+                  className="shopPromotion"
+                  onClick={() => navigate("/shop/gacha")}
+                >
+                  <h2>角色抽卡</h2>
+                  <h2>
+                    機率乘3
+                    <img className="upArrow" src={upArrow} alt="increase" />
+                  </h2>
+                  <img src={drawMachine} alt="gacha promotion" />
+                </div>
+              </div>
+            )}
+            {category === "weapon" && (
               <ShopWeapon
                 handleCart={addToCart}
-                showPage={false}
+                class="shopMargin"
+                showPage={true}
                 itemsPerPage={12}
               />
-              <div className="text-center">
-                <button
-                  className="btn-secondary btn moreWeapon"
-                  onClick={() => navigate("/shop/weapon")}
-                >
-                  查看更多
-                </button>
+            )}
+            {category === "merch" && (
+              <ShopMerch handleCart={addToCart} class="shopMargin" />
+            )}
+            {category === "gacha" && (
+              <div>
+                <ShopGacha />
               </div>
-              <div className="shopPromotion" onClick={() => navigate("/shop/gacha")}>
-                <h2>角色抽卡</h2>
-                <h2>機率乘3!</h2>
-                <img src={drawMachine} alt="gacha promotion" />
-              </div>
-            </div>
-          )}
-          {category === "weapon" && (
-            <ShopWeapon
-              handleCart={addToCart}
-              class="shopMargin"
-              showPage={true}
-              itemsPerPage={12}
+            )}
+          </div>
+        </div>
+        {displayAlert && (
+          <div className="buyingpopup">
+            <p>成功添加至購物車</p>
+            <img
+              src={close}
+              alt="close"
+              onClick={() => setDisplayAlert(false)}
             />
-          )}
-          {category === "merch" && (
-            <ShopMerch handleCart={addToCart} class="shopMargin" />
-          )}
-          {category === "gacha" && (
-            <div>
-              <ShopGacha />
-            </div>
-          )}
-        </div>
+          </div>
+        )}
+        <Footer />
       </div>
-      {displayAlert && (
-        <div className="buyingpopup">
-          <p>成功添加至購物車</p>
-          <img src={close} alt="close" onClick={() => setDisplayAlert(false)} />
-        </div>
-      )}
-      <Footer />
     </div>
   );
 };

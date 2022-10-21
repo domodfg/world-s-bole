@@ -94,7 +94,7 @@ const GachaInfo2 = (props) => {
       </div>
       <div className="gachaCharContainer gachaCharContainer2_5">
         <img src={gachachar2_5} alt="gacha character" />
-        <div>
+        <div className="gachaCharDes">
           <h2>鐵木耳·零</h2>
           <hr />
           <p>CV：松岡禎丞</p>
