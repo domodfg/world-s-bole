@@ -27,8 +27,10 @@ const ProductDetail = () => {
     }
   }, [id]);
 
+  
+
   const addToCart = () => {
-    if (buyQuantity <= 0) {
+    if (buyQuantity <= 0 || !Number.isInteger(buyQuantity) ) {
       setDisplayAlert("failure");
       setTimeout(() => {
         setDisplayAlert(false);

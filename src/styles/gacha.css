@@ -112,10 +112,8 @@
 }
 
 .gachaCharContainer7 {
-  padding: 2rem 2rem 0 0;
+  padding: 2rem 2rem 2rem 1.5rem;
 }
-
-
 
 .gachaChar5Des {
   background-color: rgba(0, 0, 0, 0.555);
@@ -133,6 +131,11 @@
 
 .gachaCharContainer6 img {
   width: 70%;
+}
+
+.gachaCharContainer7 img {
+  align-self: flex-start;
+  border-radius: 20%;
 }
 .gachaCharContainer8 img {
   width: 70%;
@@ -295,6 +298,9 @@
   }
   .gachaCharContainer7 {
     padding: 2rem;
+  }
+  .gachaCharContainer7 img {
+    align-self: center;
   }
 }
 

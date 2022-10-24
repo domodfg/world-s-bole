@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar.js";
 import close from "./images/gameinfo/close.png";
 import Footer from "./components/footer.js";
@@ -47,6 +47,23 @@ const Shop = () => {
       setDisplayAlert(false);
     }, 3000);
   };
+
+  useEffect(()=>{
+    var BG1 = new Image();
+    BG1.src = "../../images/shop/anime-forest-scenery.jpg";
+    var BG2 = new Image();
+    BG2.src = "../images/shop/gacha2-5BG.jpg";
+    var BG3 = new Image();
+    BG3.src = "../images/shop/gacha4BG.jpg";
+    var BG4 = new Image();
+    BG4.src = "../images/shop/gachashopBG4.jpg";
+    var BG5 = new Image();
+    BG5.src = "../images/shop/gacha4BG_2.jpg";
+    var BG6 = new Image();
+    BG6.src = "../images/shop/gacha6BG.jpeg";
+    var BG7 = new Image();
+    BG7.src = "url(../images/shop/gacha7BG.jpg)";
+  },[])
 
   return (
     <div className="App">
