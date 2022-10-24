@@ -319,6 +319,10 @@
   margin: 0;
 }
 
+.failurepopup {
+  background-color: #e16262e6;
+}
+
 @media (max-width: 1000px) {
   .gamecopy {
     flex-direction: column;

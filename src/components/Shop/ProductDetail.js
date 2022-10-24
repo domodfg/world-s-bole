@@ -28,29 +28,36 @@ const ProductDetail = () => {
   }, [id]);
 
   const addToCart = () => {
-    let cartItemCopy = [...cartItems];
-    let foundIndex = cartItems.findIndex(
-      (cartItem) => cartItem.id === product.id
-    );
-
-    if (foundIndex !== -1) {
-      cartItemCopy = cartItems.map((cartItem) => {
-        if (cartItem.id === product.id) {
-          return { ...cartItem, quantity: cartItem.quantity + buyQuantity };
-        }
-        return cartItem;
-      });
+    if (buyQuantity <= 0) {
+      setDisplayAlert("failure");
+      setTimeout(() => {
+        setDisplayAlert(false);
+      }, 3000);
     } else {
-      let productClone = { ...product };
-      productClone.quantity = buyQuantity;
-      cartItemCopy.push(productClone);
-    }
+      let cartItemCopy = [...cartItems];
+      let foundIndex = cartItems.findIndex(
+        (cartItem) => cartItem.id === product.id
+      );
 
-    dispatch(setShopContent(cartItemCopy));
-    setDisplayAlert(true);
-    setTimeout(() => {
-      setDisplayAlert(false);
-    }, 3000);
+      if (foundIndex !== -1) {
+        cartItemCopy = cartItems.map((cartItem) => {
+          if (cartItem.id === product.id) {
+            return { ...cartItem, quantity: cartItem.quantity + buyQuantity };
+          }
+          return cartItem;
+        });
+      } else {
+        let productClone = { ...product };
+        productClone.quantity = buyQuantity;
+        cartItemCopy.push(productClone);
+      }
+
+      dispatch(setShopContent(cartItemCopy));
+      setDisplayAlert("success");
+      setTimeout(() => {
+        setDisplayAlert(false);
+      }, 3000);
+    }
   };
 
   return (
@@ -101,7 +108,7 @@ const ProductDetail = () => {
                     件
                     <button
                       onClick={() => {
-                        if (buyQuantity !== 1) {
+                        if (buyQuantity > 1) {
                           setBuyQuantity(buyQuantity - 1);
                         }
                       }}
@@ -148,9 +155,19 @@ const ProductDetail = () => {
             </ul>
           </div>
         </div>
-        {displayAlert && (
+        {displayAlert === "success" && (
           <div className="buyingpopup">
             <p>成功添加至購物車</p>
+            <img
+              src={close}
+              alt="close"
+              onClick={() => setDisplayAlert(false)}
+            />
+          </div>
+        )}
+        {displayAlert === "failure" && (
+          <div className="buyingpopup failurepopup">
+            <p>購買數量錯誤！</p>
             <img
               src={close}
               alt="close"
