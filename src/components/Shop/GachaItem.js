@@ -30,6 +30,8 @@ const GachaItem = (props) => {
             return <GachaPrize prize={5} key={uniqid()} />;
           } else if (item === "prize6") {
             return <GachaPrize prize={6} key={uniqid()} />;
+          } else if (item === "prize7") {
+            return <GachaPrize prize={7} key={uniqid()} />;
           } else
             return (
               <li className="gameItemsInfo animate__animated animate__flipInY" key={uniqid()}>

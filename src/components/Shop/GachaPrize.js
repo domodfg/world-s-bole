@@ -8,6 +8,8 @@ import gachachar4 from "../../images/shop/gachachar4.png";
 import gachachar5 from "../../images/shop/gachachar5.png";
 import gachachar6 from "../../images/shop/gachachar6.png";
 import gachachar7 from "../../images/shop/gachachar7.png";
+import gachachar8 from "../../images/shop/gachachar8.png";
+import gachachar9 from "../../images/shop/gachachar9.png";
 
 const GachaPrize = (props) => {
   const randomNumber = Math.floor(Math.random() * 2) + 1;
@@ -60,11 +62,25 @@ const GachaPrize = (props) => {
             alt="gacha character 6"
           />
         )}
-          {props.prize === 6 && (
+        {props.prize === 6 && (
           <img
             className="URprize gachaChar7"
             src={gachachar7}
             alt="gacha character 7"
+          />
+        )}
+        {props.prize === 7 && randomNumber === 1 && (
+          <img
+            className="URprize gachaChar8"
+            src={gachachar8}
+            alt="gacha character 8"
+          />
+        )}
+        {props.prize === 7 && randomNumber === 2 && (
+          <img
+            className="URprize gachaChar9"
+            src={gachachar9}
+            alt="gacha character 9"
           />
         )}
       </li>

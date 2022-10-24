@@ -7,6 +7,7 @@ import gacha3 from "../../images/shop/gacha3.jpg";
 import gacha4 from "../../images/shop/gacha4.png";
 import gacha5 from "../../images/shop/gacha5.png";
 import gacha6 from "../../images/shop/gacha6.jpeg";
+import gacha7 from "../../images/shop/gacha7.jpg";
 import { gameItem } from "./gameProduct.js";
 import GachaItem from "./GachaItem.js";
 import GachaInfo1 from "./Gacha1.js";
@@ -15,6 +16,7 @@ import GachaInfo3 from "./Gacha3.js";
 import GachaInfo4 from "./Gacha4.js";
 import GachaInfo5 from "./Gacha5.js";
 import GachaInfo6 from "./Gacha6.js";
+import GachaInfo7 from "./Gacha7";
 
 const ShopGacha = () => {
   const [displayLoot, setDisplayLoot] = useState();
@@ -71,6 +73,8 @@ const ShopGacha = () => {
       setDisplayLoot(<GachaInfo5 lootList={lootList} draw={draw} />);
     } else if (currentSlide === 5) {
       setDisplayLoot(<GachaInfo6 lootList={lootList} draw={draw} />);
+    } else if (currentSlide === 6) {
+      setDisplayLoot(<GachaInfo7 lootList={lootList} draw={draw} />);
     } else return;
   }, [currentSlide, lootList]);
 
@@ -121,6 +125,9 @@ const ShopGacha = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={gacha6} alt="sixth slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={gacha7} alt="seventh slide" />
         </Carousel.Item>
       </Carousel>
       {displayLoot}

@@ -21,7 +21,8 @@
 .gachaBG2,
 .gachaBG3,
 .gachaBG4,
-.gachaBG5 {
+.gachaBG5,
+.gachaBG6 {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -40,7 +41,6 @@
   background-image: url(../images/shop/gacha4BG.jpg);
 }
 
-
 .gachaBG4 {
   background-image: url(../images/shop/gachashopBG4.jpg);
 }
@@ -51,6 +51,9 @@
 
 .gachaBG5 {
   background-image: url(../images/shop/gacha6BG.jpeg);
+}
+.gachaBG6 {
+  background-image: url(../images/shop/gacha7BG.jpg);
 }
 
 .gachaSlide img,
@@ -94,12 +97,12 @@
 }
 
 .gachaCharContainer1 {
-
   border-radius: 30px;
 }
 
 .gachaCharContainer5,
-.gachaCharContainer6 {
+.gachaCharContainer6,
+.gachaCharContainer8 {
   background-image: none;
   border-image: url(../images/gameplaygoldenborder.png);
   border-image-slice: 20%;
@@ -111,6 +114,8 @@
 .gachaCharContainer7 {
   padding: 2rem 2rem 0 0;
 }
+
+
 
 .gachaChar5Des {
   background-color: rgba(0, 0, 0, 0.555);
@@ -129,6 +134,10 @@
 .gachaCharContainer6 img {
   width: 70%;
 }
+.gachaCharContainer8 img {
+  width: 70%;
+}
+
 
 .gachaCharContainer .charAbility {
   width: 10%;
@@ -210,22 +219,23 @@
   width: 120%;
 }
 
+.drawMachine .gameItemsInfo .URprize.gachaChar8 {
+  width: 120%;
+}
+
+.drawMachine .gameItemsInfo .URprize.gachaChar9 {
+  width: 60%;
+}
+
+
 .drawMachine .gameItemsInfo.UR {
-  box-shadow: inset 0 0 50px #fff,
-    /* inner white */
-    inset 20px 0 80px #f0f,
-    /* inner left magenta short */
-    inset -20px 0 80px #0ff,
-    /* inner right cyan short */
-    inset 20px 0 300px #f0f,
-    /* inner left magenta broad */
-    inset -20px 0 300px #0ff,
-    /* inner right cyan broad */
-    0 0 50px #fff,
-    /* outer white */
-    -10px 0 80px #f0f,
-    /* outer left magenta */
-    10px 0 80px #0ff;
+  box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
+    /* inner left magenta short */ inset -20px 0 80px #0ff,
+    /* inner right cyan short */ inset 20px 0 300px #f0f,
+    /* inner left magenta broad */ inset -20px 0 300px #0ff,
+    /* inner right cyan broad */ 0 0 50px #fff,
+    /* outer white */ -10px 0 80px #f0f,
+    /* outer left magenta */ 10px 0 80px #0ff;
   /* outer right cyan */
 }
 
@@ -279,7 +289,8 @@
   }
 
   .gachaCharContainer5 img,
-  .gachaCharContainer6 img {
+  .gachaCharContainer6 img,
+  .gachaCharContainer8 img{
     width: 80%;
   }
   .gachaCharContainer7 {
