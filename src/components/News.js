@@ -39,11 +39,10 @@ class News extends Component {
     var settings = {
       dots: true,
       infinite: true,
-      speed: 2000,
+      speed: 500,
       autoplay: true,
       autoplaySpeed: 3000,
       centerMode: true,
-      cssEase: "ease-in-out",
       arrows: false,
       slidesToShow: 2,
       slidesToScroll: 1,
