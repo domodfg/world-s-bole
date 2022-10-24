@@ -16,7 +16,7 @@ import GachaInfo3 from "./Gacha3.js";
 import GachaInfo4 from "./Gacha4.js";
 import GachaInfo5 from "./Gacha5.js";
 import GachaInfo6 from "./Gacha6.js";
-import GachaInfo7 from "./Gacha7";
+import GachaInfo7 from "./Gacha7.js";
 
 const ShopGacha = () => {
   const [displayLoot, setDisplayLoot] = useState();
