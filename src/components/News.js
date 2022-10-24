@@ -67,7 +67,9 @@ class News extends Component {
         <div className="sliderContainer">
           <Slider {...settings}>
             <div className="newsCard">
-              <img src={gameNews} alt="link to world's bole 2's page" />
+              <a href="https://angelo218.github.io/react-gh-pages">
+                <img src={gameNews} alt="link to world's bole 2's page" />
+              </a>
             </div>
             <div className="newsCard">
               <img src={gameNews2} alt="world's bole news" />
