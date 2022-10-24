@@ -6,15 +6,22 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 6rem;
-  height: 6rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
 
 .gachaBG0,
 .gachaBG1,
 .gachaBG2,
 .gachaBG3,
-.gachaBG4 {
+.gachaBG4,
+.gachaBG5 {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -40,6 +47,10 @@
 
 .gachaBG3 {
   background-image: url(../images/shop/gacha4BG_2.jpg);
+}
+
+.gachaBG5 {
+  background-image: url(../images/shop/gacha6BG.jpeg);
 }
 
 .gachaSlide img,
@@ -95,6 +106,10 @@
   border-image-width: 4% 12%;
   flex-direction: column;
   padding: 2rem 0 0 0;
+}
+
+.gachaCharContainer7 {
+  padding: 2rem 2rem 0 0;
 }
 
 .gachaChar5Des {
@@ -173,31 +188,45 @@
 .drawMachine .gameItemsInfo .URprize {
   width: 50%;
 }
+
 .drawMachine .gameItemsInfo .URprize.gachaChar2,
 .drawMachine .gameItemsInfo .URprize.gachaChar2_5 {
   width: 70%;
 }
+
 .drawMachine .gameItemsInfo .URprize.gachaChar3 {
   width: 100%;
 }
+
 .drawMachine .gameItemsInfo .URprize.gachaChar4 {
   width: 80%;
 }
+
 .drawMachine .gameItemsInfo .URprize.gachaChar5 {
   width: 110%;
 }
+
 .drawMachine .gameItemsInfo .URprize.gachaChar6 {
   width: 120%;
 }
 
 .drawMachine .gameItemsInfo.UR {
-  box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
-    /* inner left magenta short */ inset -20px 0 80px #0ff,
-    /* inner right cyan short */ inset 20px 0 300px #f0f,
-    /* inner left magenta broad */ inset -20px 0 300px #0ff,
-    /* inner right cyan broad */ 0 0 50px #fff,
-    /* outer white */ -10px 0 80px #f0f,
-    /* outer left magenta */ 10px 0 80px #0ff; /* outer right cyan */
+  box-shadow: inset 0 0 50px #fff,
+    /* inner white */
+    inset 20px 0 80px #f0f,
+    /* inner left magenta short */
+    inset -20px 0 80px #0ff,
+    /* inner right cyan short */
+    inset 20px 0 300px #f0f,
+    /* inner left magenta broad */
+    inset -20px 0 300px #0ff,
+    /* inner right cyan broad */
+    0 0 50px #fff,
+    /* outer white */
+    -10px 0 80px #f0f,
+    /* outer left magenta */
+    10px 0 80px #0ff;
+  /* outer right cyan */
 }
 
 .lootList {
@@ -222,7 +251,7 @@
   cursor: pointer;
 }
 
-.shopPromotion h2{
+.shopPromotion h2 {
   text-align: center;
   width: 100%;
   font-size: 1rem;
@@ -231,11 +260,11 @@
   -webkit-text-fill-color: transparent;
 }
 
-.shopPromotion img{
+.shopPromotion img {
   width: 100%;
 }
 
-.shopPromotion .upArrow{
+.shopPromotion .upArrow {
   width: 20px;
 }
 
@@ -244,12 +273,17 @@
     flex-direction: column;
     align-items: center;
   }
+
   .gachaCharContainer img {
     width: 60%;
   }
+
   .gachaCharContainer5 img,
   .gachaCharContainer6 img {
     width: 80%;
+  }
+  .gachaCharContainer7 {
+    padding: 2rem;
   }
 }
 
@@ -263,16 +297,20 @@
   .gachaSlide {
     margin-top: 3rem;
   }
+
   .gachaCharContainer {
     padding: 1rem;
   }
+
   .gachaCharContainer5,
   .gachaCharContainer6 {
     padding: 0;
   }
+
   .gachaCharDes {
     padding: 0rem 1rem 1rem 1rem;
   }
+
   .drawMachine {
     min-height: 1229px;
   }
